@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="EISv3.Views.HelpView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:local="clr-namespace:EISv3.Views"
+             mc:Ignorable="d" 
+             MinHeight="600" MinWidth="1024" Background="#FFA5C3C3">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Background="#FF2E2A2A">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Sumit Mahajan" Foreground="#FFE8E8E8" FontSize="20" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="E-Mail : sumit_mahajan@persistent.com" Foreground="#FFE8E8E8" FontSize="20" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Contact Number : 9923637662" Foreground="#FFE8E8E8" FontSize="20" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="WS13, 4th Floor, Persistent Systems, Block 9, Pritech Park, Echospace, Bellandur, Bangaluru - 560103" Foreground="#FFE8E8E8" FontSize="20" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</UserControl>

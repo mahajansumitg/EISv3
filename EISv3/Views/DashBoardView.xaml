@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="EISv3.Views.DashBoardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:vm="clr-namespace:EISv3.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Background="white">
+
+    <UserControl.Resources>
+        <vm:DashBoardViewModel x:Key="DashBoardViewModel"/>
+    </UserControl.Resources>
+
+    <Grid Name="Parent" Margin="30" MinHeight="40" DataContext="{Binding Source={StaticResource DashBoardViewModel}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="searchBar" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Employee Id:" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Grid.Column="2" Content="DOJ:" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Grid.Column="4" Content="DOL:" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <TextBox    Grid.Column="1" materialDesign:HintAssist.Hint="Emp-ID" Text="{Binding EmpIdSearch}" Foreground="Black" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="120"/>
+            <DatePicker Grid.Column="3" materialDesign:HintAssist.Hint="DOJ" Text="{Binding DojSearch, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" SelectedDateFormat="Short" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <DatePicker Grid.Column="5" materialDesign:HintAssist.Hint="DOL" Text="{Binding DolSearch, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" SelectedDateFormat="Short" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+            <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Height="30" Grid.Column="6" Content="Search" Command="{Binding Search}" Margin="5,2,5,2"/>
+            <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Height="30" Grid.Column="7" Content="Clear" Command="{Binding Clear}" Margin="5,2,5,2"/>
+        </Grid>
+        <ListView Name="lstEmpInfo" Grid.Row="1" ItemsSource="{Binding CurrentPageEmpInfoList}" Margin="10" Background="White">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn  Header="Select">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <RadioButton GroupName="selectEmp" Command="{Binding ElementName=Parent, Path=DataContext.EmpChecked}" CommandParameter="{Binding}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}"></GridViewColumn>
+                    <GridViewColumn Header="Middle Name" DisplayMemberBinding="{Binding MiddleName}"></GridViewColumn>
+                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}"></GridViewColumn>
+                    <GridViewColumn Header="Email Id" DisplayMemberBinding="{Binding EmailId}"></GridViewColumn>
+                    <GridViewColumn Header="Employee Id" DisplayMemberBinding="{Binding EmpId}"></GridViewColumn>
+                    <GridViewColumn Header="Date of Birth" DisplayMemberBinding="{Binding DOB}"></GridViewColumn>
+                    <GridViewColumn Header="Date of Joining" DisplayMemberBinding="{Binding DOJ}"></GridViewColumn>
+                    <GridViewColumn Header="Date of Leaving" DisplayMemberBinding="{Binding DOL}"></GridViewColumn>
+                    <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"></GridViewColumn>
+                    <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Address}"></GridViewColumn>
+                    <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Department}"></GridViewColumn>
+                    <GridViewColumn Header="Salary" DisplayMemberBinding="{Binding Salary}"></GridViewColumn>
+                    <GridViewColumn Header="Vendor" DisplayMemberBinding="{Binding Vendor}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Grid Name="bottomBar" Grid.Row="2" Margin="0,2,0,2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Name="pagination">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <DockPanel Grid.Column="0" HorizontalAlignment="Center">
+                    <Label Content="Total Pages:" Height="30"/>
+                    <Label Content="{Binding LastPage}" Height="30"/>
+                </DockPanel>
+
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Height="30" Grid.Column="1" Content="&lt;" Command="{Binding PrevPage}"/>
+                <TextBox Width="40" TextAlignment="Center" Text="{Binding CurrentPage}" Foreground="Black" Grid.Column=" 2" Height="30" HorizontalAlignment="Center"/>
+                <Button Grid.Column="3" Height="30" Content="&gt;" Command="{Binding NxtPage}"/>
+            </Grid>
+
+            <Grid Grid.Column="1" Name="CRUDButtons" Margin="20,0,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" Height="30" materialDesign:RippleAssist.Feedback="#DD000000" Grid.Column="0" Content="Update" Command="{Binding UpdateEmployee}"/>
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" Height="30" materialDesign:RippleAssist.Feedback="#DD000000" Grid.Column="2" Content="Delete" Command="{Binding DeleteEmployee}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>
