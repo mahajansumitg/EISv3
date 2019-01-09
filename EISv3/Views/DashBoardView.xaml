@@ -87,8 +87,8 @@
                 </DockPanel>
 
                 <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Height="30" Grid.Column="1" Content="&lt;" Command="{Binding PrevPage}"/>
-                <TextBox Width="40" TextAlignment="Center" Text="{Binding CurrentPage}" Foreground="Black" Grid.Column=" 2" Height="30" HorizontalAlignment="Center"/>
-                <Button Grid.Column="3" Height="30" Content="&gt;" Command="{Binding NxtPage}"/>
+                <TextBox Width="40" TextAlignment="Center" Text="{Binding CurrentPage, Mode=TwoWay}" Foreground="Black" Grid.Column=" 2" Height="30" HorizontalAlignment="Center"/>
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" Grid.Column="3" Height="30" Content="&gt;" Command="{Binding NxtPage}"/>
             </Grid>
 
             <Grid Grid.Column="1" Name="CRUDButtons" Margin="20,0,10,0">
