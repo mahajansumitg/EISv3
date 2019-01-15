@@ -5,18 +5,39 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using static EISv3.Model.EmpInfo;
 using System.Windows.Input;
+using System.Windows.Data;
+using System.ComponentModel;
+using System.Linq;
 
 namespace EISv3.ViewModel
 {
     public class DashBoardViewModel : Notify
     {
-        private ObservableCollection<EmpInfo> currentPageEmpInfoList = new ObservableCollection<EmpInfo>();
+
+        //private CollectionViewSource _firstResultDataView;
+        //public ListCollectionView FirstResultDataView
+        //{
+        //    get
+        //    {
+        //        return (ListCollectionView)_firstResultDataView.View;
+        //    }
+        //}
+
+        //current page in listView
+        private ObservableCollection<EmpInfo> currentPageEmpInfoList;
         public ObservableCollection<EmpInfo> CurrentPageEmpInfoList
         {
             get => currentPageEmpInfoList;
-            set { currentPageEmpInfoList = value; OnPropertyChanged("CurrentPageEmpInfoList"); }
+            set
+            {
+                currentPageEmpInfoList = value;
+                //_firstResultDataView = new CollectionViewSource();
+                //_firstResultDataView.Source = currentPageEmpInfoList;
+                OnPropertyChanged("CurrentPageEmpInfoList");
+            }
         }
 
+        //current page no
         private int currentPage = 1;
         public String CurrentPage
         {
@@ -31,6 +52,7 @@ namespace EISv3.ViewModel
             }
         }
 
+        //EmpId with which we want to search
         private String empIdSearch;
         public String EmpIdSearch
         {
@@ -38,6 +60,7 @@ namespace EISv3.ViewModel
             set { empIdSearch = value; OnPropertyChanged("EmpIdSearch"); }
         }
 
+        //Date of joining with which we want to search
         private DateTime dojSearch;
         public String DojSearch
         {
@@ -53,6 +76,7 @@ namespace EISv3.ViewModel
             }
         }
 
+        //Date of leaving with which we want to search
         private DateTime dolSearch;
         public String DolSearch
         {
@@ -68,6 +92,7 @@ namespace EISv3.ViewModel
             }
         }
 
+        //last page no in listView
         private int lastPage = 1;
         public int LastPage
         {
@@ -99,7 +124,7 @@ namespace EISv3.ViewModel
 
             List<EmpInfo> temp = new List<EmpInfo>();
             empInfoDict.TryGetValue(currentPage, out temp);
-            currentPageEmpInfoList = new ObservableCollection<EmpInfo>(temp);
+            CurrentPageEmpInfoList = new ObservableCollection<EmpInfo>(temp);
             OnPropertyChanged("CurrentPageEmpInfoList");
         }
 
@@ -188,6 +213,61 @@ namespace EISv3.ViewModel
         private bool PerformSearch(object sender)
         {
             return !String.IsNullOrEmpty(empIdSearch) || !String.IsNullOrEmpty(DojSearch) || !String.IsNullOrEmpty(DolSearch);
+        }
+
+        //Sorting commands
+        public ICommand SortCommand => new Command(Sort, CanSort);
+
+        private string _sortColumn;
+        private ListSortDirection _sortDirection;
+        private void Sort(object parameter)
+        {
+            Sort sortObj = new Sort();
+            string column = parameter as string;
+            if (_sortColumn == column)
+            {
+                if (_sortDirection == ListSortDirection.Ascending)
+                {
+                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
+                    _sortDirection = ListSortDirection.Descending;
+                    OnPropertyChanged("CurrentPageEmpInfoList");
+                }
+                else
+                {
+                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
+                    _sortDirection = ListSortDirection.Ascending;
+                    OnPropertyChanged("CurrentPageEmpInfoList");
+                }
+            }
+            else
+            {
+                _sortColumn = column;
+                _sortDirection = ListSortDirection.Ascending;
+                currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
+                OnPropertyChanged("CurrentPageEmpInfoList");
+            }
+
+            //string column = parameter as string;
+            //if (_sortColumn == column)
+            //{
+            //    // Toggle sorting direction
+            //    _sortDirection = _sortDirection == ListSortDirection.Ascending ? ListSortDirection.Descending : ListSortDirection.Ascending;
+            //}
+            //else
+            //{
+            //    _sortColumn = column;
+            //    _sortDirection = ListSortDirection.Ascending;
+            //}
+
+            //_firstResultDataView.SortDescriptions.Clear();
+            //_firstResultDataView.SortDescriptions.Add(new SortDescription(_sortColumn, _sortDirection));
+        }
+
+        
+
+        private bool CanSort(object sender)
+        {
+            return true;
         }
     }
 }

@@ -44,6 +44,7 @@
         <ListView Name="lstEmpInfo" Grid.Row="1" ItemsSource="{Binding CurrentPageEmpInfoList}" Margin="10" Background="White">
             <ListView.View>
                 <GridView>
+                    
                     <GridViewColumn  Header="Select">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
@@ -51,19 +52,85 @@
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}"></GridViewColumn>
-                    <GridViewColumn Header="Middle Name" DisplayMemberBinding="{Binding MiddleName}"></GridViewColumn>
-                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}"></GridViewColumn>
-                    <GridViewColumn Header="Email Id" DisplayMemberBinding="{Binding EmailId}"></GridViewColumn>
-                    <GridViewColumn Header="Employee Id" DisplayMemberBinding="{Binding EmpId}"></GridViewColumn>
-                    <GridViewColumn Header="Date of Birth" DisplayMemberBinding="{Binding DOB}"></GridViewColumn>
-                    <GridViewColumn Header="Date of Joining" DisplayMemberBinding="{Binding DOJ}"></GridViewColumn>
-                    <GridViewColumn Header="Date of Leaving" DisplayMemberBinding="{Binding DOL}"></GridViewColumn>
-                    <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"></GridViewColumn>
-                    <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Address}"></GridViewColumn>
-                    <GridViewColumn Header="Department" DisplayMemberBinding="{Binding Department}"></GridViewColumn>
-                    <GridViewColumn Header="Salary" DisplayMemberBinding="{Binding Salary}"></GridViewColumn>
-                    <GridViewColumn Header="Vendor" DisplayMemberBinding="{Binding Vendor}"></GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding FirstName}">
+                        <GridViewColumnHeader Content="First Name"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="First Name" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding MiddleName}">
+                        <GridViewColumnHeader Content="Middle Name"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Middle Name" />
+                    </GridViewColumn>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding LastName}">
+                        <GridViewColumnHeader Content="Last Name"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Last Name" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding EmailId}">
+                        <GridViewColumnHeader Content="Email"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Email" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding EmpId}">
+                        <GridViewColumnHeader Content="Employee Id"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Employee Id" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding DOB}">
+                        <GridViewColumnHeader Content="Date of Birth"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Date of Birth" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding DOJ}">
+                        <GridViewColumnHeader Content="Date of Joining"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Date of Joining" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding DOL}">
+                        <GridViewColumnHeader Content="Date of Leaving"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Date of Leaving" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding City}">
+                        <GridViewColumnHeader Content="City"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="City" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding Address}">
+                        <GridViewColumnHeader Content="Address"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Address" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding Department}">
+                        <GridViewColumnHeader Content="Department"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Department" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding Salary}">
+                        <GridViewColumnHeader Content="Salary"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Salary" />
+                    </GridViewColumn>
+                    
+                    <GridViewColumn DisplayMemberBinding="{Binding Vendor}">
+                        <GridViewColumnHeader Content="Vendor"
+                                              Command="{Binding SortCommand}"
+                                              CommandParameter="Vendor" />
+                    </GridViewColumn>
+                    
                 </GridView>
             </ListView.View>
         </ListView>
