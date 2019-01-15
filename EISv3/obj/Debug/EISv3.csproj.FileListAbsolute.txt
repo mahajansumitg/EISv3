@@ -78,3 +78,8 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csproj.CopyComplete
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.exe
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.pdb
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4net.config
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4net.dll
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4net.xml
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\MaterialDesignColors.pdb
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3_Content.g.cs

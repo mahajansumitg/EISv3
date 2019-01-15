@@ -1,19 +1,7 @@
 ﻿using EISv3.Pages;
 using EISv3.Utils;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using log4net;
 
 namespace EISv3
 {
@@ -22,13 +10,27 @@ namespace EISv3
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public MainWindow()
         {
             InitializeComponent();
+
+            //Logs Code
+            log4net.Config.XmlConfigurator.Configure();
+            log.Info("-----Started MainWindow------");
+            /*
+              *  log.info
+              *  log.error
+              *  log.fatal
+              *  log.debug
+              */
+
             this.Content = new LoginPage();
             Mediator.registerVar("Window", this);
             Mediator.registerAction("GoToLoginPage", () => { this.Content = new LoginPage(); });
             Mediator.registerAction("GoToMainPage", () => { this.Content = new MainPage(); });
         }
+
     }
 }
