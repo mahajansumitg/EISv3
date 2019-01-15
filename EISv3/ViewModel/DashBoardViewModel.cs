@@ -228,14 +228,14 @@ namespace EISv3.ViewModel
             {
                 if (_sortDirection == ListSortDirection.Ascending)
                 {
-                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
                     _sortDirection = ListSortDirection.Descending;
+                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
                     OnPropertyChanged("CurrentPageEmpInfoList");
                 }
                 else
                 {
-                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
                     _sortDirection = ListSortDirection.Ascending;
+                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
                     OnPropertyChanged("CurrentPageEmpInfoList");
                 }
             }
