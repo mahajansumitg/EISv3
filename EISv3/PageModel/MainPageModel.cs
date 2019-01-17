@@ -1,16 +1,10 @@
 ﻿using EISv3.Model;
 using EISv3.Utils;
 using EISv3.Views;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace EISv3.PageModel
 {
@@ -25,6 +19,7 @@ namespace EISv3.PageModel
 
         public MainPageModel()
         {
+            Logger.logging("-----On MainPage------");
             Contents.Add(new HomeView());
             _OpenMenuVisibily = Visibility.Visible;
             _CloseMenuVisibily = Visibility.Collapsed;
@@ -81,6 +76,7 @@ namespace EISv3.PageModel
         public ICommand OpenMenu => new Command(_OpenMenu);
         private void _OpenMenu(object parameter)
         {
+            Logger.logging("-----Menu Opened------");
             OpenMenuVisibily = Visibility.Collapsed;
             CloseMenuVisibily = Visibility.Visible;
 
@@ -89,6 +85,8 @@ namespace EISv3.PageModel
         public ICommand CloseMenu => new Command(_CloseMenu);
         private void _CloseMenu(object parameter)
         {
+            Logger.logging("-----Menu Closed------");
+
             OpenMenuVisibily = Visibility.Visible;
             CloseMenuVisibily = Visibility.Collapsed;
         }
@@ -101,12 +99,15 @@ namespace EISv3.PageModel
             {
                 case "ItemHome":
                     Contents.Add(new HomeView());
+                    Logger.logging("-----Selected HomeView from menu------");
                     break;
                 case "ItemDashBoard":
                     Contents.Add(new DashBoardView());
+                    Logger.logging("-----Selected DashBoardView from menu------");
                     break;
                 case "ItemForm":
                     Contents.Add(new ProfileView());
+                    Logger.logging("-----Selected ProfileView from menu------");
                     break;
                 default:
                     break;
@@ -116,12 +117,14 @@ namespace EISv3.PageModel
         public ICommand Exit => new Command(_Exit);
         private void _Exit(object parameter)
         {
+            Logger.logging("-----Application Exit------");
             System.Windows.Application.Current.Shutdown();
         }
 
         public ICommand Logout => new Command(_Logout);
         private void _Logout(object parameter)
         {
+
             Mediator.removeVar("Login");
             Mediator.removeVar("EmpInfo");
             Mediator.removeAction("SwitchToDashBoardView");
@@ -130,11 +133,14 @@ namespace EISv3.PageModel
             Mediator.removeAction("EnableButtons");
 
             Mediator.performAction("GoToLoginPage");
+
+            Logger.logging("-----Logged Out------");
         }
 
         public ICommand Help => new Command(_Help);
         private void _Help(object parameter)
         {
+            Logger.logging("-----Selected Help------");
             Contents.Add(new HelpView());
         }
     }

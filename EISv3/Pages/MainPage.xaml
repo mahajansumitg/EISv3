@@ -36,6 +36,7 @@
     </Page.Triggers>
 
     <Grid Background="#FFDEDEDE" DataContext="{Binding Source={StaticResource MainPageModel}}">
+        
         <ItemsControl ItemsSource="{Binding Contents}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -43,6 +44,7 @@
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
+        
         <Grid Height="60"  VerticalAlignment="Top" Background="#FF002040">
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="1" ShadowDepth="1" Color="#FFACACAC"/>

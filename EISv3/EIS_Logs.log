@@ -1,3 +1,28 @@
 2019-01-15 13:59:57,027 [1] INFO EISv3.App -         =============  Started Logging  =============        
 2019-01-15 14:06:29,171 [1] INFO EISv3.App -         =============  Started Logging  =============        
 2019-01-15 14:06:29,240 [1] INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-16 15:01:21,537 [1] INFO EISv3.App -         =============  Started Logging  =============        
+2019-01-16 15:01:21,965 [1] INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-17 20:21:06,665 [1] INFO EISv3.App -         =============  Started Logging  =============        
+2019-01-17 20:21:07,064 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
+2019-01-17 20:21:07,074 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
+2019-01-17 20:21:16,300 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
+2019-01-17 20:21:16,319 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
+2019-01-17 20:21:33,894 [1] INFO EISv3.Utils.Logger - -----On MainPage------
+2019-01-17 20:21:33,972 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
+2019-01-17 20:21:34,212 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
+2019-01-17 20:21:38,221 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
+2019-01-17 20:21:38,225 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
+2019-01-17 20:21:38,237 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
+2019-01-17 20:21:38,429 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
+2019-01-17 20:21:38,432 [1] INFO EISv3.Utils.Logger - -----Logged Out------
+2019-01-17 20:21:38,444 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-17 20:21:38,526 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
+2019-01-17 20:21:41,675 [1] INFO EISv3.Utils.Logger - -----Clicked on Header in ListView------
+2019-01-17 20:21:41,693 [1] INFO EISv3.Utils.Logger - -----ListView Sorted------
+2019-01-17 20:21:45,826 [1] INFO EISv3.Utils.Logger - -----Clicked on Header in ListView------
+2019-01-17 20:21:45,835 [1] INFO EISv3.Utils.Logger - -----ListView Sorted------
+2019-01-17 20:21:48,356 [1] INFO EISv3.Utils.Logger - -----Clicked on Header in ListView------
+2019-01-17 20:21:48,365 [1] INFO EISv3.Utils.Logger - -----ListView Sorted------
+2019-01-17 20:21:51,799 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
+2019-01-17 20:21:51,853 [1] INFO EISv3.Utils.Logger - -----Logged Out------

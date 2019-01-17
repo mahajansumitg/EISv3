@@ -21,6 +21,12 @@ namespace EISv3.PageModel
         }
 
         private String _PSWD;
+
+        public LoginPageModel()
+        {
+            Logger.logging("-----On LoginPage------");
+        }
+
         public String PSWD
         {
             get => _PSWD;
@@ -35,6 +41,7 @@ namespace EISv3.PageModel
 
         private void _Login(object parameter)
         {
+            Logger.logging("-----Clicked on Login in LoginPage------");
             String loginQuery = "select * from Login where user_name = '" + _UserName + "'";
             List<Login> loginList = Loading.Show(() => Connection.getData<Login>(loginQuery)) as List<Login>;
 
@@ -42,6 +49,7 @@ namespace EISv3.PageModel
             {
                 Mediator.registerVar("Login", loginList.First());
                 Mediator.performAction("GoToMainPage");
+                Logger.logging("------Login Successfull------");
             }
             else
                 MessageBox.Show("Entered user_name or password is incorrect");

@@ -30,6 +30,7 @@ namespace EISv3.ViewModel
 
         public ProfileViewModel()
         {
+            Logger.logging("-----Started ProfileView------");
             EmpInfo = Mediator.getVar("EmpInfo") as EmpInfo;
             if (EmpInfo != null) isUserPresent = true;
             else EmpInfo = new EmpInfo();
@@ -40,6 +41,7 @@ namespace EISv3.ViewModel
             VendorVisibily = user.role.Equals("contractor") ? System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
             EmpInfo.IsContractor = user.role.Equals("contractor");
 
+            Logger.logging("-----Finding data for Selected Employee------");
             string findQuery = "select * from EmpInfo where emp_id = '" + user.emp_id + "'";
             List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
 
@@ -54,17 +56,6 @@ namespace EISv3.ViewModel
 
         }
 
-        private void updateProfile(object sender, RoutedEventArgs e)
-        {
-            if (isUserPresent)
-                Connection.updateData(EmpInfo, "emp_id");
-            else
-                Connection.setData(EmpInfo);
-
-            MessageBox.Show("Profile successfully updated");
-            Mediator.performAction("SwitchToDashBordView");
-        }
-
         public ICommand UpdateProfile => new Command(_UpdateProfile);
         private void _UpdateProfile(object parameter)
         {
@@ -73,9 +64,13 @@ namespace EISv3.ViewModel
             else
                 Connection.setData(EmpInfo);
 
+            Logger.logging("-----Empployee Information Updated------");
+
             MessageBox.Show("Profile successfully updated");
             Mediator.performAction("EnableButtons");
             Mediator.performAction("SwitchToDashBoardView");
+
+
         }
     }
 }

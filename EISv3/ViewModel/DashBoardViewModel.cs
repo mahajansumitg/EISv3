@@ -13,17 +13,6 @@ namespace EISv3.ViewModel
 {
     public class DashBoardViewModel : Notify
     {
-
-        //private CollectionViewSource _firstResultDataView;
-        //public ListCollectionView FirstResultDataView
-        //{
-        //    get
-        //    {
-        //        return (ListCollectionView)_firstResultDataView.View;
-        //    }
-        //}
-
-        //current page in listView
         private ObservableCollection<EmpInfo> currentPageEmpInfoList;
         public ObservableCollection<EmpInfo> CurrentPageEmpInfoList
         {
@@ -31,8 +20,6 @@ namespace EISv3.ViewModel
             set
             {
                 currentPageEmpInfoList = value;
-                //_firstResultDataView = new CollectionViewSource();
-                //_firstResultDataView.Source = currentPageEmpInfoList;
                 OnPropertyChanged("CurrentPageEmpInfoList");
             }
         }
@@ -107,15 +94,20 @@ namespace EISv3.ViewModel
 
         public DashBoardViewModel()
         {
+            Logger.logging("-----Started DashboardView------");
             InitializePaginaion();
         }
 
         private void InitializePaginaion()
         {
+            Logger.logging("-----In InitializePagination------");
+
             string findQuery = "select * from EmpInfo;";
             empInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
             SetEmpInfoDictionary(empInfoList);
             setPageInListView();
+
+            Logger.logging("-----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------");
         }
 
         private void setPageInListView()
@@ -130,6 +122,7 @@ namespace EISv3.ViewModel
 
         private void SetEmpInfoDictionary(List<EmpInfo> empInfoCollection)
         {
+            Logger.logging("-----Setting Page In EmpInfoDictionary------");
             List<EmpInfo> empInfoList = new List<EmpInfo>(empInfoCollection);
             Dictionary<int, List<EmpInfo>> empInfoDict = new Dictionary<int, List<EmpInfo>>();
             int page = 1;
@@ -139,6 +132,7 @@ namespace EISv3.ViewModel
             }
             lastPage = --page;
             this.empInfoDict = empInfoDict;
+            Logger.logging("-----Logged Out------");
         }
 
         //Employee Updation
@@ -146,11 +140,14 @@ namespace EISv3.ViewModel
         private void CheckEmp(object parameter)
         {
             currentEmployee = parameter as EmpInfo;
+            Logger.logging("-----Selected one Employee from ListView------");
         }
 
         public ICommand UpdateEmployee => new Command(UpdateCurrentEmployee, PerformActionOnEmp);
         private void UpdateCurrentEmployee(object parameter)
         {
+            Logger.logging("-----Selected Update from ListView------");
+
             Mediator.registerVar("EmpInfo", parameter);
             Mediator.performAction("DisableButtons");
             Mediator.performAction("SwitchToProfileView");
@@ -159,8 +156,13 @@ namespace EISv3.ViewModel
         public ICommand DeleteEmployee => new Command(DeleteCurrentEmployee, PerformActionOnEmp);
         private void DeleteCurrentEmployee(object parameter)
         {
+            Logger.logging("-----Selected Delete from ListView------");
+
             Connection.deleteData<EmpInfo>("emp_id", currentEmployee.emp_id);
             currentEmployee = null;
+
+            Logger.logging("------Selected Employee deleted------");
+
             InitializePaginaion();
         }
         private bool PerformActionOnEmp(object sender)
@@ -172,12 +174,14 @@ namespace EISv3.ViewModel
         public ICommand PrevPage => new Command(PreviousPage);
         private void PreviousPage(object parameter)
         {
+            Logger.logging("-----Clicked on Previous Page from ListView------");
             if (currentPage != 1) CurrentPage = (currentPage - 1).ToString();
         }
 
         public ICommand NxtPage => new Command(NextPage);
         private void NextPage(object parameter)
         {
+            Logger.logging("-----Clicked on Next Page from ListView------");
             if (currentPage != LastPage) CurrentPage = (currentPage + 1).ToString();
         }
 
@@ -185,6 +189,8 @@ namespace EISv3.ViewModel
         public ICommand Search => new Command(SeachEmployee, PerformSearch);
         private void SeachEmployee(object parameter)
         {
+            Logger.logging("-----Clicked on Search from ListView------");
+
             List<EmpInfo> prevEmpInfoList = new List<EmpInfo>(empInfoList);
             List<EmpInfo> newEmpInfoList = new List<EmpInfo>(empInfoList);
 
@@ -200,11 +206,15 @@ namespace EISv3.ViewModel
 
             setPageInListView();
             empInfoList = prevEmpInfoList;
+
+            Logger.logging("-----Search Operation Completed & Displyed in ListView------");
         }
 
         public ICommand Clear => new Command(ClearSearch, PerformSearch);
         private void ClearSearch(object parameter)
         {
+            Logger.logging("-----Clicked on Clear from ListView------");
+
             EmpIdSearch = DojSearch = DolSearch = "";
 
             SetEmpInfoDictionary(empInfoList);
@@ -222,6 +232,8 @@ namespace EISv3.ViewModel
         private ListSortDirection _sortDirection;
         private void Sort(object parameter)
         {
+            Logger.logging("-----Clicked on Header in ListView------");
+
             Sort sortObj = new Sort();
             string column = parameter as string;
             if (_sortColumn == column)
@@ -247,23 +259,8 @@ namespace EISv3.ViewModel
                 OnPropertyChanged("CurrentPageEmpInfoList");
             }
 
-            //string column = parameter as string;
-            //if (_sortColumn == column)
-            //{
-            //    // Toggle sorting direction
-            //    _sortDirection = _sortDirection == ListSortDirection.Ascending ? ListSortDirection.Descending : ListSortDirection.Ascending;
-            //}
-            //else
-            //{
-            //    _sortColumn = column;
-            //    _sortDirection = ListSortDirection.Ascending;
-            //}
-
-            //_firstResultDataView.SortDescriptions.Clear();
-            //_firstResultDataView.SortDescriptions.Add(new SortDescription(_sortColumn, _sortDirection));
+            Logger.logging("-----ListView Sorted------");
         }
-
-        
 
         private bool CanSort(object sender)
         {
