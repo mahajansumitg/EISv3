@@ -11,7 +11,7 @@ using System.Windows.Input;
 
 namespace EISv3.PageModel
 {
-    public class LoginPageModel : Notify
+    public class LoginPageModel : NotifyOnPropertyChanged
     {
         private String _UserName;
         public String UserName
@@ -21,24 +21,26 @@ namespace EISv3.PageModel
         }
 
         private String _PSWD;
-
-        public LoginPageModel()
-        {
-            Logger.logging("-----On LoginPage------");
-        }
-
         public String PSWD
         {
             get => _PSWD;
             set { _PSWD = value; OnPropertyChanged("PSWD"); }
         }
 
+        public LoginPageModel()
+        {
+            Logger.logging("-----On LoginPage------");
+        }
+
         public ICommand Login => new Command(_Login, HandleVisibility);
+
+        //Enable or disable the Login Button
         private Boolean HandleVisibility(object parameter)
         {
             return _UserName != null && (parameter as PasswordBox).Password != null;
         }
 
+        //Perform Login
         private void _Login(object parameter)
         {
             Logger.logging("-----Clicked on Login in LoginPage------");

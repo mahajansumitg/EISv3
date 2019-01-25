@@ -12,17 +12,20 @@ namespace EISv3.Utils
 {
     static class Connection
     {
-        // Local MySQL 
-        //private static string USER_ID = "";
-        //private static string PSWD = "";
-        //private static string DATA_SOURCE = "(localdb)\\MSSQLLocalDB";
-        //private static string CATALOG = "Employee_Information_System";
 
-        // Local SQL Server 
+        #region Select DB
+
+        // Local MySQL 
         private static string USER_ID = "";
         private static string PSWD = "";
-        private static string DATA_SOURCE = "(localdb)\\ProjectsV13";
+        private static string DATA_SOURCE = "(localdb)\\MSSQLLocalDB";
         private static string CATALOG = "Employee_Information_System";
+
+        // Local SQL Server 
+        //private static string USER_ID = "";
+        //private static string PSWD = "";
+        //private static string DATA_SOURCE = "(localdb)\\ProjectsV13";
+        //private static string CATALOG = "Employee_Information_System";
 
         // Microsift Azure Online
         //private static string USER_ID = "sumit";
@@ -30,40 +33,36 @@ namespace EISv3.Utils
         //private static string DATA_SOURCE = "sumit-mahajan.database.windows.net";
         //private static string CATALOG = "Employee_Information_System";
 
+        #endregion
+
+        //Common connection string for whole project
         private static SqlConnection connection = new SqlConnection(getConnectionString());
 
+        //Connection string building
+        private static string getConnectionString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.Append("Data Source=");
+            builder.Append(DATA_SOURCE);
+            builder.Append(";Initial Catalog=");
+            builder.Append(CATALOG);
+            builder.Append(";User ID=");
+            builder.Append(USER_ID);
+            builder.Append(";Password=");
+            builder.Append(PSWD);
+
+            return builder.ToString();
+        }
+
+        #region Connection Open & Close
+
+        //Connection close
         public static void close()
         {
             connection.Close();
         }
-        public static List<T> getData<T>(string query)
-        {
-            connection.Open();
-            SqlDataReader dataReader = new SqlCommand(query, connection).ExecuteReader();
-            return processResponse<T>(dataReader);
-        }
 
-        public static Boolean setData<T>(T obj)
-        {
-            connection.Open();
-            SqlDataReader dataReader = new SqlCommand(getInsertQuery(obj), connection).ExecuteReader();
-            return returnAndClose(dataReader);
-        }
-
-        public static Boolean updateData<T>(T obj, String key)
-        {
-            connection.Open();
-            SqlDataReader dataReader = new SqlCommand(getUpdateQuery(obj, key), connection).ExecuteReader();
-            return returnAndClose(dataReader);
-        }
-
-        public static Boolean deleteData<T>(String key, string value)
-        {
-            connection.Open();
-            SqlDataReader dataReader = new SqlCommand(getDeleteQuery<T>(key, value), connection).ExecuteReader();
-            return returnAndClose(dataReader);
-        }
-
+        //Status of Query action & Close connection 
         private static Boolean returnAndClose(SqlDataReader dataReader)
         {
             Boolean status = dataReader.Read();
@@ -71,7 +70,47 @@ namespace EISv3.Utils
             return status;
         }
 
+        #endregion
 
+        #region Callers to build Queries as per the requirement
+
+        //Retrive data (Select Query)
+        public static List<T> getData<T>(string query)
+        {
+            connection.Open();
+            SqlDataReader dataReader = new SqlCommand(query, connection).ExecuteReader();
+            return processResponse<T>(dataReader);
+        }
+
+        //Insert data (Insert Query)
+        public static Boolean setData<T>(T obj)
+        {
+            connection.Open();
+            SqlDataReader dataReader = new SqlCommand(getInsertQuery(obj), connection).ExecuteReader();
+            return returnAndClose(dataReader);
+        }
+
+        //Update data (Update Query)
+        public static Boolean updateData<T>(T obj, String key)
+        {
+            connection.Open();
+            SqlDataReader dataReader = new SqlCommand(getUpdateQuery(obj, key), connection).ExecuteReader();
+            return returnAndClose(dataReader);
+        }
+
+        //Delete data (Delete Query)
+        public static Boolean deleteData<T>(String key, string value)
+        {
+            connection.Open();
+            SqlDataReader dataReader = new SqlCommand(getDeleteQuery<T>(key, value), connection).ExecuteReader();
+            return returnAndClose(dataReader);
+        }
+
+        #endregion
+
+        #region Generic Processes to Perform a Query
+
+        //Getting data after select command
         private static List<T> processResponse<T>(SqlDataReader dataReader)
         {
             Type type = typeof(T);
@@ -108,7 +147,7 @@ namespace EISv3.Utils
             return dataList;
         }
 
-
+        //Inserting data to table
         private static string getInsertQuery<T>(T obj)
         {
             Type type = typeof(T);
@@ -148,6 +187,7 @@ namespace EISv3.Utils
             return builder.ToString();
         }
 
+        //Update specific data in table 
         private static string getUpdateQuery<T>(T obj, string key)
         {
             Type type = typeof(T);
@@ -193,6 +233,7 @@ namespace EISv3.Utils
             return builder.ToString();
         }
 
+        //Delete a record from table
         private static string getDeleteQuery<T>(string key, string value)
         {
             Type type = typeof(T);
@@ -209,19 +250,6 @@ namespace EISv3.Utils
             return builder.ToString();
         }
 
-        private static string getConnectionString()
-        {
-            StringBuilder builder = new StringBuilder();
-            builder.Append("Data Source=");
-            builder.Append(DATA_SOURCE);
-            builder.Append(";Initial Catalog=");
-            builder.Append(CATALOG);
-            builder.Append(";User ID=");
-            builder.Append(USER_ID);
-            builder.Append(";Password=");
-            builder.Append(PSWD);
-
-            return builder.ToString();
-        }
+        #endregion
     }
 }

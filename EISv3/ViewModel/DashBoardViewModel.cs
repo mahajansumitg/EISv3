@@ -11,8 +11,12 @@ using System.Linq;
 
 namespace EISv3.ViewModel
 {
-    public class DashBoardViewModel : Notify
+    public class DashBoardViewModel : NotifyOnPropertyChanged
     {
+
+        #region Properties
+
+        //ListView Binding
         private ObservableCollection<EmpInfo> currentPageEmpInfoList;
         public ObservableCollection<EmpInfo> CurrentPageEmpInfoList
         {
@@ -39,6 +43,14 @@ namespace EISv3.ViewModel
             }
         }
 
+        //last page no in listView
+        private int lastPage = 1;
+        public int LastPage
+        {
+            get => lastPage;
+            set { lastPage = value; OnPropertyChanged("LastPage"); }
+        }
+
         //EmpId with which we want to search
         private String empIdSearch;
         public String EmpIdSearch
@@ -46,6 +58,10 @@ namespace EISv3.ViewModel
             get => empIdSearch;
             set { empIdSearch = value; OnPropertyChanged("EmpIdSearch"); }
         }
+
+        #endregion
+
+        #region Search Properties
 
         //Date of joining with which we want to search
         private DateTime dojSearch;
@@ -79,18 +95,16 @@ namespace EISv3.ViewModel
             }
         }
 
-        //last page no in listView
-        private int lastPage = 1;
-        public int LastPage
-        {
-            get => lastPage;
-            set { lastPage = value; OnPropertyChanged("LastPage"); }
-        }
+        #endregion
+
+        #region Class Variables
 
         private List<EmpInfo> empInfoList = new List<EmpInfo>();
         private Dictionary<int, List<EmpInfo>> empInfoDict = new Dictionary<int, List<EmpInfo>>();
         private EmpInfo currentEmployee;
         private static int RecordsPerPage = 5;
+
+        #endregion
 
         public DashBoardViewModel()
         {
@@ -98,6 +112,9 @@ namespace EISv3.ViewModel
             InitializePaginaion();
         }
 
+        #region Pagination Methods
+
+        //InitializePagination when required
         private void InitializePaginaion()
         {
             Logger.logging("-----In InitializePagination------");
@@ -110,16 +127,7 @@ namespace EISv3.ViewModel
             Logger.logging("-----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------");
         }
 
-        private void setPageInListView()
-        {
-            if (currentPage == 0) return;
-
-            List<EmpInfo> temp = new List<EmpInfo>();
-            empInfoDict.TryGetValue(currentPage, out temp);
-            CurrentPageEmpInfoList = new ObservableCollection<EmpInfo>(temp);
-            OnPropertyChanged("CurrentPageEmpInfoList");
-        }
-
+        //Create a dictionary of pageno, lists
         private void SetEmpInfoDictionary(List<EmpInfo> empInfoCollection)
         {
             Logger.logging("-----Setting Page In EmpInfoDictionary------");
@@ -135,7 +143,22 @@ namespace EISv3.ViewModel
             Logger.logging("-----Logged Out------");
         }
 
-        //Employee Updation
+        //Set a particular page in ListView as per the selection
+        private void setPageInListView()
+        {
+            if (currentPage == 0) return;
+
+            List<EmpInfo> temp = new List<EmpInfo>();
+            empInfoDict.TryGetValue(currentPage, out temp);
+            CurrentPageEmpInfoList = new ObservableCollection<EmpInfo>(temp);
+            OnPropertyChanged("CurrentPageEmpInfoList");
+        }
+
+        #endregion
+
+        #region ListView Operation Commands
+
+        //Employee Selected in ListView
         public ICommand EmpChecked => new Command(CheckEmp);
         private void CheckEmp(object parameter)
         {
@@ -143,6 +166,7 @@ namespace EISv3.ViewModel
             Logger.logging("-----Selected one Employee from ListView------");
         }
 
+        //Update Selected Employee
         public ICommand UpdateEmployee => new Command(UpdateCurrentEmployee, PerformActionOnEmp);
         private void UpdateCurrentEmployee(object parameter)
         {
@@ -153,6 +177,7 @@ namespace EISv3.ViewModel
             Mediator.performAction("SwitchToProfileView");
         }
 
+        //Delete Selected Employee
         public ICommand DeleteEmployee => new Command(DeleteCurrentEmployee, PerformActionOnEmp);
         private void DeleteCurrentEmployee(object parameter)
         {
@@ -165,64 +190,11 @@ namespace EISv3.ViewModel
 
             InitializePaginaion();
         }
+
+        //Can Update or Delete. Allows only when currentEmployee is not null
         private bool PerformActionOnEmp(object sender)
         {
             return currentEmployee != null;
-        }
-
-        //Pagination Commands
-        public ICommand PrevPage => new Command(PreviousPage);
-        private void PreviousPage(object parameter)
-        {
-            Logger.logging("-----Clicked on Previous Page from ListView------");
-            if (currentPage != 1) CurrentPage = (currentPage - 1).ToString();
-        }
-
-        public ICommand NxtPage => new Command(NextPage);
-        private void NextPage(object parameter)
-        {
-            Logger.logging("-----Clicked on Next Page from ListView------");
-            if (currentPage != LastPage) CurrentPage = (currentPage + 1).ToString();
-        }
-
-        //Searching Commands
-        public ICommand Search => new Command(SeachEmployee, PerformSearch);
-        private void SeachEmployee(object parameter)
-        {
-            Logger.logging("-----Clicked on Search from ListView------");
-
-            List<EmpInfo> prevEmpInfoList = new List<EmpInfo>(empInfoList);
-            List<EmpInfo> newEmpInfoList = new List<EmpInfo>(empInfoList);
-
-            foreach (EmpInfo emp in empInfoList)
-            {
-                if (!String.IsNullOrEmpty(empIdSearch) && !emp.emp_id.ToLower().Contains(empIdSearch.ToLower())
-                    || !String.IsNullOrEmpty(DojSearch) && emp.doj != DateTime.Parse(DojSearch)
-                    || !String.IsNullOrEmpty(DolSearch) && emp.dol != DateTime.Parse(DolSearch))
-                    newEmpInfoList.Remove(emp);
-            }
-
-            SetEmpInfoDictionary(newEmpInfoList);
-
-            setPageInListView();
-            empInfoList = prevEmpInfoList;
-
-            Logger.logging("-----Search Operation Completed & Displyed in ListView------");
-        }
-
-        public ICommand Clear => new Command(ClearSearch, PerformSearch);
-        private void ClearSearch(object parameter)
-        {
-            Logger.logging("-----Clicked on Clear from ListView------");
-
-            EmpIdSearch = DojSearch = DolSearch = "";
-
-            SetEmpInfoDictionary(empInfoList);
-            setPageInListView();
-        }
-        private bool PerformSearch(object sender)
-        {
-            return !String.IsNullOrEmpty(empIdSearch) || !String.IsNullOrEmpty(DojSearch) || !String.IsNullOrEmpty(DolSearch);
         }
 
         //Sorting commands
@@ -266,5 +238,73 @@ namespace EISv3.ViewModel
         {
             return true;
         }
+
+        #endregion
+
+        #region Pagination Commands
+
+        //Previous Page selected
+        public ICommand PrevPage => new Command(PreviousPage);
+        private void PreviousPage(object parameter)
+        {
+            Logger.logging("-----Clicked on Previous Page from ListView------");
+            if (currentPage != 1) CurrentPage = (currentPage - 1).ToString();
+        }
+
+        //Next Page selected
+        public ICommand NxtPage => new Command(NextPage);
+        private void NextPage(object parameter)
+        {
+            Logger.logging("-----Clicked on Next Page from ListView------");
+            if (currentPage != LastPage) CurrentPage = (currentPage + 1).ToString();
+        }
+
+        #endregion
+
+        #region Search Commands
+
+        //Search 
+        public ICommand Search => new Command(SeachEmployee, PerformSearch);
+        private void SeachEmployee(object parameter)
+        {
+            Logger.logging("-----Clicked on Search from ListView------");
+
+            List<EmpInfo> prevEmpInfoList = new List<EmpInfo>(empInfoList);
+            List<EmpInfo> newEmpInfoList = new List<EmpInfo>(empInfoList);
+
+            foreach (EmpInfo emp in empInfoList)
+            {
+                if (!String.IsNullOrEmpty(empIdSearch) && !emp.emp_id.ToLower().Contains(empIdSearch.ToLower())
+                    || !String.IsNullOrEmpty(DojSearch) && emp.doj != DateTime.Parse(DojSearch)
+                    || !String.IsNullOrEmpty(DolSearch) && emp.dol != DateTime.Parse(DolSearch))
+                    newEmpInfoList.Remove(emp);
+            }
+
+            SetEmpInfoDictionary(newEmpInfoList);
+
+            setPageInListView();
+            empInfoList = prevEmpInfoList;
+
+            Logger.logging("-----Search Operation Completed & Displyed in ListView------");
+        }
+
+        public ICommand Clear => new Command(ClearSearch, PerformSearch);
+        private void ClearSearch(object parameter)
+        {
+            Logger.logging("-----Clicked on Clear from ListView------");
+
+            EmpIdSearch = DojSearch = DolSearch = "";
+
+            SetEmpInfoDictionary(empInfoList);
+            setPageInListView();
+        }
+
+        private bool PerformSearch(object sender)
+        {
+            return !String.IsNullOrEmpty(empIdSearch) || !String.IsNullOrEmpty(DojSearch) || !String.IsNullOrEmpty(DolSearch);
+        }
+
+        #endregion
+
     }
 }

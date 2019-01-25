@@ -49,7 +49,6 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\Materi
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\Microsoft.Expression.Interactions.xml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\System.Windows.Interactivity.xml
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csprojAssemblyReference.cache
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\MainWindow.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\MainPage.g.cs
@@ -83,3 +82,4 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4ne
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4net.xml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\MaterialDesignColors.pdb
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3_Content.g.cs
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csprojAssemblyReference.cache

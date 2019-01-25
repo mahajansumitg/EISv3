@@ -1,15 +1,9 @@
 ﻿using EISv3.Utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EISv3.Model
 {
-    public class Login : Notify
+    public class Login : NotifyOnPropertyChanged
     {
         public string user_name;
         public string pswd;

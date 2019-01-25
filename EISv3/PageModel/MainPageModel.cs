@@ -8,41 +8,16 @@ using System.Windows.Input;
 
 namespace EISv3.PageModel
 {
-    public class MainPageModel : Notify
+    public class MainPageModel : NotifyOnPropertyChanged
     {
+
+        #region Properties
+
         private ObservableCollection<UserControl> _Contents = new ObservableCollection<UserControl>();
         public ObservableCollection<UserControl> Contents
         {
             get => _Contents;
             set { _Contents = value; OnPropertyChanged("Contents"); }
-        }
-
-        public MainPageModel()
-        {
-            Logger.logging("-----On MainPage------");
-            Contents.Add(new HomeView());
-            _OpenMenuVisibily = Visibility.Visible;
-            _CloseMenuVisibily = Visibility.Collapsed;
-
-            Login login = Mediator.getVar("Login") as Login;
-            if (!login.role.Equals("admin")) DashBoardVisibility = Visibility.Hidden;
-
-            Mediator.registerAction("SwitchToDashBoardView", () => {
-                this.Contents.Clear();
-                this.Contents.Add(new DashBoardView());
-            });
-            Mediator.registerAction("SwitchToProfileView", () => {
-                this.Contents.Clear();
-                this.Contents.Add(new ProfileView());
-            });
-            Mediator.registerAction("DisableButtons", () => {
-                DashBoardVisibility = Visibility.Hidden;
-                HomeVisibility = Visibility.Hidden;
-            });
-            Mediator.registerAction("EnableButtons", () => {
-                DashBoardVisibility = Visibility.Visible;
-                HomeVisibility = Visibility.Visible;
-            });
         }
 
         private Visibility _OpenMenuVisibily;
@@ -73,15 +48,48 @@ namespace EISv3.PageModel
             set { _HomeVisibility = value; OnPropertyChanged("HomeVisibility"); }
         }
 
+        #endregion
+
+        public MainPageModel()
+        {
+            Logger.logging("-----On MainPage------");
+            Contents.Add(new HomeView());
+            _OpenMenuVisibily = Visibility.Visible;
+            _CloseMenuVisibily = Visibility.Collapsed;
+
+            Login login = Mediator.getVar("Login") as Login;
+            if (!login.role.Equals("admin")) DashBoardVisibility = Visibility.Hidden;
+
+            #region Registering Mediator Actions
+            Mediator.registerAction("SwitchToDashBoardView", () => {
+                this.Contents.Clear();
+                this.Contents.Add(new DashBoardView());
+            });
+            Mediator.registerAction("SwitchToProfileView", () => {
+                this.Contents.Clear();
+                this.Contents.Add(new ProfileView());
+            });
+            Mediator.registerAction("DisableButtons", () => {
+                DashBoardVisibility = Visibility.Hidden;
+                HomeVisibility = Visibility.Hidden;
+            });
+            Mediator.registerAction("EnableButtons", () => {
+                DashBoardVisibility = Visibility.Visible;
+                HomeVisibility = Visibility.Visible;
+            });
+            #endregion
+        }
+
+        //Open Menu Panal
         public ICommand OpenMenu => new Command(_OpenMenu);
         private void _OpenMenu(object parameter)
         {
             Logger.logging("-----Menu Opened------");
             OpenMenuVisibily = Visibility.Collapsed;
             CloseMenuVisibily = Visibility.Visible;
-
         }
 
+        //Close Menu Panal
         public ICommand CloseMenu => new Command(_CloseMenu);
         private void _CloseMenu(object parameter)
         {
@@ -91,6 +99,7 @@ namespace EISv3.PageModel
             CloseMenuVisibily = Visibility.Collapsed;
         }
 
+        //Switching of childs in ItemControl as per selection of Item in Manu
         public ICommand SelectionChanged => new Command(_SelectionChanged);
         private void _SelectionChanged(object parameter)
         {
@@ -114,6 +123,7 @@ namespace EISv3.PageModel
             }
         }
 
+        //Exit Application
         public ICommand Exit => new Command(_Exit);
         private void _Exit(object parameter)
         {
@@ -121,6 +131,7 @@ namespace EISv3.PageModel
             System.Windows.Application.Current.Shutdown();
         }
 
+        //Logout & clear all actions except SwitchToLoginPage
         public ICommand Logout => new Command(_Logout);
         private void _Logout(object parameter)
         {
@@ -137,6 +148,7 @@ namespace EISv3.PageModel
             Logger.logging("-----Logged Out------");
         }
 
+        //Help Page
         public ICommand Help => new Command(_Help);
         private void _Help(object parameter)
         {

@@ -7,10 +7,11 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace EISv3.Model
 {
-    public class EmpInfo : Notify, IDataErrorInfo
+    public class EmpInfo : NotifyOnPropertyChanged, IDataErrorInfo
     {
         public string first_name;
         public string middle_name;
@@ -191,16 +192,21 @@ namespace EISv3.Model
                         break;
                     case "DOB":
                         if (string.IsNullOrWhiteSpace(DOB)) result = name + " should not be empty";
+                        else if ( !(DateTime.Parse(DOB) < DateTime.Now.AddYears(-21)) ) result = name + " should be 21 years before today";
                         break;
                     case "DOJ":
                         if (string.IsNullOrWhiteSpace(DOJ)) result = name + " should not be empty";
+                        else if ( !( DateTime.Parse(DOJ) > DateTime.Parse(DOB).AddYears(21) )) result = name + " should be greater than 21 age";
+                        break;
+                    case "DOL":
+                        if ( !( DateTime.Parse(DOL) > DateTime.Parse(DOJ) )) result = name + " should be greater than date of joining";
                         break;
                     case "Vendor":
                         if (IsContractor && string.IsNullOrWhiteSpace(Vendor)) result = name + " should not be empty";
                         break;
-
                 }
 
+                //adding name, result in ErrorCollection dictionary
                 if (ErrorCollection.ContainsKey(name))
                     ErrorCollection[name] = result;
                 else if (result != null)

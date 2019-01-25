@@ -1,27 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 
 namespace EISv3.Utils
 {
     public static class Loading
     {
         private static ProgressBar progressBar;
-        private static event Action actionEvent;
+        private static event Action ActionEvent;
         private static MainWindow window;
 
         public static Object Show(Func<Object> actionToPerform)
         {
-            actionEvent += new Action(invoke);
+            ActionEvent += new Action(Invoke);
 
+            //Thread to Perform action
             object data = null;
             Thread thread = new Thread(() => {
-                data = actionToPerform();
-                actionEvent();
+                data = actionToPerform();  //action like getdata, setdata, etc
+                ActionEvent();
             });
             thread.Start();
 
@@ -35,7 +31,8 @@ namespace EISv3.Utils
             return data;
         }
 
-        private static void invoke()
+        //Inform ProgressBar that the Task is completed & Close the ProgressBar
+        private static void Invoke()
         {
             progressBar.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal,
             new Action(

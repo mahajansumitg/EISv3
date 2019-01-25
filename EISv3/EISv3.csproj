@@ -86,7 +86,7 @@
     <Compile Include="Utils\Loading.cs" />
     <Compile Include="Utils\Logger.cs" />
     <Compile Include="Utils\Mediator.cs" />
-    <Compile Include="Utils\Notify.cs" />
+    <Compile Include="Utils\NotifyOnPropertyChanged.cs" />
     <Compile Include="Utils\Sort.cs" />
     <Compile Include="ViewModel\DashBoardViewModel.cs" />
     <Compile Include="ViewModel\ProfileViewModel.cs" />

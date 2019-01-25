@@ -56,8 +56,19 @@
         
         <TextBox materialDesign:HintAssist.Hint="City"        Text="{Binding EmpInfo.City, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"       ToolTip="{Binding ErrorCollection[City]}"       Foreground="Black" TextAlignment="Center" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="30" Width="120"/>
         <TextBox materialDesign:HintAssist.Hint="Address"     Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[Address]}"    Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="30" Width="120"/>
-        <TextBox materialDesign:HintAssist.Hint="Department"  Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Department]}" Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="30" Width="120"/>
+        <!--<TextBox materialDesign:HintAssist.Hint="Department"  Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Department]}" Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="30" Width="120"/>-->
 
+        <ComboBox
+            materialDesign:HintAssist.Hint="Select Department" Foreground="Black" HorizontalContentAlignment="Center" 
+            Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="120"
+            Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+            ToolTip="{Binding ErrorCollection[Department]}">
+            <ComboBoxItem Content="Management"/>
+            <ComboBoxItem Content="Development"/>
+            <ComboBoxItem Content="Analytics"/>
+            <ComboBoxItem Content="Testing"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
 
         <Grid Name="VendorGrid" Visibility="{Binding VendorGrid}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EISv3.Utils
 {
-    public class Notify : INotifyPropertyChanged
+    public class NotifyOnPropertyChanged : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
