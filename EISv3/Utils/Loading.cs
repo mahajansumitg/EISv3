@@ -1,10 +1,13 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Threading;
 
 namespace EISv3.Utils
 {
     public static class Loading
     {
+        static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         private static ProgressBar progressBar;
         private static event Action ActionEvent;
         private static MainWindow window;
@@ -34,12 +37,15 @@ namespace EISv3.Utils
         //Inform ProgressBar that the Task is completed & Close the ProgressBar
         private static void Invoke()
         {
+            log4net.Config.XmlConfigurator.Configure();
+
             progressBar.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal,
             new Action(
             delegate ()
             {
                 progressBar.Close();
                 window.Opacity = 1;
+                log.Info("-----ProgressBar Running------");
             }
             ));
         }

@@ -112,7 +112,7 @@ namespace EISv3.ViewModel
         {
             log4net.Config.XmlConfigurator.Configure();
 
-            log.Info("-----Started DashboardView------");
+            log.Info("Started DashboardView: In constructor DashBoardViewModel");
             InitializePaginaion();
         }
 
@@ -121,20 +121,20 @@ namespace EISv3.ViewModel
         //InitializePagination when required
         private void InitializePaginaion()
         {
-            log.Info("-----In InitializePagination------");
+            log.Info("In InitializePagination()");
 
             string findQuery = "select * from EmpInfo;";
             empInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
             SetEmpInfoDictionary(empInfoList);
             setPageInListView();
 
-            log.Info("-----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------");
+            log.Info("InitializePagination, SetEmpInfoDictionary, SetPageInListView done");
         }
 
         //Create a dictionary of pageno, lists
         private void SetEmpInfoDictionary(List<EmpInfo> empInfoCollection)
         {
-            log.Info("-----Setting Page In EmpInfoDictionary------");
+            log.Info("Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()");
             List<EmpInfo> empInfoList = new List<EmpInfo>(empInfoCollection);
             Dictionary<int, List<EmpInfo>> empInfoDict = new Dictionary<int, List<EmpInfo>>();
             int page = 1;
@@ -144,7 +144,7 @@ namespace EISv3.ViewModel
             }
             lastPage = --page;
             this.empInfoDict = empInfoDict;
-            log.Info("-----Logged Out------");
+            log.Info("*******Logged Out******");
         }
 
         //Set a particular page in ListView as per the selection
@@ -168,16 +168,14 @@ namespace EISv3.ViewModel
         {
             currentEmployee = parameter as EmpInfo;
             Mediator.registerVar("EmpInfo", currentEmployee);
-            log.Info("-----Selected one Employee from ListView------");
+            log.Info("Selected Employee " + currentEmployee.EmpId + " from ListView");
         }
 
         //Update Selected Employee
         public ICommand UpdateEmployee => new Command(UpdateCurrentEmployee, PerformActionOnEmp);
         private void UpdateCurrentEmployee(object parameter)
         {
-            log.Info("-----Selected Update from ListView------");
-            
-           
+            log.Info("Selected Update from ListView: UpdateCurrentEmployee()");
             Mediator.performAction("SwitchToProfileView");
         }
 
@@ -185,12 +183,13 @@ namespace EISv3.ViewModel
         public ICommand DeleteEmployee => new Command(DeleteCurrentEmployee, PerformActionOnEmp);
         private void DeleteCurrentEmployee(object parameter)
         {
-            log.Info("-----Selected Delete from ListView------");
+            log.Info("Selected Delete from ListView: DeleteCurrentEmployee()");
 
             Connection.deleteData<EmpInfo>("emp_id", currentEmployee.emp_id);
-            currentEmployee = null;
 
-            log.Info("------Selected Employee deleted------");
+            log.Info("Selected Employee "+ currentEmployee.emp_id + " deleted");
+
+            currentEmployee = null;
 
             InitializePaginaion();
         }
@@ -208,10 +207,11 @@ namespace EISv3.ViewModel
         private ListSortDirection _sortDirection;
         private void Sort(object parameter)
         {
-            log.Info("-----Clicked on Header in ListView------");
-
             Sort sortObj = new Sort();
             string column = parameter as string;
+
+            log.Info("Clicked on Header "+ column + " in ListView");
+
             if (_sortColumn == column)
             {
                 if (_sortDirection == ListSortDirection.Ascending)
@@ -235,7 +235,7 @@ namespace EISv3.ViewModel
                 OnPropertyChanged("CurrentPageEmpInfoList");
             }
 
-            log.Info("-----ListView Sorted------");
+            log.Info("ListView Sorted");
         }
 
         private bool CanSort(object sender)
@@ -251,7 +251,7 @@ namespace EISv3.ViewModel
         public ICommand PrevPage => new Command(PreviousPage);
         private void PreviousPage(object parameter)
         {
-            log.Info("-----Clicked on Previous Page from ListView------");
+            log.Info("Clicked on Previous Page from ListView: PreviousPage()");
             if (currentPage != 1) CurrentPage = (currentPage - 1).ToString();
         }
 
@@ -259,7 +259,7 @@ namespace EISv3.ViewModel
         public ICommand NxtPage => new Command(NextPage);
         private void NextPage(object parameter)
         {
-            log.Info("-----Clicked on Next Page from ListView------");
+            log.Info("Clicked on Next Page from ListView: NextPage()");
             if (currentPage != LastPage) CurrentPage = (currentPage + 1).ToString();
         }
 
@@ -271,7 +271,7 @@ namespace EISv3.ViewModel
         public ICommand Search => new Command(SeachEmployee, PerformSearch);
         private void SeachEmployee(object parameter)
         {
-            log.Info("-----Clicked on Search from ListView------");
+            log.Info("Clicked on Search from ListView: SeachEmployee()");
 
             List<EmpInfo> prevEmpInfoList = new List<EmpInfo>(empInfoList);
             List<EmpInfo> newEmpInfoList = new List<EmpInfo>(empInfoList);
@@ -289,13 +289,13 @@ namespace EISv3.ViewModel
             setPageInListView();
             empInfoList = prevEmpInfoList;
 
-            log.Info("-----Search Operation Completed & Displyed in ListView------");
+            log.Info("Search Operation Completed & Displyed in ListView");
         }
 
         public ICommand Clear => new Command(ClearSearch, PerformSearch);
         private void ClearSearch(object parameter)
         {
-            log.Info("-----Clicked on Clear from ListView------");
+            log.Info("Cleared search");
 
             EmpIdSearch = DojSearch = DolSearch = "";
 

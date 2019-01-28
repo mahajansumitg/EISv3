@@ -33,7 +33,7 @@ namespace EISv3.PageModel
         public LoginPageModel()
         {
             log4net.Config.XmlConfigurator.Configure();
-            log.Info("-----On LoginPage------");
+            log.Info("On LoginPage");
         }
 
         public ICommand Login => new Command(_Login, HandleVisibility);
@@ -47,7 +47,7 @@ namespace EISv3.PageModel
         //Perform Login
         private void _Login(object parameter)
         {
-            log.Info("-----Clicked on Login in LoginPage------");
+            log.Info("In LoginPage : _Login()");
             String loginQuery = "select * from Login where user_name = '" + _UserName + "'";
             List<Login> loginList = Loading.Show(() => Connection.getData<Login>(loginQuery)) as List<Login>;
 
@@ -55,7 +55,7 @@ namespace EISv3.PageModel
             {
                 Mediator.registerVar("Login", loginList.First());
                 Mediator.performAction("GoToMainPage");
-                log.Info("------Login Successfull------");
+                log.Info("Login Successfull Mediator calling for GoToMainPage");
             }
             else
                 MessageBox.Show("Entered user_name or password is incorrect");

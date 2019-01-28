@@ -28,7 +28,7 @@ namespace EISv3.Views
         {
             InitializeComponent();
             log4net.Config.XmlConfigurator.Configure();
-            log.Info("-----Started HomeView------");
+            log.Info("On HomeView");
         }
     }
 }

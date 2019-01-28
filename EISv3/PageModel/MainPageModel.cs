@@ -55,7 +55,7 @@ namespace EISv3.PageModel
         public MainPageModel()
         {
             log4net.Config.XmlConfigurator.Configure();
-            log.Info("-----On MainPage------");
+            log.Info("MainPage started: In constructor MainPageModel");
 
             Contents.Add(new HomeView());
             _OpenMenuVisibily = Visibility.Visible;
@@ -88,7 +88,7 @@ namespace EISv3.PageModel
         public ICommand OpenMenu => new Command(_OpenMenu);
         private void _OpenMenu(object parameter)
         {
-            log.Info("-----Menu Opened------");
+            log.Info("Menu Opened: _OpenMenu()");
             OpenMenuVisibily = Visibility.Collapsed;
             CloseMenuVisibily = Visibility.Visible;
         }
@@ -97,7 +97,7 @@ namespace EISv3.PageModel
         public ICommand CloseMenu => new Command(_CloseMenu);
         private void _CloseMenu(object parameter)
         {
-            log.Info("-----Menu Closed------");
+            log.Info("Menu Closed: __CloseMenu");
 
             OpenMenuVisibily = Visibility.Visible;
             CloseMenuVisibily = Visibility.Collapsed;
@@ -112,15 +112,15 @@ namespace EISv3.PageModel
             {
                 case "ItemHome":
                     Contents.Add(new HomeView());
-                    log.Info("-----Selected HomeView from menu------");
+                    log.Info("Selected HomeView from menu: In case ItemHome");
                     break;
                 case "ItemDashBoard":
                     Contents.Add(new DashBoardView());
-                    log.Info("-----Selected DashBoardView from menu------");
+                    log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
                     break;
                 case "ItemForm":
                     Contents.Add(new ProfileView());
-                    log.Info("-----Selected ProfileView from menu------");
+                    log.Info("Selected ProfileView from menu: In case ItemForm");
                     break;
                 default:
                     break;
@@ -131,7 +131,7 @@ namespace EISv3.PageModel
         public ICommand Exit => new Command(_Exit);
         private void _Exit(object parameter)
         {
-            log.Info("-----Application Exit------");
+            log.Info("-----Application Exit-----");
             System.Windows.Application.Current.Shutdown();
         }
 
@@ -149,14 +149,14 @@ namespace EISv3.PageModel
 
             Mediator.performAction("GoToLoginPage");
 
-            log.Info("-----Logged Out------");
+            log.Info("*****Logged Out*****");
         }
 
         //Help Page
         public ICommand Help => new Command(_Help);
         private void _Help(object parameter)
         {
-            log.Info("-----Selected Help------");
+            log.Info("Selected Help: _Help");
             Contents.Add(new HelpView());
         }
     }

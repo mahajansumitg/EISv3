@@ -19,7 +19,7 @@ namespace EISv3
             InitializeComponent();
 
             //Logs Code
-            log.Info("-----Started MainWindow------");
+            log.Info("MainWindow Started");
 
             this.Content = new LoginPage();
             Mediator.registerVar("Window", this);

@@ -39,7 +39,7 @@ namespace EISv3.ViewModel
         public ProfileViewModel()
         {
             log4net.Config.XmlConfigurator.Configure();
-            log.Info("-----Started ProfileView------");
+            log.Info("Started ProfileView: In constructor ProfileViewModel()");
 
             Mediator.performAction("DisableButtons");
 
@@ -56,7 +56,7 @@ namespace EISv3.ViewModel
                 VendorGrid = user.role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
                 EmpInfo.IsContractor = user.role.Equals("contractor");
 
-                log.Info("-----Finding data for Employee------");
+                log.Info("Finding data for Employee "+ user.emp_id);
                 string findQuery = "select * from EmpInfo where emp_id = '" + user.emp_id + "'";
                 List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
                 if (EmpInfoList.Count != 0)        //if loggedin user is already present in EmpInfo
@@ -72,7 +72,7 @@ namespace EISv3.ViewModel
                 List<Login> TempList = Loading.Show(() => Connection.getData<Login>(findRoleQuery)) as List<Login>;
                 if(TempList.Count > 0) VendorGrid = TempList.First().Role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
 
-                log.Info("-----Finding data for Selected Employee------");
+                log.Info("Finding data for Selected Employee "+ EmpInfo.emp_id);
                 string findQuery = "select * from EmpInfo where emp_id = '" + EmpInfo.emp_id + "'";
                 List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
                 EmpInfo = EmpInfoList.First();
@@ -88,7 +88,7 @@ namespace EISv3.ViewModel
             else
                 Connection.setData(EmpInfo);
 
-            log.Info("-----Empployee Information Updated------");
+            log.Info("Empployee Information Updated");
 
             MessageBox.Show("Profile successfully updated");
             Mediator.performAction("EnableButtons");

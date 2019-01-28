@@ -24,8 +24,6 @@ namespace EISv3.Views
         public DashBoardView()
         {
             InitializeComponent();
-            
-
         }
     }
 }
