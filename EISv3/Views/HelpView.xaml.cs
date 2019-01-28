@@ -1,4 +1,5 @@
 ﻿using EISv3.Utils;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,13 @@ namespace EISv3.Views
     /// </summary>
     public partial class HelpView : UserControl
     {
+        readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public HelpView()
         {
             InitializeComponent();
-            Logger.logging("-----HelpView started------");
+            log4net.Config.XmlConfigurator.Configure();
+            log.Info("-----HelpView started------");
         }
     }
 }

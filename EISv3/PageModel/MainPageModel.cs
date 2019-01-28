@@ -1,6 +1,7 @@
 ﻿using EISv3.Model;
 using EISv3.Utils;
 using EISv3.Views;
+using log4net;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,6 +11,7 @@ namespace EISv3.PageModel
 {
     public class MainPageModel : NotifyOnPropertyChanged
     {
+        readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region Properties
 
@@ -52,7 +54,9 @@ namespace EISv3.PageModel
 
         public MainPageModel()
         {
-            Logger.logging("-----On MainPage------");
+            log4net.Config.XmlConfigurator.Configure();
+            log.Info("-----On MainPage------");
+
             Contents.Add(new HomeView());
             _OpenMenuVisibily = Visibility.Visible;
             _CloseMenuVisibily = Visibility.Collapsed;
@@ -84,7 +88,7 @@ namespace EISv3.PageModel
         public ICommand OpenMenu => new Command(_OpenMenu);
         private void _OpenMenu(object parameter)
         {
-            Logger.logging("-----Menu Opened------");
+            log.Info("-----Menu Opened------");
             OpenMenuVisibily = Visibility.Collapsed;
             CloseMenuVisibily = Visibility.Visible;
         }
@@ -93,7 +97,7 @@ namespace EISv3.PageModel
         public ICommand CloseMenu => new Command(_CloseMenu);
         private void _CloseMenu(object parameter)
         {
-            Logger.logging("-----Menu Closed------");
+            log.Info("-----Menu Closed------");
 
             OpenMenuVisibily = Visibility.Visible;
             CloseMenuVisibily = Visibility.Collapsed;
@@ -108,15 +112,15 @@ namespace EISv3.PageModel
             {
                 case "ItemHome":
                     Contents.Add(new HomeView());
-                    Logger.logging("-----Selected HomeView from menu------");
+                    log.Info("-----Selected HomeView from menu------");
                     break;
                 case "ItemDashBoard":
                     Contents.Add(new DashBoardView());
-                    Logger.logging("-----Selected DashBoardView from menu------");
+                    log.Info("-----Selected DashBoardView from menu------");
                     break;
                 case "ItemForm":
                     Contents.Add(new ProfileView());
-                    Logger.logging("-----Selected ProfileView from menu------");
+                    log.Info("-----Selected ProfileView from menu------");
                     break;
                 default:
                     break;
@@ -127,7 +131,7 @@ namespace EISv3.PageModel
         public ICommand Exit => new Command(_Exit);
         private void _Exit(object parameter)
         {
-            Logger.logging("-----Application Exit------");
+            log.Info("-----Application Exit------");
             System.Windows.Application.Current.Shutdown();
         }
 
@@ -145,14 +149,14 @@ namespace EISv3.PageModel
 
             Mediator.performAction("GoToLoginPage");
 
-            Logger.logging("-----Logged Out------");
+            log.Info("-----Logged Out------");
         }
 
         //Help Page
         public ICommand Help => new Command(_Help);
         private void _Help(object parameter)
         {
-            Logger.logging("-----Selected Help------");
+            log.Info("-----Selected Help------");
             Contents.Add(new HelpView());
         }
     }

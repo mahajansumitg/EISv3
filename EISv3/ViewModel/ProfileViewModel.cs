@@ -1,5 +1,6 @@
 ﻿using EISv3.Model;
 using EISv3.Utils;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,6 +14,7 @@ namespace EISv3.ViewModel
 {
     public class ProfileViewModel : NotifyOnPropertyChanged
     {
+        readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region Properties
 
@@ -24,7 +26,7 @@ namespace EISv3.ViewModel
         }
 
         private Visibility _VendorVisibily;
-        public Visibility VendorVisibily
+        public Visibility VendorGrid
         {
             get => _VendorVisibily;
             set { _VendorVisibily = value; OnPropertyChanged("VendorVisibily"); }
@@ -36,34 +38,45 @@ namespace EISv3.ViewModel
 
         public ProfileViewModel()
         {
-            Logger.logging("-----Started ProfileView------");
+            log4net.Config.XmlConfigurator.Configure();
+            log.Info("-----Started ProfileView------");
+
+            Mediator.performAction("DisableButtons");
+
             EmpInfo = Mediator.getVar("EmpInfo") as EmpInfo;   //Getting the Employee which is to be updated
             if (EmpInfo != null) isUserPresent = true;
             else EmpInfo = new EmpInfo();
 
             //Setting Employee_id same as Logged in user 
-            Login user = Mediator.getVar("Login") as Login;
-            EmpInfo.emp_id = user.emp_id;
-
-            //If user is contractor show Vendor Box otherwise hide it
-            VendorVisibily = user.role.Equals("contractor") ? System.Windows.Visibility.Visible : System.Windows.Visibility.Hidden;
-            EmpInfo.IsContractor = user.role.Equals("contractor");
-
-            Logger.logging("-----Finding data for Selected Employee------");
-
-            //Bring the Employee info if already present
-            string findQuery = "select * from EmpInfo where emp_id = '" + user.emp_id + "'";
-            List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
-
-
-            isUserPresent = (EmpInfoList.Count != 0);
-
-
-            if (isUserPresent)
+            if (!isUserPresent)
             {
+                Login user = Mediator.getVar("Login") as Login;
+                EmpInfo.emp_id = user.emp_id;
+
+                VendorGrid = user.role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
+                EmpInfo.IsContractor = user.role.Equals("contractor");
+
+                log.Info("-----Finding data for Employee------");
+                string findQuery = "select * from EmpInfo where emp_id = '" + user.emp_id + "'";
+                List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
+                if (EmpInfoList.Count != 0)        //if loggedin user is already present in EmpInfo
+                {
+                    EmpInfo = EmpInfoList.First();
+                    isUserPresent = true;
+                }             //else keep EmpInfo empty for insert
+            }
+            else     //For ListView Selected Employees
+            {
+                //checking for contractor or not
+                string findRoleQuery = "select * from Login where emp_id = '" + EmpInfo.emp_id + "'";
+                List<Login> TempList = Loading.Show(() => Connection.getData<Login>(findRoleQuery)) as List<Login>;
+                if(TempList.Count > 0) VendorGrid = TempList.First().Role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
+
+                log.Info("-----Finding data for Selected Employee------");
+                string findQuery = "select * from EmpInfo where emp_id = '" + EmpInfo.emp_id + "'";
+                List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
                 EmpInfo = EmpInfoList.First();
             }
-
         }
 
         //Insert Or Update Profile
@@ -75,10 +88,12 @@ namespace EISv3.ViewModel
             else
                 Connection.setData(EmpInfo);
 
-            Logger.logging("-----Empployee Information Updated------");
+            log.Info("-----Empployee Information Updated------");
 
             MessageBox.Show("Profile successfully updated");
             Mediator.performAction("EnableButtons");
+            Mediator.removeVar("EmpInfo");
+            
             Mediator.performAction("SwitchToDashBoardView");
         }
     }

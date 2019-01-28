@@ -84,7 +84,6 @@
     <Compile Include="Utils\Command.cs" />
     <Compile Include="Utils\Connection.cs" />
     <Compile Include="Utils\Loading.cs" />
-    <Compile Include="Utils\Logger.cs" />
     <Compile Include="Utils\Mediator.cs" />
     <Compile Include="Utils\NotifyOnPropertyChanged.cs" />
     <Compile Include="Utils\Sort.cs" />

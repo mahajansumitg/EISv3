@@ -1,5 +1,6 @@
 ﻿using EISv3.Model;
 using EISv3.Utils;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace EISv3.PageModel
 {
     public class LoginPageModel : NotifyOnPropertyChanged
     {
+        readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         private String _UserName;
         public String UserName
         {
@@ -29,7 +32,8 @@ namespace EISv3.PageModel
 
         public LoginPageModel()
         {
-            Logger.logging("-----On LoginPage------");
+            log4net.Config.XmlConfigurator.Configure();
+            log.Info("-----On LoginPage------");
         }
 
         public ICommand Login => new Command(_Login, HandleVisibility);
@@ -43,7 +47,7 @@ namespace EISv3.PageModel
         //Perform Login
         private void _Login(object parameter)
         {
-            Logger.logging("-----Clicked on Login in LoginPage------");
+            log.Info("-----Clicked on Login in LoginPage------");
             String loginQuery = "select * from Login where user_name = '" + _UserName + "'";
             List<Login> loginList = Loading.Show(() => Connection.getData<Login>(loginQuery)) as List<Login>;
 
@@ -51,7 +55,7 @@ namespace EISv3.PageModel
             {
                 Mediator.registerVar("Login", loginList.First());
                 Mediator.performAction("GoToMainPage");
-                Logger.logging("------Login Successfull------");
+                log.Info("------Login Successfull------");
             }
             else
                 MessageBox.Show("Entered user_name or password is incorrect");

@@ -1,477 +1,1033 @@
-2019-01-15 13:59:57,027 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-15 14:06:29,171 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-15 14:06:29,240 [1] INFO EISv3.MainWindow - -----Started MainWindow------
-2019-01-16 15:01:21,537 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-16 15:01:21,965 [1] INFO EISv3.MainWindow - -----Started MainWindow------
-2019-01-17 20:21:06,665 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-17 20:21:07,064 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-17 20:21:07,074 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-17 20:21:16,300 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-17 20:21:16,319 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-17 20:21:33,894 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-17 20:21:33,972 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-17 20:21:34,212 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-17 20:21:38,221 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-17 20:21:38,225 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-17 20:21:38,237 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-17 20:21:38,429 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-17 20:21:38,432 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-17 20:21:38,444 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-17 20:21:38,526 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-17 20:21:41,675 [1] INFO EISv3.Utils.Logger - -----Clicked on Header in ListView------
-2019-01-17 20:21:41,693 [1] INFO EISv3.Utils.Logger - -----ListView Sorted------
-2019-01-17 20:21:45,826 [1] INFO EISv3.Utils.Logger - -----Clicked on Header in ListView------
-2019-01-17 20:21:45,835 [1] INFO EISv3.Utils.Logger - -----ListView Sorted------
-2019-01-17 20:21:48,356 [1] INFO EISv3.Utils.Logger - -----Clicked on Header in ListView------
-2019-01-17 20:21:48,365 [1] INFO EISv3.Utils.Logger - -----ListView Sorted------
-2019-01-17 20:21:51,799 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-17 20:21:51,853 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-21 16:09:18,005 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-21 16:09:18,072 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-21 16:09:18,077 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-21 16:09:22,480 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-21 16:09:22,516 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-21 16:36:41,665 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-21 16:36:41,744 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-21 16:36:41,748 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-21 16:38:07,112 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-21 16:38:07,119 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-21 16:38:07,452 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-21 16:38:07,457 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-21 16:38:07,497 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-21 16:38:09,332 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-21 16:38:09,333 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-21 16:38:09,337 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-21 16:38:09,398 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-21 16:38:09,399 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-21 16:38:09,402 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-21 16:38:09,418 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-21 16:38:13,302 [1] INFO EISv3.Utils.Logger - -----Clicked on Next Page from ListView------
-2019-01-21 16:38:14,618 [1] INFO EISv3.Utils.Logger - -----Clicked on Previous Page from ListView------
-2019-01-21 16:38:17,984 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-21 16:38:17,986 [1] INFO EISv3.Utils.Logger - -----Selected HomeView from menu------
-2019-01-21 16:38:19,107 [1] INFO EISv3.Utils.Logger - -----Menu Opened------
-2019-01-21 16:38:21,202 [1] INFO EISv3.Utils.Logger - -----Menu Closed------
-2019-01-21 16:38:26,062 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-23 18:08:33,079 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-23 18:08:33,214 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-23 18:08:33,217 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-23 18:08:41,263 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-23 18:08:41,273 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:08:53,300 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-23 18:08:53,306 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-23 18:08:53,590 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-23 18:09:00,444 [1] INFO EISv3.Utils.Logger - -----Menu Opened------
-2019-01-23 18:09:02,842 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-23 18:09:02,844 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-23 18:09:02,848 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:09:03,342 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-23 18:09:06,380 [1] INFO EISv3.Utils.Logger - -----Menu Closed------
-2019-01-23 18:09:16,612 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-23 18:09:16,614 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-23 18:09:16,618 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:09:16,738 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-23 18:09:16,740 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-23 18:09:16,742 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-23 18:09:16,756 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-23 18:09:22,751 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-23 18:09:22,752 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-23 18:09:22,782 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:09:22,907 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-23 18:09:32,354 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-23 18:09:32,356 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-23 18:09:32,360 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:09:32,448 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-23 18:09:32,450 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-23 18:09:32,451 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-23 18:09:32,462 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-23 18:09:34,454 [1] INFO EISv3.Utils.Logger - -----Selected one Employee from ListView------
-2019-01-23 18:09:37,080 [1] INFO EISv3.Utils.Logger - -----Selected Update from ListView------
-2019-01-23 18:09:37,097 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-23 18:09:37,098 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-23 18:09:37,103 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:09:49,017 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-23 18:09:49,018 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-23 18:09:49,022 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:09:49,125 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-23 18:10:01,040 [1] INFO EISv3.Utils.Logger - -----Empployee Information Updated------
-2019-01-23 18:10:02,172 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-23 18:10:02,174 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-23 18:10:02,179 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:10:02,264 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-23 18:10:02,266 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-23 18:10:02,267 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-23 18:10:13,734 [1] INFO EISv3.Utils.Logger - -----Clicked on Next Page from ListView------
-2019-01-23 18:10:15,330 [1] INFO EISv3.Utils.Logger - -----Clicked on Previous Page from ListView------
-2019-01-23 18:10:58,803 [1] INFO EISv3.Utils.Logger - -----Clicked on Previous Page from ListView------
-2019-01-23 18:11:02,490 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-23 18:11:02,493 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-23 18:11:02,505 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:11:02,585 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-23 18:11:02,588 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-23 18:11:02,590 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-23 18:11:02,603 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-23 18:11:04,209 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-23 18:11:04,215 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-23 18:11:04,233 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:11:04,392 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-23 18:11:52,335 [1] INFO EISv3.Utils.Logger - -----Empployee Information Updated------
-2019-01-23 18:11:54,038 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-23 18:11:54,041 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-23 18:11:54,048 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:11:54,177 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-23 18:11:54,179 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-23 18:11:54,181 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-23 18:12:11,263 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-23 18:12:11,265 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-23 18:12:11,269 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:12:11,346 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-23 18:12:11,348 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-23 18:12:11,351 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-23 18:12:11,364 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-23 18:12:12,062 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-23 18:12:12,063 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-23 18:12:12,067 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-23 18:12:12,217 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-23 18:13:24,032 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-25 11:48:47,240 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 11:48:47,304 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 11:48:47,308 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 11:48:56,850 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 11:48:56,887 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 11:49:04,525 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 11:49:04,532 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 11:49:04,615 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 11:49:07,686 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-25 11:49:07,688 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-25 11:49:07,693 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 11:49:07,773 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-25 11:49:07,777 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-25 11:49:07,779 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-25 11:49:07,822 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-25 11:49:09,779 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 11:49:09,781 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 11:49:09,787 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 11:49:09,962 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 11:58:55,060 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 11:58:55,126 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 11:58:55,130 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 11:59:04,352 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 11:59:04,365 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 11:59:07,700 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 11:59:07,706 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 11:59:07,755 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 11:59:11,219 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 11:59:11,223 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 11:59:11,231 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 11:59:11,448 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 12:00:48,667 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-25 12:12:16,857 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 12:12:16,944 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 12:12:16,947 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 12:12:21,350 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 12:12:21,357 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:12:24,793 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 12:12:24,807 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 12:12:24,865 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 12:12:26,371 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 12:12:26,373 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 12:12:26,380 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:12:26,525 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 12:14:38,438 [1] INFO EISv3.Utils.Logger - -----Empployee Information Updated------
-2019-01-25 12:14:39,563 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-25 12:14:39,565 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-25 12:14:39,571 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:14:39,651 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-25 12:14:39,653 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-25 12:14:39,656 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-25 12:14:44,924 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-25 12:27:33,816 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 12:27:33,884 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 12:27:33,890 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 12:27:40,593 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 12:27:40,602 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:27:43,557 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 12:27:43,561 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 12:27:43,624 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 12:27:55,272 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 12:27:55,279 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 12:27:55,299 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:27:55,577 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 12:30:23,082 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 12:30:23,165 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 12:30:23,168 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 12:30:29,478 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 12:30:29,494 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:30:29,748 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 12:30:29,753 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 12:30:29,800 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 12:30:31,366 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 12:30:31,370 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 12:30:31,402 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 12:30:39,479 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:10:40,418 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:10:40,497 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:10:40,500 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:10:46,760 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:10:46,769 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:10:50,004 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:10:50,014 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:10:50,071 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:10:51,558 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:10:51,560 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:10:51,567 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:11:40,218 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:11:40,294 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:11:40,296 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:11:43,916 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:11:43,960 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:11:44,139 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:11:44,149 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:11:44,197 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:11:45,008 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:11:45,015 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:11:45,058 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:12:55,429 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:12:55,490 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:12:55,493 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:13:00,374 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:13:00,404 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:13:00,580 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:13:00,586 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:13:00,633 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:13:01,426 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:13:01,434 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:13:01,473 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:13:01,642 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:13:29,598 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-25 13:13:49,876 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:13:49,933 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:13:49,936 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:13:53,494 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:13:53,514 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:13:53,750 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:13:53,755 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:13:53,803 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:13:55,347 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:13:55,354 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:13:55,395 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:14:11,684 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:25:43,715 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:25:43,802 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:25:43,806 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:25:47,531 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:25:47,544 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:25:50,248 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:25:50,259 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:25:50,316 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:25:51,344 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:25:51,351 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:25:51,372 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:25:51,542 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:29:52,437 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:29:52,512 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:29:52,517 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:29:56,828 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:29:56,835 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:29:57,029 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:29:57,036 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:29:57,089 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:29:59,184 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:29:59,187 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:29:59,196 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:29:59,326 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:32:27,267 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:32:27,335 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:32:27,339 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:32:31,954 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:32:32,000 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:32:32,171 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:32:32,177 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:32:32,224 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:32:33,469 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:32:33,475 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:32:33,518 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:32:33,801 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:32:56,967 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:32:57,033 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:32:57,036 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:33:02,508 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:33:02,517 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:33:02,688 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:33:02,693 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:33:02,738 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:33:04,414 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:33:04,421 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:33:04,462 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:33:04,739 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:33:11,956 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-25 13:33:11,958 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-25 13:33:11,963 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:33:12,032 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-25 13:33:12,034 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-25 13:33:12,036 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-25 13:33:12,051 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-25 13:33:22,912 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:33:22,914 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:33:22,920 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:33:23,028 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:33:32,385 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-25 13:38:08,013 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:38:08,100 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:38:08,102 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:38:13,469 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:38:13,486 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:38:13,902 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:38:13,907 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:38:13,951 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:38:15,582 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:38:15,588 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:38:15,629 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:38:15,962 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:39:53,564 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:39:53,630 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:39:53,633 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:39:58,803 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:39:58,810 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:39:59,078 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:39:59,087 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:39:59,136 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:40:00,391 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:40:00,396 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:40:00,431 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:40:00,709 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:45:54,929 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:45:55,021 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:45:55,025 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:45:59,021 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:45:59,068 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:46:02,549 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:46:02,555 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:46:02,626 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:46:03,598 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:46:03,599 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:46:03,605 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:55:25,492 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:55:25,571 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:55:25,573 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 13:55:31,488 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 13:55:31,498 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:55:34,603 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 13:55:34,608 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 13:55:34,652 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 13:55:35,660 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 13:55:35,662 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 13:55:35,668 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 13:55:35,833 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 13:56:02,146 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 13:56:02,210 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 13:56:02,213 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:12:56,883 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:12:56,967 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:12:56,971 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:13:04,050 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:13:04,059 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:13:07,260 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:13:07,267 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:13:07,320 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:13:08,578 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:13:08,581 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:13:08,587 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:29:41,554 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:29:41,654 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:29:41,657 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:30:06,962 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:30:06,976 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:30:10,415 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:30:10,434 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:30:10,513 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:30:13,219 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:30:13,221 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:30:13,226 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:30:13,433 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 14:33:14,574 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:33:14,650 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:33:14,653 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:33:21,965 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:33:21,981 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:33:22,335 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:33:22,348 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:33:22,414 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:33:23,922 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-25 14:33:23,928 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-25 14:33:23,967 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:33:24,054 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-25 14:33:24,056 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-25 14:33:24,059 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-25 14:33:24,081 [1] INFO EISv3.Utils.Logger - -----Selected DashBoardView from menu------
-2019-01-25 14:33:25,853 [1] INFO EISv3.Utils.Logger - -----Clicked on Next Page from ListView------
-2019-01-25 14:33:27,257 [1] INFO EISv3.Utils.Logger - -----Clicked on Previous Page from ListView------
-2019-01-25 14:33:59,333 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:33:59,337 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:33:59,345 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:33:59,483 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 14:34:04,462 [1] INFO EISv3.Utils.Logger - -----Empployee Information Updated------
-2019-01-25 14:34:05,548 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-25 14:34:05,550 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-25 14:34:05,564 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:34:05,654 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-25 14:34:05,657 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-25 14:34:05,658 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-25 14:34:09,736 [1] INFO EISv3.Utils.Logger - -----Application Exit------
-2019-01-25 14:35:01,133 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:35:01,200 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:35:01,205 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:35:08,511 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:35:08,519 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:35:08,690 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:35:08,696 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:35:08,794 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:35:10,231 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:35:10,235 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:35:10,263 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:35:10,433 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 14:37:12,819 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:37:12,886 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:37:12,889 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:37:17,757 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:37:17,773 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:37:17,975 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:37:17,981 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:37:18,027 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:37:19,640 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:37:19,647 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:37:19,687 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:37:19,876 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 14:39:04,685 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:39:04,757 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:39:04,759 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:39:10,833 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:39:10,841 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:39:11,019 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:39:11,026 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:39:11,076 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:39:12,166 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:39:12,170 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:39:12,201 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:39:12,335 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 14:45:37,509 [1] INFO EISv3.App -         =============  Started Logging  =============        
-2019-01-25 14:45:37,576 [1] INFO EISv3.Utils.Logger - -----Started MainWindow------
-2019-01-25 14:45:37,579 [1] INFO EISv3.Utils.Logger - -----On LoginPage------
-2019-01-25 14:45:43,041 [1] INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
-2019-01-25 14:45:43,056 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:45:43,433 [1] INFO EISv3.Utils.Logger - -----On MainPage------
-2019-01-25 14:45:43,450 [1] INFO EISv3.Utils.Logger - -----Started HomeView------
-2019-01-25 14:45:43,522 [1] INFO EISv3.Utils.Logger - ------Login Successfull------
-2019-01-25 14:45:46,826 [1] INFO EISv3.Utils.Logger - -----Started ProfileView------
-2019-01-25 14:45:46,832 [1] INFO EISv3.Utils.Logger - -----Finding data for Selected Employee------
-2019-01-25 14:45:46,850 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:45:47,070 [1] INFO EISv3.Utils.Logger - -----Selected ProfileView from menu------
-2019-01-25 14:45:50,731 [1] INFO EISv3.Utils.Logger - -----Empployee Information Updated------
-2019-01-25 14:45:57,521 [1] INFO EISv3.Utils.Logger - -----Started DashboardView------
-2019-01-25 14:45:57,523 [1] INFO EISv3.Utils.Logger - -----In InitializePagination------
-2019-01-25 14:45:57,528 [1] INFO EISv3.Utils.Logger - -----ProgressBar Running------
-2019-01-25 14:45:57,598 [1] INFO EISv3.Utils.Logger - -----Setting Page In EmpInfoDictionary------
-2019-01-25 14:45:57,600 [1] INFO EISv3.Utils.Logger - -----Logged Out------
-2019-01-25 14:45:57,605 [1] INFO EISv3.Utils.Logger - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
-2019-01-25 14:46:00,672 [1] INFO EISv3.Utils.Logger - -----Application Exit------
+2019-01-25 16:22:52,909 [1] EISv3.App -         =============  Started Logging  =============        
+2019-01-25 16:22:53,024 [1] EISv3.Utils.Logger - -----Started MainWindow------
+2019-01-25 16:22:53,028 [1] EISv3.Utils.Logger - -----On LoginPage------
+2019-01-25 16:22:57,594 [1] EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
+2019-01-25 16:22:57,619 [1] EISv3.Utils.Logger - -----ProgressBar Running------
+2019-01-25 16:22:57,825 [1] EISv3.Utils.Logger - -----On MainPage------
+2019-01-25 16:22:57,831 [1] EISv3.Utils.Logger - -----Started HomeView------
+2019-01-25 16:22:57,871 [1] EISv3.Utils.Logger - ------Login Successfull------
+2019-01-25 16:22:59,185 [1] EISv3.Utils.Logger - -----Started ProfileView------
+2019-01-25 16:22:59,188 [1] EISv3.Utils.Logger - -----Finding data for Selected Employee------
+2019-01-25 16:22:59,212 [1] EISv3.Utils.Logger - -----ProgressBar Running------
+2019-01-25 16:22:59,347 [1] EISv3.Utils.Logger - -----Selected ProfileView from menu------
+2019-01-25 16:23:03,045 [1] EISv3.Utils.Logger - -----Application Exit------
+2019-01-25 16:24:08,763 INFO EISv3.App -         =============  Started Logging  =============        
+2019-01-25 16:24:08,821 INFO EISv3.Utils.Logger - -----Started MainWindow------
+2019-01-25 16:24:08,824 INFO EISv3.Utils.Logger - -----On LoginPage------
+2019-01-25 16:24:13,778 INFO EISv3.Utils.Logger - -----Clicked on Login in LoginPage------
+2019-01-25 16:24:13,784 INFO EISv3.Utils.Logger - -----ProgressBar Running------
+2019-01-25 16:24:13,935 INFO EISv3.Utils.Logger - -----On MainPage------
+2019-01-25 16:24:13,940 INFO EISv3.Utils.Logger - -----Started HomeView------
+2019-01-25 16:24:13,979 INFO EISv3.Utils.Logger - ------Login Successfull------
+2019-01-25 16:24:16,833 INFO EISv3.Utils.Logger - -----Application Exit------
+2019-01-25 16:56:11,248 INFO EISv3.App -         =============  Started App  =============        
+2019-01-25 16:56:11,320 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-25 16:56:11,323 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-25 16:56:15,940 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-25 16:56:15,965 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 16:56:18,800 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-25 16:56:18,808 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-25 16:56:18,852 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-25 16:56:20,167 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-25 16:56:20,168 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-25 16:56:20,173 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 16:56:20,387 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-25 16:56:22,201 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-25 17:02:34,252 INFO EISv3.App -         =============  Started App  =============        
+2019-01-25 17:02:34,304 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-25 17:02:34,307 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-25 17:02:42,392 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-25 17:02:42,402 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:02:45,229 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-25 17:02:45,233 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-25 17:02:45,278 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-25 17:03:40,768 INFO EISv3.App -         =============  Started App  =============        
+2019-01-25 17:03:40,828 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-25 17:03:40,831 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-25 17:03:49,038 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-25 17:03:49,045 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:03:49,189 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-25 17:03:49,198 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-25 17:03:49,255 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-25 17:03:50,470 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-25 17:03:50,470 INFO EISv3.PageModel.MainPageModel - -----Selected HomeView from menu------
+2019-01-25 17:03:51,169 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-25 17:03:51,169 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-25 17:03:51,176 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:03:51,368 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-25 17:03:57,082 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-25 17:03:57,083 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-25 17:03:57,087 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:03:57,138 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-25 17:03:57,139 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-25 17:03:57,139 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-25 17:03:57,152 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-25 17:03:59,633 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Next Page from ListView------
+2019-01-25 17:04:00,842 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-25 17:04:01,807 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-25 17:04:01,818 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-25 17:04:01,818 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-25 17:04:01,823 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:04:03,811 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-25 17:04:04,837 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-25 17:04:04,837 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-25 17:04:04,862 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:04:04,920 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-25 17:04:04,920 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-25 17:04:04,920 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-25 17:04:07,567 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-25 17:05:49,088 INFO EISv3.App -         =============  Started App  =============        
+2019-01-25 17:05:49,150 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-25 17:05:49,153 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-25 17:06:11,813 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-25 17:06:11,821 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:06:11,978 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-25 17:06:11,988 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-25 17:06:12,039 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-25 17:06:21,853 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-25 17:06:21,853 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-25 17:06:21,878 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:06:22,019 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-25 17:06:38,981 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-25 17:06:39,951 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-25 17:06:39,951 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-25 17:06:39,956 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:06:40,013 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-25 17:06:40,013 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-25 17:06:40,014 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-25 17:06:46,938 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-25 17:06:49,859 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-25 17:06:49,874 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-25 17:06:49,875 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-25 17:06:49,880 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-25 17:07:52,418 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 10:04:28,901 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:04:29,005 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:04:29,008 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:05:19,343 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:05:19,351 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:05:24,865 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:05:24,877 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:05:24,976 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:05:28,633 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:05:28,634 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:05:28,638 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:05:28,835 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:06:37,072 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:06:38,362 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:06:38,363 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:06:38,390 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:06:38,438 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:06:38,438 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:06:38,439 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:07:18,742 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:07:23,134 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:07:23,154 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:07:23,154 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:07:23,158 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:13:43,883 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:13:43,929 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:13:43,932 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:13:47,641 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:13:47,666 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:13:50,689 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:13:50,693 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:13:50,734 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:13:54,560 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:13:54,561 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:13:54,565 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:13:54,746 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:13:58,466 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:13:59,419 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:13:59,420 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:13:59,424 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:13:59,508 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:13:59,508 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:13:59,509 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:14:07,334 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:14:08,734 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:14:08,756 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:14:08,756 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:14:08,761 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:14:12,702 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:14:13,560 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:14:13,560 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:14:13,564 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:14:13,626 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:14:13,626 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:14:13,626 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:14:28,109 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:14:29,420 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:14:59,751 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:14:59,800 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:14:59,802 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:15:03,940 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:15:03,965 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:15:04,231 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:15:04,236 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:15:04,285 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:15:05,955 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:15:05,956 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:15:05,980 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:15:06,106 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:15:08,235 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:15:08,235 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:15:08,240 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:15:08,289 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:15:08,290 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:15:08,290 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:15:08,302 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:15:16,152 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:15:17,262 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:15:17,279 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:15:17,279 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:15:17,283 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:15:20,768 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:15:21,752 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:15:21,752 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:15:21,758 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:15:21,806 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:15:21,806 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:15:21,806 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:15:40,926 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:15:43,727 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:19:51,963 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:19:52,037 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:19:52,040 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:20:00,130 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:20:00,137 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:00,288 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:20:00,292 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:20:00,329 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:20:07,823 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:07,824 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:07,847 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:07,964 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:09,384 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:09,385 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:09,389 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:09,442 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:09,442 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:09,443 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:09,454 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:10,195 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:10,195 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:10,201 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:10,299 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:10,895 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:10,895 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:10,899 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:10,959 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:10,960 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:10,960 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:10,988 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:11,520 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:11,520 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:11,524 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:11,640 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:12,234 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:12,234 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:12,240 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:12,290 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:12,290 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:12,290 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:12,298 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:12,881 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:12,881 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:12,885 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:12,982 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:13,490 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:13,490 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:13,495 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:13,543 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:13,543 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:13,543 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:13,552 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:14,009 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:14,009 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:14,014 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:14,118 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:14,394 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:14,394 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:14,399 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:14,459 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:14,459 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:14,459 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:14,467 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:14,780 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:14,780 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:14,785 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:14,882 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:15,107 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:15,107 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:15,111 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:15,157 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:15,157 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:15,157 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:15,168 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:15,516 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:20:15,517 INFO EISv3.PageModel.MainPageModel - -----Selected HomeView from menu------
+2019-01-28 10:20:16,203 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:16,203 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:16,209 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:16,302 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:16,553 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:16,553 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:16,557 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:16,607 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:16,608 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:16,608 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:16,627 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:17,452 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:20:17,452 INFO EISv3.PageModel.MainPageModel - -----Selected HomeView from menu------
+2019-01-28 10:20:17,851 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:17,851 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:17,855 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:17,952 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:18,236 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:18,236 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:18,242 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:18,311 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:18,311 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:18,311 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:18,321 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:18,730 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:20:18,731 INFO EISv3.PageModel.MainPageModel - -----Selected HomeView from menu------
+2019-01-28 10:20:19,120 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:19,121 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:19,124 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:19,219 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:19,531 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:19,531 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:19,535 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:19,592 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:19,592 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:19,592 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:19,611 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:20,036 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:20:20,036 INFO EISv3.PageModel.MainPageModel - -----Selected HomeView from menu------
+2019-01-28 10:20:20,475 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:20,475 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:20,481 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:20,566 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:20,994 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:20,995 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:21,000 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:21,058 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:21,058 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:21,058 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:21,075 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:21,506 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:20:21,506 INFO EISv3.PageModel.MainPageModel - -----Selected HomeView from menu------
+2019-01-28 10:20:22,731 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:22,731 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:22,737 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:22,848 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:23,259 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:23,259 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:23,264 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:23,324 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:23,324 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:23,324 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:23,332 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:20:37,155 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:37,155 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:37,160 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:37,252 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:20:40,882 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:20:42,102 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:20:42,102 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:20:42,106 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:20:42,174 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:20:42,174 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:20:42,174 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:20:54,416 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:20:56,164 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:20:56,176 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:20:56,176 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:20:56,180 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:21:01,712 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:21:02,734 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:21:02,734 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:21:02,738 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:21:02,791 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:21:02,791 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:21:02,791 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:21:32,324 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:21:33,613 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:22:36,210 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:22:36,259 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:22:36,261 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:22:40,274 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:22:40,307 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:22:40,448 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:22:40,453 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:22:40,491 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:22:43,423 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:22:43,423 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:22:43,448 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:22:43,502 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:22:43,503 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:22:43,503 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:22:43,520 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:22:45,116 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:22:46,550 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:28:05,791 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:28:05,841 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:28:05,843 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:28:52,864 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:28:52,918 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:28:52,921 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:29:00,390 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:29:00,398 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:29:03,641 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:29:03,645 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:29:03,682 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:29:07,443 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:29:07,444 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:29:07,448 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:29:07,630 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:29:26,644 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:29:27,616 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:29:27,616 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:29:27,669 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:29:27,716 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:29:27,716 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:29:27,717 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:29:34,701 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:29:36,117 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:29:36,129 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:29:36,129 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:29:36,134 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:29:39,720 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:29:40,721 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:29:40,721 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:29:40,726 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:29:40,781 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:29:40,781 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:29:40,781 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:30:11,148 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 10:32:29,138 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:32:29,188 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:32:29,191 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:32:33,721 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:32:33,731 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:32:33,870 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:32:33,875 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:32:33,912 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:32:35,004 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:32:35,004 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:32:35,008 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:32:35,125 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:32:39,074 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:32:40,377 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:32:40,378 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:32:40,384 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:32:40,441 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:32:40,441 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:32:40,442 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:38:13,793 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:38:13,874 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:38:13,877 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:38:20,281 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:38:20,292 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:38:20,438 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:38:20,442 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:38:20,479 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:38:21,830 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:38:21,830 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:38:21,868 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:38:21,993 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 10:38:26,446 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:38:27,255 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:38:27,255 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:38:27,259 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:38:27,309 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:38:27,309 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:38:27,310 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:38:34,052 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:38:35,550 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:38:35,562 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:38:35,562 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:38:35,566 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:38:43,631 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 10:38:44,650 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:38:44,650 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:38:44,654 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:38:44,720 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:38:44,720 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:38:44,720 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:38:49,355 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 10:38:50,652 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 10:38:50,664 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:38:50,664 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:38:50,668 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:39:00,308 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 10:47:26,504 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 10:47:26,571 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 10:47:26,580 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 10:47:47,901 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 10:47:47,908 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:48:19,430 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 10:48:19,435 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 10:48:19,476 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 10:48:31,859 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 10:48:31,859 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 10:48:31,864 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:48:31,920 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 10:48:31,920 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 10:48:31,921 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 10:48:31,935 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 10:48:33,878 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 10:48:33,878 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 10:48:33,883 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 10:48:34,013 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 11:03:14,003 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 11:03:14,091 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 11:03:14,094 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 11:03:24,286 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 11:03:24,310 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:03:27,558 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 11:03:27,564 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 11:03:27,602 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 11:03:58,392 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 11:03:58,393 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 11:03:58,398 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:03:58,511 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 11:03:58,511 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 11:03:58,513 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 11:03:58,527 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 11:04:00,044 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 11:04:00,044 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 11:04:00,050 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:04:00,173 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 11:04:04,881 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 11:04:05,915 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 11:04:05,915 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 11:04:05,919 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:04:05,990 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 11:04:05,990 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 11:04:05,990 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 11:04:23,782 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 11:04:27,750 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 11:04:27,766 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 11:04:27,766 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 11:04:27,770 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:04:36,943 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 11:04:37,838 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 11:04:37,838 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 11:04:37,844 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:04:37,918 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 11:04:37,918 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 11:04:37,918 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 11:04:45,695 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 11:22:31,232 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 11:22:31,304 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 11:22:31,308 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 11:22:36,017 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 11:22:36,024 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:22:39,452 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 11:22:39,458 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 11:22:39,498 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 11:22:50,154 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 11:22:50,154 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 11:22:50,160 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:22:50,213 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 11:22:50,213 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 11:22:50,213 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 11:22:50,237 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 11:24:33,671 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 11:24:33,727 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 11:24:33,730 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 11:24:38,447 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 11:24:38,471 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:24:38,622 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 11:24:38,627 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 11:24:38,672 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 11:24:40,053 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 11:24:40,053 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 11:24:40,079 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 11:24:40,154 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 11:24:40,154 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 11:24:40,155 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 11:24:40,170 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 11:24:41,205 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 12:10:58,656 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 12:10:58,750 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 12:10:58,753 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 12:11:03,131 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 12:11:03,159 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 12:11:06,707 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 12:11:06,720 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 12:11:06,816 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 12:11:10,861 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 12:11:10,862 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 12:11:10,874 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 12:11:10,928 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 12:11:10,928 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 12:11:10,929 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 12:11:10,945 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 12:11:13,024 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 12:11:13,772 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 12:11:14,403 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 12:11:14,902 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 12:11:54,314 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 12:15:03,368 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 12:15:03,438 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 12:15:03,441 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 12:15:09,307 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 12:15:09,321 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 12:15:09,571 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 12:15:09,576 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 12:15:09,633 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 12:15:11,207 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 12:16:12,006 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 12:16:12,014 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 12:16:12,148 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 12:16:15,884 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 13:18:59,672 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:18:59,747 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:18:59,750 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:19:04,223 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:19:04,238 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:19:07,657 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:19:07,667 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:19:07,767 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:19:08,846 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:19:08,852 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:19:09,084 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 13:19:09,198 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:21:16,295 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:21:16,378 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:21:16,381 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:21:22,059 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:21:22,073 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:21:22,335 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:21:22,340 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:21:22,384 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:21:23,939 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:21:23,941 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:21:23,970 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:21:24,061 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:21:24,061 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:21:24,062 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:21:24,079 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 13:21:25,943 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 13:21:27,084 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 13:21:27,111 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:21:27,120 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:21:27,174 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 13:21:27,182 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:22:46,799 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 13:22:47,854 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:22:47,854 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:22:47,862 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:22:47,937 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:22:47,937 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:22:47,937 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:23:11,254 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:23:11,259 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:23:11,321 INFO EISv3.ViewModel.ProfileViewModel - -----Finding data for Selected Employee------
+2019-01-28 13:23:11,373 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:23:18,115 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 13:26:58,785 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:26:58,837 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:26:58,840 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:27:02,894 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:27:02,910 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:27:03,242 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:27:03,262 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:27:03,359 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:27:04,883 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:27:04,915 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:27:05,087 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:27:14,855 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:27:14,855 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:27:14,862 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:27:14,947 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:27:14,947 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:27:14,948 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:27:14,962 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 13:27:24,380 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:29:56,104 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:30:05,295 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:34:45,139 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:34:45,202 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:34:45,206 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:34:48,685 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:34:48,745 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:34:48,936 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:34:48,941 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:34:48,984 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:34:50,043 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:36:19,788 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:36:19,852 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:36:19,856 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:36:35,555 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:36:35,567 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:36:45,153 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:36:45,166 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:36:45,261 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:36:45,268 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:36:45,313 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:36:47,083 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:36:47,104 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:40:01,380 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:40:01,444 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:40:01,447 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:40:13,195 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:40:13,227 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:40:13,399 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:40:13,405 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:40:13,451 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:40:15,134 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:40:15,146 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:45:48,134 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:45:48,186 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:45:48,189 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:45:52,712 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:45:52,728 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:45:52,898 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:45:52,906 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:45:52,951 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:45:55,888 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:45:55,916 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:45:56,082 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:46:05,225 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:46:05,225 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:46:05,231 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:46:05,310 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:46:05,311 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:46:05,312 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:46:05,323 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 13:46:18,652 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:57:36,130 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 13:57:36,180 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 13:57:36,182 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 13:57:40,055 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 13:57:40,070 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:57:40,303 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 13:57:40,308 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 13:57:40,352 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 13:57:41,758 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:57:41,788 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:57:41,966 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:57:51,742 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:57:51,742 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:57:51,747 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:57:51,810 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:57:51,810 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:57:51,811 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:57:51,832 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 13:58:05,603 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:58:05,609 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:58:05,778 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:58:07,052 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:58:07,052 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:58:07,063 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:58:07,158 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:58:07,158 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:58:07,158 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:58:07,171 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 13:58:13,554 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:58:13,561 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:58:13,697 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:58:30,154 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 13:58:30,154 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 13:58:30,163 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:58:30,220 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 13:58:30,220 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 13:58:30,220 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 13:58:30,232 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 13:58:32,790 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 13:58:32,796 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 13:58:32,931 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 13:58:46,158 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:16:23,154 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:16:23,242 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:16:23,245 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:16:29,770 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:16:29,779 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:16:30,176 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:16:30,183 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:16:30,225 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:16:31,685 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:16:31,729 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:16:31,864 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:16:36,499 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:19:25,868 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:19:25,929 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:19:25,932 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:19:38,133 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:19:38,149 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:19:38,429 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:19:38,434 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:19:38,491 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:19:40,431 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:19:40,437 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:20:49,473 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:20:49,542 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:20:49,546 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:20:57,587 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:20:57,595 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:20:57,820 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:20:57,826 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:20:57,871 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:20:59,836 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:20:59,862 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:21:46,841 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:21:46,925 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:21:46,929 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:21:59,027 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:21:59,063 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:21:59,327 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:21:59,332 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:21:59,384 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:22:00,735 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:22:00,759 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:23:32,609 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:24:29,983 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:26:42,687 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:26:42,753 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:26:42,756 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:26:54,828 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:26:54,847 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:26:55,069 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:26:55,075 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:26:55,122 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:26:56,558 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:26:56,565 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:27:02,857 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:29:44,423 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:29:44,495 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:29:44,499 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:29:54,496 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:29:54,505 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:29:54,710 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:29:54,717 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:29:54,759 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:29:56,356 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:29:56,362 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:29:56,506 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:30:01,426 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:30:01,476 INFO EISv3.PageModel.MainPageModel - -----Logged Out------
+2019-01-28 14:30:13,302 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:30:13,314 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:30:13,396 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:30:13,402 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:30:13,416 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:30:14,737 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:30:14,748 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:30:14,878 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:30:21,421 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:31:08,843 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:31:08,903 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:31:08,906 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:31:13,764 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:31:13,777 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:31:14,019 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:31:14,036 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:31:14,094 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:31:15,175 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:31:15,212 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:31:15,363 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:31:27,297 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:35:07,139 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:35:07,209 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:35:07,212 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:35:12,870 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:35:12,886 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:35:13,134 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:35:13,139 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:35:13,186 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:35:14,393 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:35:14,427 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:35:14,604 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:38:50,537 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:38:50,596 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:38:50,600 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:38:54,436 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:38:54,468 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:38:54,702 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:38:54,708 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:38:54,753 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:38:56,337 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:39:44,162 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:39:44,327 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:39:51,728 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:42:19,462 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:42:19,514 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:42:19,516 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:42:23,628 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:42:23,666 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:42:23,842 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:42:23,847 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:42:23,891 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:42:25,240 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 14:42:25,241 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 14:42:25,283 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:42:25,368 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 14:42:25,368 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 14:42:25,369 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 14:42:25,387 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 14:42:27,645 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 14:42:29,167 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 14:42:29,204 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:42:29,211 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:42:42,525 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:46:44,599 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:46:44,652 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:46:44,655 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:46:48,624 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:46:48,648 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:46:48,841 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:46:48,847 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:46:48,890 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:46:50,144 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 14:46:50,144 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 14:46:50,177 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:46:50,254 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 14:46:50,254 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 14:46:50,254 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 14:46:50,275 INFO EISv3.PageModel.MainPageModel - -----Selected DashBoardView from menu------
+2019-01-28 14:46:50,777 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:46:50,785 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:46:50,933 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:49:08,753 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:49:08,817 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:49:08,820 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:49:12,535 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:49:12,547 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:49:12,775 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:49:12,780 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:49:12,828 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:49:13,967 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:49:53,275 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:49:53,421 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:49:58,490 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:54:36,812 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:54:36,879 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:54:36,882 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 14:54:41,230 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 14:54:41,245 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:54:41,549 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 14:54:41,561 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 14:54:41,653 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 14:54:42,569 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 14:54:42,584 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:54:42,744 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 14:54:44,510 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 14:54:45,757 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 14:54:45,758 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 14:54:45,769 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 14:54:45,866 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 14:54:45,866 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 14:54:45,867 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 14:54:53,230 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 14:55:24,699 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 14:55:24,765 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 14:55:24,767 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:21:30,867 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 15:21:30,963 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 15:21:30,967 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:21:42,661 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 15:21:42,676 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:21:43,126 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 15:21:43,131 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 15:21:43,174 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 15:21:44,419 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 15:21:44,453 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:21:44,664 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 15:21:56,682 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 15:22:05,347 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 15:22:05,408 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 15:22:05,411 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:22:31,380 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 15:22:31,464 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 15:22:31,467 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:22:40,805 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 15:22:40,820 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:22:41,111 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 15:22:41,119 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 15:22:41,161 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 15:22:42,567 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 15:22:42,579 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:22:42,797 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 15:44:16,315 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 15:44:16,378 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 15:44:16,381 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:44:20,905 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 15:44:20,946 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:44:21,173 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 15:44:21,180 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 15:44:21,230 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 15:44:22,361 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 15:44:22,370 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:44:22,537 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 15:44:25,394 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 15:44:26,218 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 15:44:26,219 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 15:44:26,224 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:44:26,335 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 15:44:26,336 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 15:44:26,337 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 15:44:28,941 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:44:28,980 INFO EISv3.PageModel.MainPageModel - -----Logged Out------
+2019-01-28 15:44:41,427 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 15:44:41,437 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:44:46,468 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 15:44:46,477 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:44:46,532 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 15:44:46,536 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 15:44:46,549 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 15:44:47,900 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 15:44:47,921 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:44:48,066 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 15:44:58,345 INFO EISv3.PageModel.MainPageModel - -----Application Exit------
+2019-01-28 15:45:05,327 INFO EISv3.App -         =============  Started App  =============        
+2019-01-28 15:45:05,392 INFO EISv3.MainWindow - -----Started MainWindow------
+2019-01-28 15:45:05,395 INFO EISv3.PageModel.LoginPageModel - -----On LoginPage------
+2019-01-28 15:45:15,901 INFO EISv3.PageModel.LoginPageModel - -----Clicked on Login in LoginPage------
+2019-01-28 15:45:15,914 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:45:16,132 INFO EISv3.PageModel.MainPageModel - -----On MainPage------
+2019-01-28 15:45:16,140 INFO EISv3.Views.HomeView - -----Started HomeView------
+2019-01-28 15:45:16,183 INFO EISv3.PageModel.LoginPageModel - ------Login Successfull------
+2019-01-28 15:45:17,616 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 15:45:17,629 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:45:17,780 INFO EISv3.PageModel.MainPageModel - -----Selected ProfileView from menu------
+2019-01-28 15:46:29,442 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 15:46:30,648 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 15:46:30,649 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 15:46:30,654 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:46:30,754 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 15:46:30,754 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 15:46:30,757 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 15:46:38,388 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Next Page from ListView------
+2019-01-28 15:46:42,896 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Previous Page from ListView------
+2019-01-28 15:46:46,148 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Header in ListView------
+2019-01-28 15:46:46,161 INFO EISv3.ViewModel.DashBoardViewModel - -----ListView Sorted------
+2019-01-28 15:46:47,324 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Header in ListView------
+2019-01-28 15:46:47,331 INFO EISv3.ViewModel.DashBoardViewModel - -----ListView Sorted------
+2019-01-28 15:46:49,287 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Next Page from ListView------
+2019-01-28 15:46:50,489 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Header in ListView------
+2019-01-28 15:46:50,493 INFO EISv3.ViewModel.DashBoardViewModel - -----ListView Sorted------
+2019-01-28 15:46:52,153 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Header in ListView------
+2019-01-28 15:46:52,157 INFO EISv3.ViewModel.DashBoardViewModel - -----ListView Sorted------
+2019-01-28 15:46:53,040 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Header in ListView------
+2019-01-28 15:46:53,043 INFO EISv3.ViewModel.DashBoardViewModel - -----ListView Sorted------
+2019-01-28 15:46:57,141 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Previous Page from ListView------
+2019-01-28 15:46:58,732 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Next Page from ListView------
+2019-01-28 15:46:59,838 INFO EISv3.ViewModel.DashBoardViewModel - -----Clicked on Previous Page from ListView------
+2019-01-28 15:47:07,118 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected one Employee from ListView------
+2019-01-28 15:47:08,165 INFO EISv3.ViewModel.DashBoardViewModel - -----Selected Update from ListView------
+2019-01-28 15:47:08,189 INFO EISv3.ViewModel.ProfileViewModel - -----Started ProfileView------
+2019-01-28 15:47:08,195 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:47:08,333 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:48:08,667 INFO EISv3.ViewModel.ProfileViewModel - -----Empployee Information Updated------
+2019-01-28 15:48:10,059 INFO EISv3.ViewModel.DashBoardViewModel - -----Started DashboardView------
+2019-01-28 15:48:10,059 INFO EISv3.ViewModel.DashBoardViewModel - -----In InitializePagination------
+2019-01-28 15:48:10,064 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-28 15:48:10,138 INFO EISv3.ViewModel.DashBoardViewModel - -----Setting Page In EmpInfoDictionary------
+2019-01-28 15:48:10,138 INFO EISv3.ViewModel.DashBoardViewModel - -----Logged Out------
+2019-01-28 15:48:10,139 INFO EISv3.ViewModel.DashBoardViewModel - -----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------
+2019-01-28 15:48:20,444 INFO EISv3.PageModel.MainPageModel - -----Application Exit------

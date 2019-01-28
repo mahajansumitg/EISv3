@@ -10,12 +10,16 @@ namespace EISv3
     /// </summary>
     public partial class MainWindow : Window
     {
+        readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public MainWindow()
         {
+            log4net.Config.XmlConfigurator.Configure();
+
             InitializeComponent();
 
             //Logs Code
-            Logger.logging("-----Started MainWindow------");
+            log.Info("-----Started MainWindow------");
 
             this.Content = new LoginPage();
             Mediator.registerVar("Window", this);

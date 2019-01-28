@@ -12,6 +12,7 @@ namespace EISv3.Utils
         private static Dictionary<string, Action> actionDictionary = new Dictionary<string, Action>();
         public static void registerVar(string key, Object obj)
         {
+            if (varDictionary.ContainsKey(key)) varDictionary.Remove(key);
             varDictionary.Add(key, obj);
         }
         public static void registerAction(string key, Action action)

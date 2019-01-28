@@ -18,7 +18,7 @@ namespace EISv3
         protected override void OnStartup(StartupEventArgs e)
         {
             log4net.Config.XmlConfigurator.Configure();
-            log.Info("        =============  Started Logging  =============        ");
+            log.Info("        =============  Started App  =============        ");
             base.OnStartup(e);
         }
     }

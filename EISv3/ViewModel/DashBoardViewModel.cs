@@ -8,11 +8,13 @@ using System.Windows.Input;
 using System.Windows.Data;
 using System.ComponentModel;
 using System.Linq;
+using log4net;
 
 namespace EISv3.ViewModel
 {
     public class DashBoardViewModel : NotifyOnPropertyChanged
     {
+        readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region Properties
 
@@ -108,7 +110,9 @@ namespace EISv3.ViewModel
 
         public DashBoardViewModel()
         {
-            Logger.logging("-----Started DashboardView------");
+            log4net.Config.XmlConfigurator.Configure();
+
+            log.Info("-----Started DashboardView------");
             InitializePaginaion();
         }
 
@@ -117,20 +121,20 @@ namespace EISv3.ViewModel
         //InitializePagination when required
         private void InitializePaginaion()
         {
-            Logger.logging("-----In InitializePagination------");
+            log.Info("-----In InitializePagination------");
 
             string findQuery = "select * from EmpInfo;";
             empInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
             SetEmpInfoDictionary(empInfoList);
             setPageInListView();
 
-            Logger.logging("-----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------");
+            log.Info("-----InitializePagination, SetEmpInfoDictionary, SetPageInListView done------");
         }
 
         //Create a dictionary of pageno, lists
         private void SetEmpInfoDictionary(List<EmpInfo> empInfoCollection)
         {
-            Logger.logging("-----Setting Page In EmpInfoDictionary------");
+            log.Info("-----Setting Page In EmpInfoDictionary------");
             List<EmpInfo> empInfoList = new List<EmpInfo>(empInfoCollection);
             Dictionary<int, List<EmpInfo>> empInfoDict = new Dictionary<int, List<EmpInfo>>();
             int page = 1;
@@ -140,7 +144,7 @@ namespace EISv3.ViewModel
             }
             lastPage = --page;
             this.empInfoDict = empInfoDict;
-            Logger.logging("-----Logged Out------");
+            log.Info("-----Logged Out------");
         }
 
         //Set a particular page in ListView as per the selection
@@ -163,17 +167,17 @@ namespace EISv3.ViewModel
         private void CheckEmp(object parameter)
         {
             currentEmployee = parameter as EmpInfo;
-            Logger.logging("-----Selected one Employee from ListView------");
+            Mediator.registerVar("EmpInfo", currentEmployee);
+            log.Info("-----Selected one Employee from ListView------");
         }
 
         //Update Selected Employee
         public ICommand UpdateEmployee => new Command(UpdateCurrentEmployee, PerformActionOnEmp);
         private void UpdateCurrentEmployee(object parameter)
         {
-            Logger.logging("-----Selected Update from ListView------");
-
-            Mediator.registerVar("EmpInfo", parameter);
-            Mediator.performAction("DisableButtons");
+            log.Info("-----Selected Update from ListView------");
+            
+           
             Mediator.performAction("SwitchToProfileView");
         }
 
@@ -181,12 +185,12 @@ namespace EISv3.ViewModel
         public ICommand DeleteEmployee => new Command(DeleteCurrentEmployee, PerformActionOnEmp);
         private void DeleteCurrentEmployee(object parameter)
         {
-            Logger.logging("-----Selected Delete from ListView------");
+            log.Info("-----Selected Delete from ListView------");
 
             Connection.deleteData<EmpInfo>("emp_id", currentEmployee.emp_id);
             currentEmployee = null;
 
-            Logger.logging("------Selected Employee deleted------");
+            log.Info("------Selected Employee deleted------");
 
             InitializePaginaion();
         }
@@ -204,7 +208,7 @@ namespace EISv3.ViewModel
         private ListSortDirection _sortDirection;
         private void Sort(object parameter)
         {
-            Logger.logging("-----Clicked on Header in ListView------");
+            log.Info("-----Clicked on Header in ListView------");
 
             Sort sortObj = new Sort();
             string column = parameter as string;
@@ -231,7 +235,7 @@ namespace EISv3.ViewModel
                 OnPropertyChanged("CurrentPageEmpInfoList");
             }
 
-            Logger.logging("-----ListView Sorted------");
+            log.Info("-----ListView Sorted------");
         }
 
         private bool CanSort(object sender)
@@ -247,7 +251,7 @@ namespace EISv3.ViewModel
         public ICommand PrevPage => new Command(PreviousPage);
         private void PreviousPage(object parameter)
         {
-            Logger.logging("-----Clicked on Previous Page from ListView------");
+            log.Info("-----Clicked on Previous Page from ListView------");
             if (currentPage != 1) CurrentPage = (currentPage - 1).ToString();
         }
 
@@ -255,7 +259,7 @@ namespace EISv3.ViewModel
         public ICommand NxtPage => new Command(NextPage);
         private void NextPage(object parameter)
         {
-            Logger.logging("-----Clicked on Next Page from ListView------");
+            log.Info("-----Clicked on Next Page from ListView------");
             if (currentPage != LastPage) CurrentPage = (currentPage + 1).ToString();
         }
 
@@ -267,7 +271,7 @@ namespace EISv3.ViewModel
         public ICommand Search => new Command(SeachEmployee, PerformSearch);
         private void SeachEmployee(object parameter)
         {
-            Logger.logging("-----Clicked on Search from ListView------");
+            log.Info("-----Clicked on Search from ListView------");
 
             List<EmpInfo> prevEmpInfoList = new List<EmpInfo>(empInfoList);
             List<EmpInfo> newEmpInfoList = new List<EmpInfo>(empInfoList);
@@ -285,13 +289,13 @@ namespace EISv3.ViewModel
             setPageInListView();
             empInfoList = prevEmpInfoList;
 
-            Logger.logging("-----Search Operation Completed & Displyed in ListView------");
+            log.Info("-----Search Operation Completed & Displyed in ListView------");
         }
 
         public ICommand Clear => new Command(ClearSearch, PerformSearch);
         private void ClearSearch(object parameter)
         {
-            Logger.logging("-----Clicked on Clear from ListView------");
+            log.Info("-----Clicked on Clear from ListView------");
 
             EmpIdSearch = DojSearch = DolSearch = "";
 
