@@ -43,8 +43,10 @@
 
             <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Content="Employee Information System"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bookman Old Style" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
-            <TextBox materialDesign:HintAssist.Hint="User Name" Foreground="Black" Text="{Binding UserName}" MinWidth="200" Grid.Column="0"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <PasswordBox Name="pswd"  materialDesign:HintAssist.Hint="Password" MinWidth="200" Grid.Column="0"  Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
+            <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="User Name" 
+                     Foreground="Black" Text="{Binding UserName}" MinWidth="200" Grid.Column="0"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <PasswordBox Name="pswd" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password" 
+                         MinWidth="200" Grid.Column="0"  Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
 
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Login" Command="{Binding Login}"  CommandParameter="{Binding ElementName=pswd}" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>

@@ -7,7 +7,7 @@
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
              xmlns:local="clr-namespace:EISv3.Views"
              mc:Ignorable="d" 
-             MinHeight="600" MinWidth="1024" Background="#FFA5C3C3">
+             MinHeight="600" MinWidth="1024" Background="#FF6A7878" BorderThickness="2" BorderBrush="Black">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>

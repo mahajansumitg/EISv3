@@ -45,7 +45,7 @@ namespace EISv3.Utils
             {
                 progressBar.Close();
                 window.Opacity = 1;
-                log.Info("-----ProgressBar Running------");
+                log.Info("-----ProgressBar Closed------");
             }
             ));
         }
