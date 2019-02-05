@@ -132,7 +132,7 @@ namespace EISv3.PageModel
         private void _Exit(object parameter)
         {
             log.Info("-----Application Exit-----");
-            System.Windows.Application.Current.Shutdown();
+            Application.Current.Shutdown();
         }
 
         //Logout & clear all actions except SwitchToLoginPage

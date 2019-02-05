@@ -48,6 +48,7 @@ namespace EISv3.PageModel
         private void _Login(object parameter)
         {
             log.Info("In LoginPage : _Login()");
+
             String loginQuery = "select * from Login where user_name = '" + _UserName + "'";
             List<Login> loginList = Loading.Show(() => Connection.getData<Login>(loginQuery)) as List<Login>;
 

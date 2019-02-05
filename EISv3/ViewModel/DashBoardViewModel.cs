@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.ComponentModel;
 using System.Linq;
 using log4net;
+using System.Windows;
 
 namespace EISv3.ViewModel
 {
@@ -185,7 +186,7 @@ namespace EISv3.ViewModel
         {
             log.Info("Selected Delete from ListView: DeleteCurrentEmployee()");
 
-            Connection.deleteData<EmpInfo>("emp_id", currentEmployee.emp_id);
+            if (Connection.deleteData<EmpInfo>("emp_id", currentEmployee.emp_id)) MessageBox.Show(currentEmployee.emp_id+" is deleted."); ;
 
             log.Info("Selected Employee "+ currentEmployee.emp_id + " deleted");
 

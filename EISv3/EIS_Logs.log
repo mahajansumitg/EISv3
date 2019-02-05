@@ -443,3 +443,1155 @@
 2019-01-30 12:29:53,824 INFO EISv3.ViewModel.DashBoardViewModel - Clicked on Header First Name in ListView
 2019-01-30 12:29:53,828 INFO EISv3.ViewModel.DashBoardViewModel - ListView Sorted
 2019-01-30 12:29:55,886 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-01-30 13:57:41,246 INFO EISv3.App -         =============  Application Started  =============        
+2019-01-30 13:57:41,310 INFO EISv3.MainWindow - MainWindow Started
+2019-01-30 13:57:41,316 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-01-30 13:57:47,962 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-01-30 13:57:47,975 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 13:57:53,456 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:57:53,513 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-01-30 13:57:53,521 INFO EISv3.Views.HomeView - On HomeView
+2019-01-30 13:57:53,574 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-01-30 13:57:56,518 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 13:57:56,519 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-01-30 13:57:56,526 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 13:57:56,667 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:57:56,892 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-01-30 13:57:56,893 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:01,905 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-01-30 13:58:01,924 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-01-30 13:58:01,925 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-01-30 13:58:01,953 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 13:58:02,102 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:02,112 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-01-30 13:58:02,113 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-01-30 13:58:02,115 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-01-30 13:58:02,145 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:02,149 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:12,333 INFO EISv3.Views.HomeView - On HomeView
+2019-01-30 13:58:12,334 INFO EISv3.PageModel.MainPageModel - Selected HomeView from menu: In case ItemHome
+2019-01-30 13:58:12,889 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 13:58:12,889 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-01-30 13:58:12,905 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 13:58:12,967 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:13,065 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-01-30 13:58:13,065 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:13,068 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:13,137 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:58:17,999 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-01-30 13:59:50,390 INFO EISv3.App -         =============  Application Started  =============        
+2019-01-30 13:59:50,473 INFO EISv3.MainWindow - MainWindow Started
+2019-01-30 13:59:50,476 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-01-30 13:59:54,907 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-01-30 13:59:54,923 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 13:59:55,176 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:59:55,184 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-01-30 13:59:55,189 INFO EISv3.Views.HomeView - On HomeView
+2019-01-30 13:59:55,236 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-01-30 13:59:58,490 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-01-30 13:59:58,491 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-01-30 13:59:58,527 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 13:59:58,618 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 13:59:58,621 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-01-30 13:59:58,621 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-01-30 13:59:58,622 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-01-30 13:59:58,644 INFO EISv3.PageModel.MainPageModel - Selected DashBoardView from menu: In case ItemDashBoard
+2019-01-30 13:59:58,645 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:03,709 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00004 from ListView
+2019-01-30 14:00:07,773 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-01-30 14:00:07,814 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 14:00:07,826 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:00:08,146 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:08,148 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00004
+2019-01-30 14:00:08,157 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:00:08,220 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:08,320 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:08,322 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:08,322 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:08,324 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:00:08,325 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:36,225 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-01-30 14:02:37,345 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-01-30 14:02:37,345 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-01-30 14:02:37,372 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:02:37,500 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:37,500 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-01-30 14:02:37,500 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-01-30 14:02:37,500 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-01-30 14:02:37,520 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:37,524 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:37,528 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:37,638 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:51,611 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00003 from ListView
+2019-01-30 14:02:52,701 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-01-30 14:02:52,735 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 14:02:52,749 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:02:52,844 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:52,844 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00003
+2019-01-30 14:02:52,859 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:02:52,955 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,023 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,024 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,024 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,048 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,048 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,075 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,075 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,261 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,261 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,268 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:02:53,271 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:03:16,455 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-01-30 14:04:35,934 INFO EISv3.App -         =============  Application Started  =============        
+2019-01-30 14:04:35,996 INFO EISv3.MainWindow - MainWindow Started
+2019-01-30 14:04:35,999 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-01-30 14:04:39,981 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-01-30 14:04:39,990 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:04:40,243 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:04:40,250 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-01-30 14:04:40,255 INFO EISv3.Views.HomeView - On HomeView
+2019-01-30 14:04:40,301 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-01-30 14:04:41,630 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 14:04:41,633 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-01-30 14:04:41,674 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:04:41,755 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:04:41,838 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-01-30 14:04:41,838 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:04:52,107 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-01-30 14:04:53,254 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-01-30 14:04:53,255 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-01-30 14:04:53,281 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:04:53,351 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:04:53,354 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-01-30 14:04:53,354 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-01-30 14:04:53,355 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-01-30 14:04:53,386 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:04:53,390 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:00,804 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00003 from ListView
+2019-01-30 14:05:01,898 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-01-30 14:05:01,913 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 14:05:01,921 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:05:02,005 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,009 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00003
+2019-01-30 14:05:02,019 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:05:02,085 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,145 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,145 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,147 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,176 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,180 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,299 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:05:02,304 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:06:53,909 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-01-30 14:06:55,010 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-01-30 14:06:55,010 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-01-30 14:06:55,017 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:06:55,099 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:06:55,099 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-01-30 14:06:55,099 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-01-30 14:06:55,099 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-01-30 14:06:55,118 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:06:55,121 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:06:55,226 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:06:55,230 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:06:55,233 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:07:05,168 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-01-30 14:28:35,159 INFO EISv3.App -         =============  Application Started  =============        
+2019-01-30 14:28:35,217 INFO EISv3.MainWindow - MainWindow Started
+2019-01-30 14:28:35,221 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-01-30 14:28:40,219 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-01-30 14:28:40,229 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:28:43,336 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:28:43,346 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-01-30 14:28:43,356 INFO EISv3.Views.HomeView - On HomeView
+2019-01-30 14:28:43,415 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-01-30 14:28:44,760 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 14:28:44,761 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-01-30 14:28:44,766 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:28:44,898 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:28:44,994 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-01-30 14:28:44,995 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:28:59,546 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-01-30 14:29:00,676 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-01-30 14:29:00,676 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-01-30 14:29:00,693 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:29:00,765 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:29:00,767 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-01-30 14:29:00,767 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-01-30 14:29:00,768 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-01-30 14:29:00,795 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:29:00,798 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:29:03,746 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-01-30 14:30:40,684 INFO EISv3.App -         =============  Application Started  =============        
+2019-01-30 14:30:40,740 INFO EISv3.MainWindow - MainWindow Started
+2019-01-30 14:30:40,742 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-01-30 14:30:45,486 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-01-30 14:30:45,505 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:30:45,790 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:30:45,804 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-01-30 14:30:45,818 INFO EISv3.Views.HomeView - On HomeView
+2019-01-30 14:30:45,912 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-01-30 14:30:46,869 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-01-30 14:30:46,872 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-01-30 14:30:46,915 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-01-30 14:30:46,978 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-01-30 14:30:47,315 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-01-30 14:30:47,316 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:14:07,091 INFO EISv3.App -         =============  Application Started  =============        
+2019-02-01 14:14:07,190 INFO EISv3.MainWindow - MainWindow Started
+2019-02-01 14:14:07,193 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-02-01 14:14:19,322 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-02-01 14:14:19,331 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:14:25,874 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:14:25,880 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-02-01 14:14:25,885 INFO EISv3.Views.HomeView - On HomeView
+2019-02-01 14:14:26,019 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-02-01 14:14:27,534 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:14:27,534 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A65634
+2019-02-01 14:14:27,539 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:14:27,647 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:14:27,734 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-02-01 14:14:27,734 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:01,404 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-02-01 14:15:01,456 INFO EISv3.PageModel.MainPageModel - *****Logged Out*****
+2019-02-01 14:15:06,109 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-02-01 14:15:06,138 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:15:06,201 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:06,207 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-02-01 14:15:06,212 INFO EISv3.Views.HomeView - On HomeView
+2019-02-01 14:15:06,221 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-02-01 14:15:06,221 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:06,224 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:09,472 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:15:09,472 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-02-01 14:15:09,485 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:15:09,556 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:09,609 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-02-01 14:15:09,610 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:09,612 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:09,680 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:15:29,147 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-02-01 14:16:35,202 INFO EISv3.App -         =============  Application Started  =============        
+2019-02-01 14:16:35,266 INFO EISv3.MainWindow - MainWindow Started
+2019-02-01 14:16:35,270 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-02-01 14:16:41,929 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-02-01 14:16:41,940 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:16:42,137 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:16:42,146 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-02-01 14:16:42,151 INFO EISv3.Views.HomeView - On HomeView
+2019-02-01 14:16:42,200 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-02-01 14:16:43,752 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:16:43,754 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A65634
+2019-02-01 14:16:43,785 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:16:43,836 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:16:43,910 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-02-01 14:16:43,910 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:21,795 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:17:22,787 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:17:22,788 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:17:22,815 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:22,883 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:22,885 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:17:22,885 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:17:22,886 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:17:22,900 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:22,902 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:27,646 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:17:27,646 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:17:27,652 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:27,702 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:27,702 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:17:27,702 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:17:27,702 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:17:27,714 INFO EISv3.PageModel.MainPageModel - Selected DashBoardView from menu: In case ItemDashBoard
+2019-02-01 14:17:27,714 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:27,716 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:27,796 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:28,438 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:17:28,438 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A65634
+2019-02-01 14:17:28,446 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:28,499 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:28,547 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-02-01 14:17:28,548 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:28,549 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:28,637 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:28,643 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:36,482 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:17:37,562 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:17:37,562 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:17:37,589 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:37,633 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:37,633 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:17:37,633 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:17:37,633 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:17:37,644 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:37,647 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:37,729 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:37,732 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:37,736 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:49,889 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00000 from ListView
+2019-02-01 14:17:50,954 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:17:50,974 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:17:50,979 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:51,033 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,036 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00000
+2019-02-01 14:17:51,067 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:51,115 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,163 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,164 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,164 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,211 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,212 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,213 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,238 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,238 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,314 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,318 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:51,328 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:53,362 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:17:54,346 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:17:54,346 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:17:54,353 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:54,414 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,414 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:17:54,414 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:17:54,414 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:17:54,426 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,428 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,507 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,511 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,513 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,516 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,519 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:54,522 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:55,865 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00001 from ListView
+2019-02-01 14:17:57,153 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:17:57,179 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:17:57,204 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:57,268 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,269 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00001
+2019-02-01 14:17:57,301 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:17:57,348 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,395 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,396 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,396 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,420 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,420 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,445 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,445 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,471 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,473 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,473 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,559 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,559 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,588 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,588 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,620 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,620 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,623 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,624 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:17:57,625 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:15,375 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:18:16,345 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:18:16,345 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:18:16,352 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:16,398 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,398 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:18:16,398 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:18:16,398 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:18:16,416 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,421 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,505 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,509 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,512 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,514 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,516 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,518 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,520 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,522 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:16,527 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:22,375 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00002 from ListView
+2019-02-01 14:18:23,697 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:18:23,716 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:18:23,746 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:23,798 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,798 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00002
+2019-02-01 14:18:23,830 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:23,897 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,945 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,946 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,946 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,970 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,970 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,995 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:23,995 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,087 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,087 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,113 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,113 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,143 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,143 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,169 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,171 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,172 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,173 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,174 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,175 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,176 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,201 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,201 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,204 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,206 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:24,207 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:37,338 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:18:38,007 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:18:38,007 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:18:38,035 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:38,082 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,082 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:18:38,082 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:18:38,082 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:18:38,097 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,101 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,184 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,188 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,191 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,193 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,196 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,198 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,200 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,203 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,205 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,207 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,209 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:38,211 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:42,472 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00003 from ListView
+2019-02-01 14:18:43,569 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:18:43,593 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:18:43,598 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:43,648 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,648 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00003
+2019-02-01 14:18:43,680 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:43,730 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,798 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,799 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,803 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,803 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,827 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,827 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,851 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,851 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,943 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,943 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,971 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:43,971 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,002 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,002 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,028 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,028 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,053 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,054 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,078 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,078 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,103 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,103 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,126 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,126 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,151 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,151 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,176 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,177 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,178 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,179 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:44,180 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:46,316 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:18:47,066 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:18:47,066 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:18:47,096 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:47,146 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,146 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:18:47,146 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:18:47,146 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:18:47,161 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,163 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,254 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,257 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,259 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,262 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,263 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,265 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,267 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,269 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,278 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,280 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,283 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,287 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,290 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,292 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:47,294 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:49,001 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00004 from ListView
+2019-02-01 14:18:49,944 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:18:49,961 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:18:49,967 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:50,013 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,013 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00004
+2019-02-01 14:18:50,044 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:50,113 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,161 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,162 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,162 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,188 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,188 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,289 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,290 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,316 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,316 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,349 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,349 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,354 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,354 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,377 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,378 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,380 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,380 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,404 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,404 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,428 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,429 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,453 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,454 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,485 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,485 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,490 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,493 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,495 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,495 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,518 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,520 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,542 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,544 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,545 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,547 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,548 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:50,550 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:51,525 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:18:52,250 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:18:52,250 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:18:52,278 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:52,330 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,330 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:18:52,330 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:18:52,330 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:18:52,341 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,344 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,439 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,443 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,445 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,447 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,449 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,452 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,454 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,460 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,463 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,464 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,467 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,469 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,471 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,474 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,477 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,479 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,481 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:52,485 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:54,280 INFO EISv3.ViewModel.DashBoardViewModel - Clicked on Next Page from ListView: NextPage()
+2019-02-01 14:18:55,960 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00005 from ListView
+2019-02-01 14:18:56,985 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:18:57,006 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:18:57,012 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:57,063 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,063 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00005
+2019-02-01 14:18:57,097 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:18:57,147 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,194 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,195 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,195 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,219 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,221 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,222 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,223 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,224 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,225 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,226 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,227 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,229 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,229 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,254 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,254 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,278 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,278 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,391 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,391 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,419 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,419 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,448 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,448 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,473 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,473 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,475 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,476 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,478 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,478 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,479 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,480 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,481 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,483 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,484 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,486 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,487 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,488 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,513 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,513 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,537 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,537 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,541 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:57,543 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:18:59,151 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:19:00,116 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:19:00,116 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:19:00,143 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:19:00,229 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,229 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:19:00,229 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:19:00,229 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:19:00,255 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,258 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,363 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,367 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,371 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,374 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,376 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,377 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,380 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,382 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,384 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,387 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,389 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,390 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,393 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,394 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,402 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,405 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,406 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,408 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,409 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,410 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:00,412 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:02,328 INFO EISv3.ViewModel.DashBoardViewModel - Clicked on Next Page from ListView: NextPage()
+2019-02-01 14:19:03,632 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A09675 from ListView
+2019-02-01 14:19:04,976 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:19:04,991 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:19:04,997 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:19:05,046 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,046 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A09675
+2019-02-01 14:19:05,062 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:19:05,111 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,163 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,164 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,164 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,211 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,213 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,237 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,239 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,239 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,263 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,264 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,265 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,267 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,268 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,269 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,271 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,272 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,273 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,274 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,275 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,276 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,277 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,279 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,280 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,281 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,283 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,286 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,286 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,374 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,374 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,402 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,402 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,430 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,430 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,457 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,457 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,480 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,480 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,503 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,505 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,506 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,507 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,508 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,509 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,531 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,536 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,537 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:05,539 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:44,369 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:19:45,675 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:19:45,675 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:19:45,700 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:19:45,762 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,762 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:19:45,762 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:19:45,762 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:19:45,776 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,779 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,860 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,864 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,869 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,871 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,873 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,874 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,876 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,878 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,885 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,888 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,890 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,892 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,894 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,896 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,901 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,904 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,906 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,907 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,908 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,909 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,910 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,912 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,913 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:45,916 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:19:52,881 INFO EISv3.ViewModel.DashBoardViewModel - Clicked on Next Page from ListView: NextPage()
+2019-02-01 14:19:59,898 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A09675 from ListView
+2019-02-01 14:20:01,312 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:20:01,325 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:20:01,333 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:01,394 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,394 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A09675
+2019-02-01 14:20:01,409 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:01,461 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,512 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,513 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,515 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,516 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,518 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,519 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,520 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,522 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,522 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,524 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,525 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,526 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,527 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,528 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,558 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,558 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,583 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,584 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,607 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,608 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,706 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,706 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,738 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,738 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,771 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,771 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,795 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,797 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,798 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,799 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,801 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,802 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,803 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,804 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,828 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,829 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,831 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,832 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,834 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,835 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,836 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,838 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,841 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,841 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,865 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,867 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,867 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,868 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,869 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,870 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,872 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,873 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,875 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,876 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:01,877 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:02,969 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:20:03,725 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:20:03,725 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:20:03,732 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:03,779 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,779 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:20:03,779 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:20:03,779 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:20:03,802 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,805 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,887 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,891 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,894 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,896 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,899 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,901 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,903 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,905 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,906 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,908 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,915 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,917 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,919 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,921 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,924 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,926 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,929 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,932 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,934 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,935 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,936 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,938 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,940 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,942 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,944 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,946 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:03,952 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:06,032 INFO EISv3.ViewModel.DashBoardViewModel - Clicked on Next Page from ListView: NextPage()
+2019-02-01 14:20:09,608 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A65634 from ListView
+2019-02-01 14:20:11,697 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:20:11,709 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:20:11,717 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:11,776 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,776 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A65634
+2019-02-01 14:20:11,790 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:11,841 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,903 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,905 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,905 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,906 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,907 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,908 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,909 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,911 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,912 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,914 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,915 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,917 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,918 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,919 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,920 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,921 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,922 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,923 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,924 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,925 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,926 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,928 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,930 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,932 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,933 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,934 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,958 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,958 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,984 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,984 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,985 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,987 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,988 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,989 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,990 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,992 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,992 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,994 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,995 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,997 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:11,998 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,000 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,002 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,003 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,005 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,006 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,007 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,009 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,009 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,011 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,013 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,016 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,016 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,018 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,019 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,020 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,022 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,045 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,047 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,118 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:12,122 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,027 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:20:13,731 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:20:13,731 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:20:13,738 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:13,808 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,808 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:20:13,808 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:20:13,808 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:20:13,832 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,834 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,937 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,941 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,943 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,946 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,948 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,950 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,952 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,953 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,958 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,961 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,963 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,965 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,967 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,970 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,972 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,974 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,976 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,977 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,979 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,983 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,985 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,986 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,987 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,988 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,989 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,990 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,991 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,992 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,993 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:13,994 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:15,129 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00003 from ListView
+2019-02-01 14:20:16,616 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-02-01 14:20:16,628 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:20:16,636 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:16,692 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,692 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00003
+2019-02-01 14:20:16,706 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:16,759 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,807 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,808 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,808 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,833 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,833 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,857 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,857 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,882 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,882 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,984 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:16,984 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,011 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,011 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,041 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,041 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,067 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,067 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,091 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,091 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,092 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,117 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,117 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,163 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,163 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,212 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,215 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,216 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,239 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,239 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,264 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,264 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,287 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,287 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,311 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,312 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,337 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,337 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,339 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,340 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,341 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,366 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,367 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,397 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,404 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,408 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,408 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,433 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,433 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,457 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,457 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,480 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,481 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,505 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,505 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,548 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,548 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,573 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,574 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,577 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,577 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,581 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,581 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,583 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,584 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:17,586 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:18,238 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-02-01 14:20:19,097 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:20:19,097 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:20:19,125 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:19,175 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,175 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:20:19,175 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:20:19,175 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:20:19,186 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,189 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,298 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,302 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,308 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,311 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,315 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,317 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,319 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,321 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,323 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,330 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,334 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,336 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,337 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,339 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,341 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,342 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,344 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,345 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,349 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,351 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,352 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,354 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,355 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,356 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,357 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,358 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,359 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,360 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,362 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,364 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,366 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,367 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:19,368 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,805 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-02-01 14:20:22,805 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-02-01 14:20:22,831 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:22,876 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,876 INFO EISv3.ViewModel.DashBoardViewModel - Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-02-01 14:20:22,876 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-02-01 14:20:22,876 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-02-01 14:20:22,890 INFO EISv3.PageModel.MainPageModel - Selected DashBoardView from menu: In case ItemDashBoard
+2019-02-01 14:20:22,891 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,893 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,980 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,983 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,986 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,988 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,990 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,991 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,992 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,995 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:22,997 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,000 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,005 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,007 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,010 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,014 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,017 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,019 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,021 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,023 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,025 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,027 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,031 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,034 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,036 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,038 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,040 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,042 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,043 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,044 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,048 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,050 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,051 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,053 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,054 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,056 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,366 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-02-01 14:20:23,366 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A65634
+2019-02-01 14:20:23,372 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-02-01 14:20:23,424 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,478 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-02-01 14:20:23,478 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,480 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,554 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,559 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,569 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,572 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,573 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,575 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,577 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,579 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,583 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,585 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,586 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,588 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,590 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,592 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,593 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,594 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,598 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,600 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,602 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,606 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,608 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,609 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,611 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,614 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,616 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,618 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,620 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,621 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,622 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,623 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,625 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,626 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,627 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,628 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:23,631 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-02-01 14:20:27,304 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----

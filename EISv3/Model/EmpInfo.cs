@@ -199,7 +199,7 @@ namespace EISv3.Model
                         else if ( !( DateTime.Parse(DOJ) > DateTime.Parse(DOB).AddYears(21) )) result = name + " should be greater than 21 age";
                         break;
                     case "DOL":
-                        if (!(string.IsNullOrEmpty(DOL)))
+                        if (!(DOL == ""))
                         {
                             if ( !( DateTime.Parse(DOL) > DateTime.Parse(DOJ) )) result = name + " should be greater than date of joining";
                         }
