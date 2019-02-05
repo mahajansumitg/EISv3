@@ -83,3 +83,7 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.exe
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.pdb
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csprojAssemblyReference.cache
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.exe.manifest
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.application
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.exe.manifest
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.application

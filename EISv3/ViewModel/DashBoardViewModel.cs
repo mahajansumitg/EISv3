@@ -126,6 +126,7 @@ namespace EISv3.ViewModel
 
             string findQuery = "select * from EmpInfo;";
             empInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
+
             SetEmpInfoDictionary(empInfoList);
             setPageInListView();
 
@@ -135,7 +136,8 @@ namespace EISv3.ViewModel
         //Create a dictionary of pageno, lists
         private void SetEmpInfoDictionary(List<EmpInfo> empInfoCollection)
         {
-            log.Info("Setting Page In EmpInfoDictionary: SetEmpInfoDictionary()");
+            log.Info("Setting Pages In EmpInfoDictionary: SetEmpInfoDictionary()");
+
             List<EmpInfo> empInfoList = new List<EmpInfo>(empInfoCollection);
             Dictionary<int, List<EmpInfo>> empInfoDict = new Dictionary<int, List<EmpInfo>>();
             int page = 1;
@@ -208,7 +210,7 @@ namespace EISv3.ViewModel
         private ListSortDirection _sortDirection;
         private void Sort(object parameter)
         {
-            Sort sortObj = new Sort();
+            
             string column = parameter as string;
 
             log.Info("Clicked on Header "+ column + " in ListView");
@@ -218,25 +220,33 @@ namespace EISv3.ViewModel
                 if (_sortDirection == ListSortDirection.Ascending)
                 {
                     _sortDirection = ListSortDirection.Descending;
-                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
-                    OnPropertyChanged("CurrentPageEmpInfoList");
+
+                    PerformSort(column);
                 }
                 else
                 {
                     _sortDirection = ListSortDirection.Ascending;
-                    currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
-                    OnPropertyChanged("CurrentPageEmpInfoList");
+
+                    PerformSort(column);
                 }
             }
             else
             {
                 _sortColumn = column;
                 _sortDirection = ListSortDirection.Ascending;
-                currentPageEmpInfoList = new ObservableCollection<EmpInfo>(sortObj.OrderByLogic(CurrentPageEmpInfoList, column, _sortDirection));
-                OnPropertyChanged("CurrentPageEmpInfoList");
+
+                PerformSort(column);
             }
 
             log.Info("ListView Sorted");
+        }
+
+        private void PerformSort(string column)
+        {
+            Sort sortObj = new Sort();
+            sortObj.OrderByLogic(ref empInfoList, column, _sortDirection);
+            SetEmpInfoDictionary(empInfoList);
+            setPageInListView();
         }
 
         private bool CanSort(object sender)
