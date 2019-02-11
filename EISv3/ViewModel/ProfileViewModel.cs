@@ -89,13 +89,20 @@ namespace EISv3.ViewModel
         private void _UpdateProfile(object parameter)
         {
             if (isUserPresent)
-                Connection.updateData(EmpInfo, "emp_id");
+                if (Connection.updateData(EmpInfo, "emp_id"))
+                {
+                    MessageBox.Show("Profile successfully updated");
+                    log.Info("Empployee Information Updated");
+                }
+                else MessageBox.Show("Error in Updation.");
             else
-                Connection.setData(EmpInfo);
-
-            log.Info("Empployee Information Updated");
-
-            MessageBox.Show("Profile successfully updated");
+                if (Connection.setData(EmpInfo))
+                {
+                    MessageBox.Show("Profile successfully inserted");
+                    log.Info("Empployee Information Inserted");
+                }
+                else MessageBox.Show("Error in Insertion");
+            
             Mediator.removeVar("EmpInfo");
             if (isAdmin)
             {

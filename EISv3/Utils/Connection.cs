@@ -63,11 +63,11 @@ namespace EISv3.Utils
         }
 
         //Status of Query action & Close connection 
-        private static bool returnAndClose(SqlDataReader dataReader)
+        private static bool returnAndClose(SqlCommand command)
         {
-            bool status = dataReader.Read();
+            int cnt = command.ExecuteNonQuery();
             connection.Close();
-            return status;
+            return cnt > 0 ? true : false;
         }
 
         #endregion
@@ -83,27 +83,27 @@ namespace EISv3.Utils
         }
 
         //Insert data (Insert Query)
-        public static Boolean setData<T>(T obj)
+        public static bool setData<T>(T obj)
         {
             connection.Open();
-            SqlDataReader dataReader = new SqlCommand(getInsertQuery(obj), connection).ExecuteReader();
-            return returnAndClose(dataReader);
+            SqlCommand command = new SqlCommand(getInsertQuery(obj), connection);
+            return returnAndClose(command);
         }
 
         //Update data (Update Query)
-        public static Boolean updateData<T>(T obj, String key)
+        public static bool updateData<T>(T obj, string key)
         {
             connection.Open();
-            SqlDataReader dataReader = new SqlCommand(getUpdateQuery(obj, key), connection).ExecuteReader();
-            return returnAndClose(dataReader);
+            SqlCommand command = new SqlCommand(getUpdateQuery(obj, key), connection);
+            return returnAndClose(command);
         }
 
         //Delete data (Delete Query)
-        public static Boolean deleteData<T>(String key, string value)
+        public static bool deleteData<T>(string key, string value)
         {
             connection.Open();
-            SqlDataReader dataReader = new SqlCommand(getDeleteQuery<T>(key, value), connection).ExecuteReader();
-            return returnAndClose(dataReader);
+            SqlCommand command = new SqlCommand(getDeleteQuery<T>(key, value), connection);
+            return returnAndClose(command);
         }
 
         #endregion
