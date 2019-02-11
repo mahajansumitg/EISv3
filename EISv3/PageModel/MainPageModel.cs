@@ -62,7 +62,11 @@ namespace EISv3.PageModel
             _CloseMenuVisibily = Visibility.Collapsed;
 
             Login login = Mediator.getVar("Login") as Login;
-            if (!login.role.Equals("admin")) DashBoardVisibility = Visibility.Hidden;
+            if (!login.role.Equals("admin"))
+            {
+                DashBoardVisibility = Visibility.Hidden;
+                HomeVisibility = Visibility.Hidden;
+            }
 
             #region Registering Mediator Actions
             Mediator.registerAction("SwitchToDashBoardView", () => {

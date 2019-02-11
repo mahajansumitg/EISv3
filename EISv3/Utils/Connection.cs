@@ -63,9 +63,9 @@ namespace EISv3.Utils
         }
 
         //Status of Query action & Close connection 
-        private static Boolean returnAndClose(SqlDataReader dataReader)
+        private static bool returnAndClose(SqlDataReader dataReader)
         {
-            Boolean status = dataReader.Read();
+            bool status = dataReader.Read();
             connection.Close();
             return status;
         }
