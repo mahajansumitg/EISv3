@@ -30,10 +30,5 @@ namespace EISv3.Model
             get { return emp_id; }
             set { OnPropertyChanged(ref emp_id, value); }
         }
-
-        public static string GetFormatedDate(DateTime dateTime)
-        {
-            return dateTime.ToString("yyyy-MM-dd");
-        }
     }
 }
