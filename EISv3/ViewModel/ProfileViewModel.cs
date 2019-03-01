@@ -91,7 +91,7 @@ namespace EISv3.ViewModel
         }
 
         //Insert Or Update Profile
-        public ICommand UpdateProfile => new Command(_UpdateProfile);
+        public ICommand UpdateProfile => new Command(_UpdateProfile, CanUpdate);
         private void _UpdateProfile(object parameter)
         {
             try
@@ -119,6 +119,12 @@ namespace EISv3.ViewModel
             {
                 MessageBox.Show(e.Message);
             }
+        }
+
+        //CanUpdate methid to check for empty textboxes
+        private bool CanUpdate(object parameter)
+        {
+            return !string.IsNullOrWhiteSpace(EmpInfo.FirstName) && !string.IsNullOrWhiteSpace(EmpInfo.MiddleName) && !string.IsNullOrWhiteSpace(EmpInfo.LastName) && !string.IsNullOrWhiteSpace(EmpInfo.EmailId) && !string.IsNullOrWhiteSpace(EmpInfo.EmpId) && !string.IsNullOrWhiteSpace(EmpInfo.Salary.ToString()) && !string.IsNullOrWhiteSpace(EmpInfo.DOB) && !string.IsNullOrWhiteSpace(EmpInfo.DOJ) && !string.IsNullOrWhiteSpace(EmpInfo.City) && !string.IsNullOrWhiteSpace(EmpInfo.Address) && !string.IsNullOrWhiteSpace(EmpInfo.Department);
         }
 
         //Switch & enable buttons

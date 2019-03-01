@@ -4184,3 +4184,542 @@
 2019-03-01 11:08:49,964 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
 2019-03-01 11:08:49,971 INFO EISv3.ViewModel.DashBoardViewModel - ListView Sorted
 2019-03-01 11:09:16,529 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 11:43:54,340 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 11:43:54,407 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 11:43:54,411 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:43:58,974 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:43:59,011 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:43:59,279 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:43:59,288 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:43:59,295 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:43:59,351 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:44:00,392 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:44:00,393 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 11:44:00,413 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:44:00,497 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:00,600 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:44:00,601 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:08,854 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:44:08,921 INFO EISv3.PageModel.MainPageModel - *****Logged Out*****
+2019-03-01 11:44:17,751 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:44:17,767 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:44:17,860 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:17,869 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:44:17,876 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:44:17,892 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:44:17,892 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:17,895 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:19,366 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:44:19,366 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 11:44:19,395 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:44:19,515 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:19,590 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:44:19,590 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:19,592 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:19,677 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:29,013 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 11:44:49,250 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 11:44:49,330 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 11:44:49,334 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:44:59,535 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:44:59,549 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:44:59,817 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:44:59,827 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:44:59,834 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:44:59,897 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:45:01,000 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:45:01,002 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 11:45:01,044 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:45:01,145 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:45:01,243 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:45:01,246 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:45:49,739 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 11:50:21,551 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 11:50:21,632 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 11:50:21,635 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:50:25,831 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:50:25,860 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:50:26,193 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:26,203 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:50:26,211 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:50:26,264 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:50:27,421 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:50:27,423 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 11:50:27,475 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:50:27,602 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:27,696 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:50:27,696 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:30,945 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:50:30,972 INFO EISv3.PageModel.MainPageModel - *****Logged Out*****
+2019-03-01 11:50:41,112 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:50:41,136 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:50:41,266 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:41,273 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:50:41,282 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:50:41,296 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:50:41,302 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:41,305 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:43,223 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:50:43,224 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 11:50:43,237 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:50:43,330 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:43,401 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:50:43,401 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:43,404 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:50:43,480 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:51:29,825 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 11:58:56,813 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 11:58:56,883 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 11:58:56,885 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:59:01,456 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:59:01,467 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:59:01,680 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:01,687 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:59:01,693 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:59:01,742 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:59:03,112 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:59:03,114 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 11:59:03,151 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:59:03,251 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:03,348 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:59:03,348 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:08,692 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 11:59:08,728 INFO EISv3.PageModel.MainPageModel - *****Logged Out*****
+2019-03-01 11:59:21,327 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 11:59:21,353 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:59:21,486 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:21,491 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 11:59:21,497 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 11:59:21,509 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 11:59:21,509 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:21,512 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:22,911 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 11:59:22,911 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 11:59:22,940 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 11:59:23,058 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:23,122 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 11:59:23,123 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:23,125 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 11:59:23,199 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:03:21,341 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Inserted
+2019-03-01 12:03:21,398 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:03:26,365 INFO EISv3.PageModel.MainPageModel - Menu Opened: _OpenMenu()
+2019-03-01 12:03:31,262 INFO EISv3.PageModel.MainPageModel - Menu Closed: __CloseMenu
+2019-03-01 12:03:51,037 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 12:16:44,061 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 12:16:44,124 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 12:16:44,127 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 12:16:49,123 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 12:16:49,139 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:16:55,384 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:16:55,392 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 12:16:55,397 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:16:55,439 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 12:16:58,110 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 12:16:58,118 INFO EISv3.PageModel.MainPageModel - *****Logged Out*****
+2019-03-01 12:17:07,888 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 12:17:07,920 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:17:08,004 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:17:08,008 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 12:17:08,011 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:17:08,022 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 12:17:08,022 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:17:09,396 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 12:17:09,396 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 12:17:09,409 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:17:09,481 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:17:09,556 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 12:17:09,559 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:17:09,561 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:17:20,512 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 12:23:34,846 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 12:23:34,913 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 12:23:34,916 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 12:23:45,932 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 12:23:45,961 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:23:49,505 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:23:49,512 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 12:23:49,519 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:23:49,559 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 12:23:52,871 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 12:23:52,872 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 12:23:52,884 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:23:52,943 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:23:53,022 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 12:23:53,022 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:27:07,910 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 12:35:17,560 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 12:35:17,621 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 12:35:17,624 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 12:35:30,465 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 12:35:30,475 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:35:34,317 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:35:34,324 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 12:35:34,329 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:35:34,372 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 12:35:35,676 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 12:35:35,677 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 12:35:35,689 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:35:35,753 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:35:35,825 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 12:35:35,825 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:35:51,618 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 12:36:30,020 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 12:36:30,092 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 12:36:30,095 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 12:36:39,512 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 12:36:39,543 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:36:39,723 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:36:39,729 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 12:36:39,735 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:36:39,778 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 12:36:41,127 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 12:36:41,128 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 12:36:41,160 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:36:41,221 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:36:41,310 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 12:36:41,311 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:36:47,890 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 12:37:00,101 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 12:37:00,162 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 12:37:00,165 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 12:37:11,605 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 12:37:11,615 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:37:11,819 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:37:11,825 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 12:37:11,832 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 12:37:11,878 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 12:37:13,224 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 12:37:13,225 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 12:37:13,260 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 12:37:13,321 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:37:13,456 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 12:37:13,456 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 12:38:59,998 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 13:53:12,327 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 13:53:12,416 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 13:53:12,419 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 13:53:25,076 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 13:53:25,085 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 13:53:29,257 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 13:53:29,265 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 13:53:29,275 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 13:53:29,319 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 13:53:31,015 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 13:53:31,015 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 13:53:31,027 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 13:53:31,087 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 13:53:31,182 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 13:53:31,183 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 13:54:26,683 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 13:58:41,577 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 13:58:41,637 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 13:58:41,641 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 13:58:54,553 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 13:58:54,582 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 13:58:54,744 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 13:58:54,752 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 13:58:54,758 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 13:58:54,806 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 13:58:56,113 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 13:58:56,114 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 13:58:56,146 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 13:58:56,212 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 13:58:56,292 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 13:58:56,292 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 13:59:11,291 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 14:08:28,657 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 14:08:28,733 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 14:08:28,735 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 14:08:42,024 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 14:08:42,059 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 14:08:45,949 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:08:45,959 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 14:08:45,969 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 14:08:46,037 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 14:08:47,770 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 14:08:47,771 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 14:08:47,791 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 14:08:47,880 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:08:47,963 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 14:08:47,964 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:11:21,847 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 14:25:03,722 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 14:25:03,782 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 14:25:03,784 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 14:25:18,977 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 14:25:19,006 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 14:25:22,792 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:25:22,800 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 14:25:22,806 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 14:25:22,853 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 14:25:23,779 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 14:25:23,780 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 14:25:23,790 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 14:25:23,842 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:25:23,913 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 14:25:23,914 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:26:12,216 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 14:44:18,518 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 14:44:18,594 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 14:44:18,597 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 14:44:48,819 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 14:44:48,828 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 14:44:52,554 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:44:52,561 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 14:44:52,565 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 14:44:52,606 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 14:44:53,843 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 14:44:53,844 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 14:44:53,853 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 14:44:53,919 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:44:53,993 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 14:44:53,993 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 14:46:46,169 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 15:47:51,694 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 15:47:51,775 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 15:47:51,778 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 15:48:01,555 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-01 15:53:32,991 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 15:53:33,066 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 15:53:33,070 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 15:53:34,941 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-01 15:53:54,111 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-01 16:07:32,653 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 16:07:32,718 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 16:07:32,722 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 16:07:35,721 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-01 16:09:52,308 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 16:09:52,383 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 16:09:52,387 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 16:10:05,390 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 16:10:05,410 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:10:10,015 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:10:10,025 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 16:10:10,035 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 16:10:10,087 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 16:10:10,848 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 16:10:10,848 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 16:10:10,861 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:10:10,923 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:10:11,012 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 16:10:11,015 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:12:34,304 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 16:13:54,634 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 16:13:54,704 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 16:13:54,707 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 16:14:09,687 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 16:14:09,725 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:14:10,034 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:14:10,043 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 16:14:10,049 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 16:14:10,106 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 16:14:12,296 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 16:14:12,297 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 16:14:12,336 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:14:12,484 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:14:12,576 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 16:14:12,577 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:15:18,169 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 16:18:04,405 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 16:18:04,500 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 16:18:04,503 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 16:18:15,407 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 16:18:15,420 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:18:15,691 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:18:15,699 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 16:18:15,704 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 16:18:15,795 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 16:18:17,059 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 16:18:17,060 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee C09876
+2019-03-01 16:18:17,099 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:18:17,177 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:18:17,371 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 16:18:17,371 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:19:36,497 INFO EISv3.ViewModel.ProfileViewModel - Empployee Information Updated
+2019-03-01 16:19:36,561 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 16:19:53,745 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 16:58:47,269 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 16:58:47,334 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 16:58:47,337 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 16:58:52,524 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 16:58:52,545 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:58:56,503 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:58:56,511 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 16:58:56,518 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 16:58:56,576 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 16:58:58,173 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-03-01 16:58:58,174 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-03-01 16:58:58,201 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:58:58,311 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:58:58,313 INFO EISv3.ViewModel.DashBoardViewModel - Setting Pages In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-03-01 16:58:58,314 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-03-01 16:58:58,315 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-03-01 16:58:58,333 INFO EISv3.PageModel.MainPageModel - Selected DashBoardView from menu: In case ItemDashBoard
+2019-03-01 16:58:58,333 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:00,316 INFO EISv3.ViewModel.DashBoardViewModel - Selected Employee A00004 from ListView
+2019-03-01 16:59:01,568 INFO EISv3.ViewModel.DashBoardViewModel - Selected Update from ListView: UpdateCurrentEmployee()
+2019-03-01 16:59:01,592 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 16:59:01,608 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:59:01,689 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:01,691 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Selected Employee A00004
+2019-03-01 16:59:01,731 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 16:59:01,835 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:01,947 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:01,947 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:01,951 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:01,953 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:02,029 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 16:59:40,036 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:02:50,525 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:02:50,592 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:02:50,596 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:02:56,759 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:02:56,797 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:02:57,042 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:02:57,050 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:02:57,055 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:02:57,112 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:02:58,269 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:02:58,270 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:02:58,309 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:02:58,428 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:02:58,523 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:02:58,526 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:03:24,426 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:03:40,672 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:03:40,743 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:03:40,746 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:03:44,805 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:03:44,817 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:03:45,028 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:03:45,037 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:03:45,042 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:03:45,091 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:03:46,165 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:03:46,167 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:03:46,208 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:03:46,271 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:03:46,356 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:03:46,357 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:07:59,138 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:07:59,206 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:07:59,210 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:08:02,795 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:08:02,805 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:08:03,003 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:08:03,010 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:08:03,016 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:08:03,064 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:08:04,298 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:08:04,301 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:08:04,362 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:08:04,461 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:08:04,544 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:08:04,546 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:08:56,291 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:16:05,453 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:16:05,521 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:16:05,525 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:16:11,259 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:16:11,293 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:16:15,296 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:16:15,313 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:16:15,323 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:16:15,416 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:16:19,255 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:16:19,255 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:16:19,271 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:16:19,376 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:16:19,488 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:16:19,488 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:30:44,575 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:30:44,637 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:30:44,640 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:30:49,617 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:30:49,628 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:30:53,254 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:30:53,265 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:30:53,274 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:30:53,383 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:30:54,735 INFO EISv3.ViewModel.DashBoardViewModel - Started DashboardView: In constructor DashBoardViewModel
+2019-03-01 17:30:54,736 INFO EISv3.ViewModel.DashBoardViewModel - In InitializePagination()
+2019-03-01 17:30:54,753 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:30:54,822 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:30:54,825 INFO EISv3.ViewModel.DashBoardViewModel - Setting Pages In EmpInfoDictionary: SetEmpInfoDictionary()
+2019-03-01 17:30:54,825 INFO EISv3.ViewModel.DashBoardViewModel - *******Logged Out******
+2019-03-01 17:30:54,826 INFO EISv3.ViewModel.DashBoardViewModel - InitializePagination, SetEmpInfoDictionary, SetPageInListView done
+2019-03-01 17:30:54,845 INFO EISv3.PageModel.MainPageModel - Selected DashBoardView from menu: In case ItemDashBoard
+2019-03-01 17:30:54,845 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:31:10,083 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:31:10,084 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:31:10,123 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:31:10,282 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:31:10,750 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:31:10,752 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:31:10,759 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:31:57,633 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:46:22,290 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:46:22,346 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:46:22,349 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:46:28,022 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:46:28,042 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:46:31,878 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:46:31,888 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:46:31,897 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:46:31,968 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:46:34,962 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:46:34,964 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:46:35,007 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:46:35,100 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:46:35,497 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:46:35,499 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:47:29,062 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:49:24,919 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:49:24,987 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:49:24,989 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:49:29,623 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:49:29,646 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:49:29,933 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:49:29,948 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:49:29,960 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:49:30,045 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:49:31,378 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:49:31,380 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:49:31,418 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:49:31,519 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:49:31,806 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:49:31,806 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:51:06,469 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:51:36,073 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:51:36,151 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:51:36,155 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:51:41,887 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:51:41,921 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:51:42,150 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:51:42,157 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:51:42,163 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:51:42,240 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:51:43,398 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:51:43,399 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:51:43,442 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:51:43,557 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:51:43,869 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:51:43,874 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:51:48,570 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----
+2019-03-01 17:52:23,725 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-01 17:52:23,792 INFO EISv3.MainWindow - MainWindow Started
+2019-03-01 17:52:23,795 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-01 17:52:27,636 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-01 17:52:27,659 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:52:27,910 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:52:27,918 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-01 17:52:27,927 INFO EISv3.Views.HomeView - On HomeView
+2019-03-01 17:52:27,996 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-01 17:52:29,042 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-01 17:52:29,043 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-01 17:52:29,074 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-01 17:52:29,159 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:52:29,441 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-01 17:52:29,442 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-01 17:53:21,259 INFO EISv3.PageModel.MainPageModel - -----Application Exit-----

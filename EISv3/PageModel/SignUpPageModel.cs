@@ -31,12 +31,25 @@ namespace EISv3.PageModel
             Login = new Login();
         }
 
+        //Password Command
+        public ICommand PasswordChanged => new Command(_passwordCommand);
+        private void _passwordCommand(object parameter)
+        {
+            password = (parameter as PasswordBox).Password;
+            if (password == null) MessageBox.Show("Password should not empty");
+            else
+            {
+                Login.PSWD = password;
+            }
+        }
+
         //SignUp Command
         public ICommand SignUp => new Command(_SignUp);
         private void _SignUp(object parameter)
         {
-            password = (parameter as PasswordBox).Password;
-            Login.PSWD = password;
+            //password = (parameter as PasswordBox).Password;
+            //if(password == null) MessageBox.Show("PasswordBox should not empty");
+            //Login.PSWD = password;
 
             try
             {

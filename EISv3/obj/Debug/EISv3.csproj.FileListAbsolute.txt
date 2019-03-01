@@ -40,6 +40,8 @@ C:\Users\sumit_mahajan\source\repos\EISv3\EISv3\obj\Debug\EISv3.pdb
 C:\Users\sumit_mahajan\source\repos\EISv3\EISv3\obj\Debug\EISv3.csprojAssemblyReference.cache
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4net.config
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.exe.config
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.exe.manifest
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.application
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.exe
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.pdb
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\log4net.dll
@@ -56,6 +58,7 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\System
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\MainWindow.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\MainPage.g.cs
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\SignUpPage.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\ProgressBar.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Views\DashBoardView.g.cs
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Views\HelpView.g.cs
@@ -70,6 +73,7 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\App.ba
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\MainWindow.baml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\LoginPage.baml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\MainPage.baml
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\SignUpPage.baml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\ProgressBar.baml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Views\DashBoardView.baml
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Views\HelpView.baml
@@ -79,13 +83,8 @@ C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.Properties.Resources.resources
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csproj.GenerateResource.cache
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csproj.CoreCompileInputs.cache
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.exe.manifest
+C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.application
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csproj.CopyComplete
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.exe
 C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.pdb
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.exe.manifest
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\bin\Debug\EISv3.application
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.exe.manifest
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.application
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\EISv3.csprojAssemblyReference.cache
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\SignUpPage.g.cs
-C:\Users\sumit_mahajan\Downloads\All_Projects\EISv3\EISv3\EISv3\obj\Debug\Pages\SignUpPage.baml

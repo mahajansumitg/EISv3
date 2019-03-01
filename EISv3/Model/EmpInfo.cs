@@ -28,7 +28,7 @@ namespace EISv3.Model
         public DateTime doj;
         public DateTime dol;
 
-        public string salary;
+        public string salary = "5000";
 
         public string FirstName
         {
@@ -97,7 +97,13 @@ namespace EISv3.Model
                     OnPropertyChanged("DOB");
                     return;
                 }
-                OnPropertyChanged(ref dob, DateTime.Parse(value));
+                try
+                {
+                    OnPropertyChanged(ref dob, DateTime.Parse(value));
+                }catch (Exception)
+                {
+                    MessageBox.Show("Please select date from date picker");
+                }
             }
         }
 
@@ -114,7 +120,14 @@ namespace EISv3.Model
                     OnPropertyChanged("DOJ");
                     return;
                 }
-                OnPropertyChanged(ref doj, DateTime.Parse(value));
+                try
+                {
+                    OnPropertyChanged(ref doj, DateTime.Parse(value));
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Please select date from date picker");
+                }
             }
         }
 
@@ -131,17 +144,23 @@ namespace EISv3.Model
                     OnPropertyChanged("DOL");
                     return;
                 }
-                OnPropertyChanged(ref dol, DateTime.Parse(value));
+                try
+                {
+                    OnPropertyChanged(ref dol, DateTime.Parse(value));
+                }catch(Exception)
+                {
+                    MessageBox.Show("Please select date from date picker");
+                }
             }
         }
 
         public int Salary
         {
-            get { return salary == null ? 0 : Int32.Parse(salary); }
+            get { return salary == null ? 0 : int.Parse(salary); }
             set { OnPropertyChanged(ref salary, value.ToString()); }
         }
 
-        public Boolean IsContractor { get; set; }
+        public bool IsContractor { get; set; }
 
         public static string GetFormatedDate(DateTime dateTime)
         {
@@ -151,11 +170,7 @@ namespace EISv3.Model
         //IDataErrorInfo
         public string Error { get { return null; } }
 
-       // public static readonly DependencyProperty IsFocusedProperty =
-       //DependencyProperty.RegisterAttached("IsFocused", typeof(bool?), typeof(EmpInfo), new FrameworkPropertyMetadata(IsFocusedChanged) { BindsTwoWayByDefault = true });
-        public Dictionary<string, bool> FocusEnabled { get; set; } = new Dictionary<string, bool>();
-        public Dictionary<string, string> ErrorCollectionF { get; set; } = new Dictionary<string, string>();
-        public Dictionary<string, string> ErrorCollectionB { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> ErrorCollection { get; set; } = new Dictionary<string, string>();
 
         public string this[string name]
         {
@@ -167,60 +182,84 @@ namespace EISv3.Model
                 switch (name)
                 {
                     case "FirstName":
-                        if (string.IsNullOrWhiteSpace(first_name)) result = name + " should not be empty";
-                        else if (!avoidSpecialChar.IsMatch(first_name)) result = name + " should not contain numbers and special chars";
+                        if (!string.IsNullOrWhiteSpace(first_name)) 
+                        {
+                            if (!avoidSpecialChar.IsMatch(first_name)) result = name + " should not contain numbers and special chars";
+                            else if(first_name.Contains(" ")) result = name + " should not contain white space";
+                        }
                         break;
                     case "MiddleName":
-                        if (string.IsNullOrWhiteSpace(middle_name)) result = name + " should not be empty";
-                        else if (!avoidSpecialChar.IsMatch(middle_name)) result = name + " should not contain  numbers and special chars";
+                        if (!string.IsNullOrWhiteSpace(middle_name))
+                        {
+                            if (!avoidSpecialChar.IsMatch(middle_name)) result = name + " should not contain  numbers and special chars";
+                        }
                         break;
                     case "LastName":
-                        if (string.IsNullOrWhiteSpace(last_name)) result = name + " should not be empty";
-                        else if (!avoidSpecialChar.IsMatch(last_name)) result = name + " should not contain  numbers and special chars";
+                        if (!string.IsNullOrWhiteSpace(last_name))
+                        {
+                            if (!avoidSpecialChar.IsMatch(last_name)) result = name + " should not contain  numbers and special chars";
+                        }
                         break;
                     case "EmailId":
-                        if (string.IsNullOrWhiteSpace(email_id)) result = name + " should not be empty";
-                        else if (!emailPattern.IsMatch(email_id)) result = "Invalid Email Id";
+                        if (!string.IsNullOrWhiteSpace(email_id))
+                        {
+                            if (!emailPattern.IsMatch(email_id)) result = "Invalid Email Id";
+                        }
                         break;
                     case "City":
-                        if (string.IsNullOrWhiteSpace(city)) result = name + " should not be empty";
+                        if (!string.IsNullOrWhiteSpace(city))
+                        {
+                            if (!avoidSpecialChar.IsMatch(city)) result = name + " should not contain  numbers and special chars";
+                        }
                         break;
                     case "Address":
-                        if (string.IsNullOrWhiteSpace(address)) result = name + " should not be empty";
                         break;
                     case "Department":
-                        if (string.IsNullOrWhiteSpace(department)) result = name + " should not be empty";
+                        if (!string.IsNullOrWhiteSpace(department))
+                        {
+                            if (!avoidSpecialChar.IsMatch(department)) result = name + " should not contain  numbers and special chars";
+                        }
                         break;
                     case "Salary":
-                        if (string.IsNullOrWhiteSpace(salary)) result = name + " should not be empty";
-                        else if (Int32.Parse(salary) <= 0) result = name + " should be more than 0";
+                        if (!string.IsNullOrWhiteSpace(salary) && int.Parse(salary) != 0)
+                        {
+                            if (int.Parse(salary) < 0 || int.Parse(salary) < 5000) result = name + " should be more than 5000";
+                        }
                         break;
                     case "DOB":
-                        if (string.IsNullOrWhiteSpace(DOB)) result = name + " should not be empty";
-                        else if ( !(DateTime.Parse(DOB) < DateTime.Now.AddYears(-21)) ) result = name + " should be 21 years before today";
+                        if (!string.IsNullOrWhiteSpace(DOB))
+                        {
+                            if (!(DateTime.Parse(DOB) < DateTime.Now.AddYears(-21))) result = name + " should be 21 years before today";
+                        }
                         break;
                     case "DOJ":
-                        if (string.IsNullOrWhiteSpace(DOJ)) result = name + " should not be empty";
-                        else if ( !( DateTime.Parse(DOJ) > DateTime.Parse(DOB).AddYears(21) )) result = name + " should be greater than 21 age";
+                        if (!string.IsNullOrWhiteSpace(DOJ))
+                        {
+                            if (!(DateTime.Parse(DOJ) > DateTime.Parse(DOB).AddYears(21))) result = name + " should be greater than 21 age";
+                            //else if(!(DateTime.Parse(DOJ) < DateTime.Now.AddMonths(1))) result = name + " should be within 1 month from today";
+                        }
                         break;
                     case "DOL":
                         if (!(DOL == ""))
                         {
-                            if ( !( DateTime.Parse(DOL) > DateTime.Parse(DOJ) )) result = name + " should be greater than date of joining";
+                            if ( !(DateTime.Parse(DOL) > DateTime.Parse(DOJ)) ) result = name + " should be greater than date of joining";
                         }
                         break;
                     case "Vendor":
-                        if (IsContractor && string.IsNullOrWhiteSpace(Vendor)) result = name + " should not be empty";
+                        if (IsContractor && !string.IsNullOrWhiteSpace(Vendor))
+                        {
+                            if (!avoidSpecialChar.IsMatch(department)) result = name + " should not contain  numbers and special chars";
+                        }
                         break;
                 }
 
                 //adding name, result in ErrorCollection dictionary
-                if (ErrorCollectionB.ContainsKey(name))
-                    ErrorCollectionB[name] = result;
+                if (ErrorCollection.ContainsKey(name))
+                    ErrorCollection[name] = result;
                 else if (result != null)
-                    ErrorCollectionB.Add(name, result);
+                    ErrorCollection.Add(name, result);
 
-                foreach (string value in ErrorCollectionB.Values)
+                foreach (string value in ErrorCollection.Values)
                 {
                     if (value != null)
                     {

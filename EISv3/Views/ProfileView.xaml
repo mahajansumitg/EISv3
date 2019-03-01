@@ -28,58 +28,57 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label Content="Name        :" HorizontalAlignment="Center" Height="30"  Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
-        <Label Content="Email Id    :" HorizontalAlignment="Center" Height="30"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
-        <Label Content="Emp Id      :" HorizontalAlignment="Center" Height="30"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
-        <Label Content="Salary      :" HorizontalAlignment="Center" Height="30"  Grid.Row="2" Grid.Column="2" VerticalAlignment="Center"/>
-        <Label Content="DOB         :" HorizontalAlignment="Center" Height="30"  Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
-        <Label Content="DOJ         :" HorizontalAlignment="Center" Height="30"  Grid.Row="3" Grid.Column="2" VerticalAlignment="Center"/>
-        <Label Content="DOL         :" HorizontalAlignment="Center" Height="30"  Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
-        <Label Content="City        :" HorizontalAlignment="Center" Height="30"  Grid.Row="4" Grid.Column="2" VerticalAlignment="Center"/>
-        <Label Content="Address     :" HorizontalAlignment="Center" Height="30"  Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
-        <Label Content="Department  :" HorizontalAlignment="Center" Height="30"  Grid.Row="5" Grid.Column="2" VerticalAlignment="Center"/>
+        <Label Content="Use the form below to update information or insert (for new employee)" Foreground="Black"
+               HorizontalAlignment="Center" Height="30"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Center" FontWeight="Bold"/>
+        <Label Content="Note : All fields except Date of leaving and Vendor are mandatory. Select whole date and delete it once to clear date value" Foreground="Black"
+               HorizontalAlignment="Center" Height="30"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Center"/>
+        
+        <Label Content="Name                  :" HorizontalAlignment="Center" Height="30"  Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Email Id              :" HorizontalAlignment="Center" Height="30"  Grid.Row="3" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Employee Id           :" HorizontalAlignment="Center" Height="30"  Grid.Row="3" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Salary                :" HorizontalAlignment="Center" Height="30"  Grid.Row="4" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Date Of Birth         :" HorizontalAlignment="Center" Height="30"  Grid.Row="4" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Date Of Joining       :" HorizontalAlignment="Center" Height="30"  Grid.Row="5" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Date Of Leaving       :" HorizontalAlignment="Center" Height="30"  Grid.Row="6" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="City                  :" HorizontalAlignment="Center" Height="30"  Grid.Row="5" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Address               :" HorizontalAlignment="Center" Height="30"  Grid.Row="7" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Department            :" HorizontalAlignment="Center" Height="30"  Grid.Row="6" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" VerticalAlignment="Center"/>
 
         <TextBox Name="FirstName" Text="{Binding EmpInfo.FirstName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[FirstName]}"  
-                 Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120">
-            <!--<i:Interaction.Triggers>
-                <i:EventTrigger EventName="GotKeyboardFocus">
-                    <i:InvokeCommandAction Command="{Binding FocusAquired}" CommandParameter="{Binding ElementName=FirstName, Path=Name}"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>-->
-        </TextBox> 
+                 Foreground="Black" TextAlignment="Center" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
         <TextBox Text="{Binding EmpInfo.MiddleName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[MiddleName]}" 
-                 Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
+                 Foreground="Black" TextAlignment="Center" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
         <TextBox Text="{Binding EmpInfo.LastName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"   ToolTip="{Binding ErrorCollection[LastName]}"   
-                 Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-
-        <TextBox Text="{Binding EmpInfo.EmailId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[EmailId]}"    
-                 Foreground="Black" TextAlignment="Center" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Text="{Binding EmpInfo.EmpId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"      ToolTip="{Binding ErrorCollection[EmpId]}"      
-                 Foreground="Black" IsReadOnly="True" TextAlignment="Center" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Text="{Binding EmpInfo.Salary, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"     ToolTip="{Binding ErrorCollection[Salary]}"     
                  Foreground="Black" TextAlignment="Center" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
 
-        <DatePicker Text="{Binding EmpInfo.DOB, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOB]}" Focusable="False"
-                    Foreground="Black" Height="40" Grid.Row="3" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <DatePicker Text="{Binding EmpInfo.DOJ, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOJ]}" Focusable="False"
-                    Foreground="Black" Height="40" Grid.Row="3" Grid.Column="3" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <DatePicker Text="{Binding EmpInfo.DOL, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOL]}" Focusable="False"
+        <TextBox Text="{Binding EmpInfo.EmailId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[EmailId]}"    
+                 Foreground="Black" TextAlignment="Center" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
+        
+        <TextBox Text="{Binding EmpInfo.EmpId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"      ToolTip="{Binding ErrorCollection[EmpId]}"      
+                 Foreground="Black" IsReadOnly="True" TextAlignment="Center" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
+
+        <DatePicker Text="{Binding EmpInfo.DOB, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOB]}"
                     Foreground="Black" Height="40" Grid.Row="4" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
-        <TextBox Text="{Binding EmpInfo.City, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"       ToolTip="{Binding ErrorCollection[City]}"       
+        <TextBox Text="{Binding EmpInfo.Salary, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"     ToolTip="{Binding ErrorCollection[Salary]}"     
                  Foreground="Black" TextAlignment="Center" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[Address]}"    
-                 Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        
-        <!--<TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Department"  
-        Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Department]}" 
-        Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>-->
+
+        <DatePicker Text="{Binding EmpInfo.DOJ, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOJ]}"
+                    Foreground="Black" Height="40" Grid.Row="5" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+        <TextBox Text="{Binding EmpInfo.City, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"       ToolTip="{Binding ErrorCollection[City]}"       
+                 Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
+
+        <DatePicker Text="{Binding EmpInfo.DOL, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOL]}"
+                    Foreground="Black" Height="40" Grid.Row="6" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         <ComboBox
             Foreground="Black" HorizontalContentAlignment="Center" 
-            Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="120"
+            Grid.Row="6" Grid.Column="3" HorizontalAlignment="Center" VerticalContentAlignment="Center" Height="40" Width="120"
             IsEditable="True"
             Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
             ToolTip="{Binding ErrorCollection[Department]}">
@@ -89,8 +88,18 @@
             <ComboBoxItem Content="Testing"/>
             <ComboBoxItem Content="Other"/>
         </ComboBox>
+        
+        <TextBox TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True"
+            Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Address]}"    
+            Foreground="Black" TextAlignment="Center" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" MaxHeight="40" Width="500"/>
+        
+        <!--<TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Department"  
+        Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Department]}" 
+        Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>-->
 
-        <Grid Name="VendorGrid" Visibility="{Binding VendorGrid, Mode=TwoWay}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+        
+
+        <Grid Name="VendorGrid" Visibility="{Binding VendorGrid, Mode=TwoWay}" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -98,19 +107,19 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label Name = "VendorLabel" Content="Vendor" HorizontalAlignment="Center" Height="30" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+            <Label Name = "VendorLabel" Content="Vendor       :" HorizontalAlignment="Center" Height="30" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
             <TextBox Text="{Binding EmpInfo.Vendor, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Vendor]}" 
                      Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
         </Grid>
 
         <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" 
                 x:Name="Submit" IsEnabled="{Binding EmpInfo.SubmitEnabled, Mode=TwoWay}" Content="Update Profile" 
-                Grid.Column="0"  Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" Width="150"
+                Grid.Column="0"  Grid.Row="9" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="36" Width="150"
                 Command="{Binding UpdateProfile}"/>
         
         <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" 
                 x:Name="GoBack" Content="Click here to go on Home Page" 
-                Grid.Column="2"  Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" Width="230"
+                Grid.Column="2"  Grid.Row="9" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="36" Width="230"
                 Command="{Binding GoToHomePage}"/>
     </Grid>
 </UserControl>

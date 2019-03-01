@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
         xmlns:Local="clr-namespace:EISv3.PageModel"
         mc:Ignorable="d"
         Title="SignUpPage" Height="450" Width="600" WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="NoResize" BorderThickness="1">
@@ -11,7 +12,7 @@
     <Window.Resources>
         <Local:SignUpPageModel x:Key="vm"/>
     </Window.Resources>
-    <Grid DataContext="{Binding Source={StaticResource vm}}">
+    <Grid Name="SignUPGrid" DataContext="{Binding Source={StaticResource vm}}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -29,20 +30,29 @@
         <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Fill your details below to ceate your login account"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bookman Old Style" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
 
         <Label Foreground="Black" Grid.Column="0" Grid.Row="1" Content="UserName :" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Foreground="Black" Text="{Binding Login.UserName}" MinWidth="200" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB"/>
+        <TextBox Foreground="Black" Text="{Binding Login.UserName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[UserName]}"
+                 MinWidth="200" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB"/>
 
         <Label Foreground="Black" Grid.Column="0" Grid.Row="2" Content="Password :" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <PasswordBox Name="pswd" MinWidth="200" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
-        
+        <PasswordBox Name="pswd" MinWidth="200" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="LostFocus">
+                    <i:InvokeCommandAction Command="{Binding PasswordChanged}" CommandParameter="{Binding ElementName=pswd}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </PasswordBox>
+
         <Label Foreground="Black" Grid.Column="0" Grid.Row="3" Content="Role :" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <ComboBox Foreground="Black" Text="{Binding Login.Role}" MinWidth="200" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <ComboBox Foreground="Black" Text="{Binding Login.Role, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Role]}"
+                  MinWidth="200" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">
             <ComboBoxItem Content="admin"/>
             <ComboBoxItem Content="employee"/>
             <ComboBoxItem Content="contractor"/>
         </ComboBox>
 
         <Label Foreground="Black" Grid.Column="0" Grid.Row="4" Content="Employee ID :" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Foreground="Black" Text="{Binding Login.EmpId}" MinWidth="200" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB"/>
+        <TextBox Foreground="Black" Text="{Binding Login.EmpId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[EmpId]}"
+                 MinWidth="200" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB"/>
 
         <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Sign Up" 
                 IsEnabled="{Binding SignUpEnable, Mode=TwoWay}" Command="{Binding SignUp}"  CommandParameter="{Binding ElementName=pswd}" 
