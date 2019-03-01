@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace EISv3.Model
@@ -150,7 +151,11 @@ namespace EISv3.Model
         //IDataErrorInfo
         public string Error { get { return null; } }
 
-        public Dictionary<string, string> ErrorCollection { get; set; } = new Dictionary<string, string>();
+       // public static readonly DependencyProperty IsFocusedProperty =
+       //DependencyProperty.RegisterAttached("IsFocused", typeof(bool?), typeof(EmpInfo), new FrameworkPropertyMetadata(IsFocusedChanged) { BindsTwoWayByDefault = true });
+        public Dictionary<string, bool> FocusEnabled { get; set; } = new Dictionary<string, bool>();
+        public Dictionary<string, string> ErrorCollectionF { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> ErrorCollectionB { get; set; } = new Dictionary<string, string>();
 
         public string this[string name]
         {
@@ -210,12 +215,12 @@ namespace EISv3.Model
                 }
 
                 //adding name, result in ErrorCollection dictionary
-                if (ErrorCollection.ContainsKey(name))
-                    ErrorCollection[name] = result;
+                if (ErrorCollectionB.ContainsKey(name))
+                    ErrorCollectionB[name] = result;
                 else if (result != null)
-                    ErrorCollection.Add(name, result);
+                    ErrorCollectionB.Add(name, result);
 
-                foreach (string value in ErrorCollection.Values)
+                foreach (string value in ErrorCollectionB.Values)
                 {
                     if (value != null)
                     {
@@ -225,7 +230,7 @@ namespace EISv3.Model
                     SubmitEnabled = true;
                 }
 
-                OnPropertyChanged("ErrorCollection");
+                //OnPropertyChanged("ErrorCollection");
                 OnPropertyChanged("SubmitEnabled");
                 return result;
             }

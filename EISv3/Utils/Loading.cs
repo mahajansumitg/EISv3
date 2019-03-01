@@ -24,7 +24,7 @@ namespace EISv3.Utils
             });
             thread.Start();
 
-            window = Mediator.getVar("Window") as MainWindow;
+            window = Mediator.GetVar("Window") as MainWindow;
             window.Opacity = 0.4;
 
             progressBar = new ProgressBar();

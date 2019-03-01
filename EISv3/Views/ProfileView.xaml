@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
-             xmlns:local="clr-namespace:EISv3.Views"
              xmlns:vm="clr-namespace:EISv3.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="#FF313E3A" BorderThickness="2" BorderBrush="Black">
@@ -42,41 +41,36 @@
         <Label Content="Address     :" HorizontalAlignment="Center" Height="30"  Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
         <Label Content="Department  :" HorizontalAlignment="Center" Height="30"  Grid.Row="5" Grid.Column="2" VerticalAlignment="Center"/>
 
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="First Name"  
-                 Text="{Binding EmpInfo.FirstName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"  ToolTip="{Binding ErrorCollection[FirstName]}"  
-                 Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Middle Name" 
-                 Text="{Binding EmpInfo.MiddleName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[MiddleName]}" 
+        <TextBox Name="FirstName" Text="{Binding EmpInfo.FirstName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[FirstName]}"  
+                 Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120">
+            <!--<i:Interaction.Triggers>
+                <i:EventTrigger EventName="GotKeyboardFocus">
+                    <i:InvokeCommandAction Command="{Binding FocusAquired}" CommandParameter="{Binding ElementName=FirstName, Path=Name}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>-->
+        </TextBox> 
+        <TextBox Text="{Binding EmpInfo.MiddleName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[MiddleName]}" 
                  Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Last Name"   
-                 Text="{Binding EmpInfo.LastName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"   ToolTip="{Binding ErrorCollection[LastName]}"   
+        <TextBox Text="{Binding EmpInfo.LastName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"   ToolTip="{Binding ErrorCollection[LastName]}"   
                  Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
 
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Email-ID"    
-                 Text="{Binding EmpInfo.EmailId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[EmailId]}"    
+        <TextBox Text="{Binding EmpInfo.EmailId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[EmailId]}"    
                  Foreground="Black" TextAlignment="Center" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Emp-ID"      
-                 Text="{Binding EmpInfo.EmpId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"      ToolTip="{Binding ErrorCollection[EmpId]}"      
+        <TextBox Text="{Binding EmpInfo.EmpId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"      ToolTip="{Binding ErrorCollection[EmpId]}"      
                  Foreground="Black" IsReadOnly="True" TextAlignment="Center" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Salary"      
-                 Text="{Binding EmpInfo.Salary, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"     ToolTip="{Binding ErrorCollection[Salary]}"     
+        <TextBox Text="{Binding EmpInfo.Salary, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"     ToolTip="{Binding ErrorCollection[Salary]}"     
                  Foreground="Black" TextAlignment="Center" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
 
-        <DatePicker Style="{StaticResource MaterialDesignFloatingHintDatePicker}" materialDesign:HintAssist.Hint="Date of Birth" 
-                    Text="{Binding EmpInfo.DOB, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOB]}" 
+        <DatePicker Text="{Binding EmpInfo.DOB, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOB]}" Focusable="False"
                     Foreground="Black" Height="40" Grid.Row="3" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <DatePicker Style="{StaticResource MaterialDesignFloatingHintDatePicker}" materialDesign:HintAssist.Hint="Date of Joining" 
-                    Text="{Binding EmpInfo.DOJ, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOJ]}" 
+        <DatePicker Text="{Binding EmpInfo.DOJ, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOJ]}" Focusable="False"
                     Foreground="Black" Height="40" Grid.Row="3" Grid.Column="3" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <DatePicker Style="{StaticResource MaterialDesignFloatingHintDatePicker}" materialDesign:HintAssist.Hint="Date of Leaving" 
-                    Text="{Binding EmpInfo.DOL, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOL]}" 
+        <DatePicker Text="{Binding EmpInfo.DOL, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOL]}" Focusable="False"
                     Foreground="Black" Height="40" Grid.Row="4" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="City"        
-                 Text="{Binding EmpInfo.City, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"       ToolTip="{Binding ErrorCollection[City]}"       
+        <TextBox Text="{Binding EmpInfo.City, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"       ToolTip="{Binding ErrorCollection[City]}"       
                  Foreground="Black" TextAlignment="Center" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
-        <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Address"     
-                 Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[Address]}"    
+        <TextBox Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"    ToolTip="{Binding ErrorCollection[Address]}"    
                  Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
         
         <!--<TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Department"  
@@ -84,7 +78,6 @@
         Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>-->
 
         <ComboBox
-            Style="{StaticResource MaterialDesignFloatingHintComboBox}" materialDesign:HintAssist.Hint="Select Department" 
             Foreground="Black" HorizontalContentAlignment="Center" 
             Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="120"
             IsEditable="True"
@@ -106,14 +99,18 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Label Name = "VendorLabel" Content="Vendor" HorizontalAlignment="Center" Height="30" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
-            <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Vendor" 
-                     Text="{Binding EmpInfo.Vendor, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Vendor]}" 
+            <TextBox Text="{Binding EmpInfo.Vendor, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Vendor]}" 
                      Foreground="Black" TextAlignment="Center" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
         </Grid>
 
         <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" 
                 x:Name="Submit" IsEnabled="{Binding EmpInfo.SubmitEnabled, Mode=TwoWay}" Content="Update Profile" 
-                Grid.Column="1"  Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" Width="150"
+                Grid.Column="0"  Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" Width="150"
                 Command="{Binding UpdateProfile}"/>
+        
+        <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" 
+                x:Name="GoBack" Content="Click here to go on Home Page" 
+                Grid.Column="2"  Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" Width="230"
+                Command="{Binding GoToHomePage}"/>
     </Grid>
 </UserControl>

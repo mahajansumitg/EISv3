@@ -34,13 +34,13 @@
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    Use left side panal controls for own information updations."/>
+                <TextBlock Text="    Use left side panal controls for information update."/>
             </BulletDecorator>
             <BulletDecorator>
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    Form consists of all your information registered."/>
+                <TextBlock Text="    Form consists of all your information if registered."/>
             </BulletDecorator>
             <BulletDecorator>
                 <BulletDecorator.Bullet>
@@ -52,7 +52,7 @@
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    If you have admin rights, you can use Dashboard for controlling all employees."/>
+                <TextBlock Text="    If you are the admin, you can use Dashboard for managing all employees."/>
             </BulletDecorator>
 
         </ListBox>

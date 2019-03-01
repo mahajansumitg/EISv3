@@ -8,39 +8,38 @@ namespace EISv3.Utils
 {
     static class Mediator
     {
-        private static Dictionary<string, Object> varDictionary = new Dictionary<string, Object>();
+        private static Dictionary<string, object> varDictionary = new Dictionary<string, object>();
         private static Dictionary<string, Action> actionDictionary = new Dictionary<string, Action>();
-        public static void registerVar(string key, Object obj)
+        public static void RegisterVar(string key, object obj)
         {
             if (varDictionary.ContainsKey(key)) varDictionary.Remove(key);
             varDictionary.Add(key, obj);
         }
-        public static void registerAction(string key, Action action)
+        public static void RegisterAction(string key, Action action)
         {
+            if (actionDictionary.ContainsKey(key)) actionDictionary.Remove(key);
             actionDictionary.Add(key, action);
         }
-        public static Object getVar(string key)
+        public static object GetVar(string key)
         {
-            Object obj;
-            varDictionary.TryGetValue(key, out obj);
+            varDictionary.TryGetValue(key, out object obj);
             return obj;
         }
 
-        public static void performAction(string key)
+        public static void PerformAction(string key)
         {
-            Action action;
-            actionDictionary.TryGetValue(key, out action);
+            actionDictionary.TryGetValue(key, out Action action);
             action.Invoke();
         }
 
-        public static void removeVar(string key)
+        public static void RemoveVar(string key)
         {
-            varDictionary.Remove(key);
+            if(varDictionary.ContainsKey(key)) varDictionary.Remove(key);
         }
 
-        public static void removeAction(string key)
+        public static void RemoveAction(string key)
         {
-            actionDictionary.Remove(key);
+            if(actionDictionary.ContainsKey(key)) actionDictionary.Remove(key);
         }
     }
 }

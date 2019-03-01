@@ -42,45 +42,51 @@ namespace EISv3.ViewModel
             log4net.Config.XmlConfigurator.Configure();
             log.Info("Started ProfileView: In constructor ProfileViewModel()");
 
-            Mediator.performAction("DisableButtons");
-
-            EmpInfo = Mediator.getVar("EmpInfo") as EmpInfo;   //Getting the Employee which is to be updated from listview
-            if (EmpInfo != null) isUserPresent = true;
-            else EmpInfo = new EmpInfo();
-
-            
-            if (isUserPresent)                //For ListView Selected Employees
+            try
             {
-                isAdmin = true;
+                Mediator.PerformAction("DisableButtons");
 
-                //checking for contractor or not
-                string findRoleQuery = "select * from Login where emp_id = '" + EmpInfo.emp_id + "'";
-                List<Login> TempList = Loading.Show(() => Connection.getData<Login>(findRoleQuery)) as List<Login>;
-                if (TempList.Count > 0) VendorGrid = TempList.First().Role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
+                EmpInfo = Mediator.GetVar("EmpInfo") as EmpInfo;   //Getting the Employee which is to be updated from listview
+                if (EmpInfo != null) isUserPresent = true;
+                else EmpInfo = new EmpInfo();
 
-                log.Info("Finding data for Selected Employee " + EmpInfo.emp_id);
-                string findQuery = "select * from EmpInfo where emp_id = '" + EmpInfo.emp_id + "'";
-                List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
-                EmpInfo = EmpInfoList.First();
-            }
-            else     //If not coming from listview selection
-            {
-                Login user = Mediator.getVar("Login") as Login;            //Setting Employee_id same as Logged in user 
-                EmpInfo.emp_id = user.emp_id;
-
-                isAdmin = user.role.Equals("admin") ? true : false;
-                VendorGrid = user.role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
-                EmpInfo.IsContractor = user.role.Equals("contractor");
-
-                log.Info("Finding data for Employee " + user.emp_id);
-
-                string findQuery = "select * from EmpInfo where emp_id = '" + user.emp_id + "'";
-                List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
-                if (EmpInfoList.Count != 0)        //if loggedin user is already present in EmpInfo
+                if (isUserPresent)                //For ListView Selected Employees
                 {
+                    isAdmin = true;
+
+                    //checking for contractor or not
+                    string findRoleQuery = "select * from Login where emp_id = '" + EmpInfo.emp_id + "'";
+                    List<Login> TempList = Loading.Show(() => Connection.getData<Login>(findRoleQuery)) as List<Login>;
+                    if (TempList.Count > 0) VendorGrid = TempList.First().Role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
+
+                    log.Info("Finding data for Selected Employee " + EmpInfo.emp_id);
+                    string findQuery = "select * from EmpInfo where emp_id = '" + EmpInfo.emp_id + "'";
+                    List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
                     EmpInfo = EmpInfoList.First();
-                    isUserPresent = true;
-                }             //else keep EmpInfo empty for insert
+                }
+                else     //If not coming from listview selection
+                {
+                    Login user = Mediator.GetVar("Login") as Login;            //Setting Employee_id same as Logged in user 
+                    EmpInfo.emp_id = user.emp_id;
+
+                    isAdmin = user.role.Equals("admin") ? true : false;
+                    VendorGrid = user.role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
+                    EmpInfo.IsContractor = user.role.Equals("contractor");
+
+                    log.Info("Finding data for Employee " + user.emp_id);
+
+                    string findQuery = "select * from EmpInfo where emp_id = '" + user.emp_id + "'";
+                    List<EmpInfo> EmpInfoList = Loading.Show(() => Connection.getData<EmpInfo>(findQuery)) as List<EmpInfo>;
+                    if (EmpInfoList.Count != 0)        //if loggedin user is already present in EmpInfo
+                    {
+                        EmpInfo = EmpInfoList.First();
+                        isUserPresent = true;
+                    }             //else keep EmpInfo empty for insert
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -88,32 +94,53 @@ namespace EISv3.ViewModel
         public ICommand UpdateProfile => new Command(_UpdateProfile);
         private void _UpdateProfile(object parameter)
         {
-            if (isUserPresent)
-                if (Connection.updateData(EmpInfo, "emp_id"))
-                {
-                    MessageBox.Show("Profile successfully updated");
-                    log.Info("Empployee Information Updated");
-                }
-                else MessageBox.Show("Error in Updation.");
-            else
-                if (Connection.setData(EmpInfo))
+            try
+            {
+                if (isUserPresent)
+                    if (Connection.updateData(EmpInfo, "emp_id"))
+                    {
+                        MessageBox.Show("Profile successfully updated");
+                        log.Info("Empployee Information Updated");
+                    }
+                    else MessageBox.Show("Error in Updation.");
+                else
+                    if (Connection.setData(EmpInfo))
                 {
                     MessageBox.Show("Profile successfully inserted");
                     log.Info("Empployee Information Inserted");
                 }
                 else MessageBox.Show("Error in Insertion");
-            
-            Mediator.removeVar("EmpInfo");
+
+                //Clearing employee object
+                Mediator.RemoveVar("EmpInfo");
+                SwitchEnable();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        //Switch & enable buttons
+        private void SwitchEnable()
+        {
             if (isAdmin)
             {
-                Mediator.performAction("EnableButtons");
+                Mediator.PerformAction("EnableButtons");
 
-                Mediator.performAction("SwitchToDashBoardView");
+                Mediator.PerformAction("SwitchToHomeView");
             }
             else
             {
-                Mediator.performAction("SwitchToProfileView");
+                Mediator.PerformAction("SwitchToHomeView");
             }
+        }
+
+        //GoToHomePage Command
+        public ICommand GoToHomePage => new Command(_GoToHomePage);
+        private void _GoToHomePage(object parameter)
+        {
+            SwitchEnable();
         }
     }
 }

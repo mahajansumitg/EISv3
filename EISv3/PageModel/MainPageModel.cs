@@ -2,6 +2,7 @@
 using EISv3.Utils;
 using EISv3.Views;
 using log4net;
+using System;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -61,31 +62,46 @@ namespace EISv3.PageModel
             _OpenMenuVisibily = Visibility.Visible;
             _CloseMenuVisibily = Visibility.Collapsed;
 
-            Login login = Mediator.getVar("Login") as Login;
-            if (!login.role.Equals("admin"))
+            try
             {
-                DashBoardVisibility = Visibility.Hidden;
-                HomeVisibility = Visibility.Hidden;
-            }
+                Login login = Mediator.GetVar("Login") as Login;
+                if (!login.role.Equals("admin"))
+                {
+                    DashBoardVisibility = Visibility.Hidden;
+                    HomeVisibility = Visibility.Hidden;
+                }
 
-            #region Registering Mediator Actions
-            Mediator.registerAction("SwitchToDashBoardView", () => {
-                this.Contents.Clear();
-                this.Contents.Add(new DashBoardView());
-            });
-            Mediator.registerAction("SwitchToProfileView", () => {
-                this.Contents.Clear();
-                this.Contents.Add(new ProfileView());
-            });
-            Mediator.registerAction("DisableButtons", () => {
-                DashBoardVisibility = Visibility.Hidden;
-                HomeVisibility = Visibility.Hidden;
-            });
-            Mediator.registerAction("EnableButtons", () => {
-                DashBoardVisibility = Visibility.Visible;
-                HomeVisibility = Visibility.Visible;
-            });
-            #endregion
+                #region Registering Mediator Actions
+                Mediator.RegisterAction("SwitchToHomeView", () =>
+                {
+                    this.Contents.Clear();
+                    this.Contents.Add(new HomeView());
+                });
+                Mediator.RegisterAction("SwitchToDashBoardView", () =>
+                {
+                    this.Contents.Clear();
+                    this.Contents.Add(new DashBoardView());
+                });
+                Mediator.RegisterAction("SwitchToProfileView", () =>
+                {
+                    this.Contents.Clear();
+                    this.Contents.Add(new ProfileView());
+                });
+                Mediator.RegisterAction("DisableButtons", () =>
+                {
+                    DashBoardVisibility = Visibility.Hidden;
+                    HomeVisibility = Visibility.Hidden;
+                });
+                Mediator.RegisterAction("EnableButtons", () =>
+                {
+                    DashBoardVisibility = Visibility.Visible;
+                    HomeVisibility = Visibility.Visible;
+                });
+                #endregion
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         //Open Menu Panal
@@ -112,22 +128,28 @@ namespace EISv3.PageModel
         private void _SelectionChanged(object parameter)
         {
             Contents.Clear();
-            switch ((parameter as ListViewItem).Name)
+            try
             {
-                case "ItemHome":
-                    Contents.Add(new HomeView());
-                    log.Info("Selected HomeView from menu: In case ItemHome");
-                    break;
-                case "ItemDashBoard":
-                    Contents.Add(new DashBoardView());
-                    log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
-                    break;
-                case "ItemForm":
-                    Contents.Add(new ProfileView());
-                    log.Info("Selected ProfileView from menu: In case ItemForm");
-                    break;
-                default:
-                    break;
+                switch ((parameter as ListViewItem).Name)
+                {
+                    case "ItemHome":
+                        Contents.Add(new HomeView());
+                        log.Info("Selected HomeView from menu: In case ItemHome");
+                        break;
+                    case "ItemDashBoard":
+                        Contents.Add(new DashBoardView());
+                        log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
+                        break;
+                    case "ItemForm":
+                        Contents.Add(new ProfileView());
+                        log.Info("Selected ProfileView from menu: In case ItemForm");
+                        break;
+                    default:
+                        break;
+                }
+            }catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -143,15 +165,19 @@ namespace EISv3.PageModel
         public ICommand Logout => new Command(_Logout);
         private void _Logout(object parameter)
         {
+            Mediator.RemoveVar("Login");
+            Mediator.RemoveVar("EmpInfo");
 
-            Mediator.removeVar("Login");
-            Mediator.removeVar("EmpInfo");
-            Mediator.removeAction("SwitchToDashBoardView");
-            Mediator.removeAction("SwitchToProfileView");
-            Mediator.removeAction("DisableButtons");
-            Mediator.removeAction("EnableButtons");
+            Mediator.RemoveAction("SwitchToHomeView");
+            Mediator.RemoveAction("SwitchToDashBoardView");
+            Mediator.RemoveAction("SwitchToProfileView");
 
-            Mediator.performAction("GoToLoginPage");
+            Mediator.RemoveAction("CloseSignUpPage");
+
+            Mediator.RemoveAction("DisableButtons");
+            Mediator.RemoveAction("EnableButtons");
+
+            Mediator.PerformAction("GoToLoginPage");
 
             log.Info("*****Logged Out*****");
         }
@@ -161,7 +187,13 @@ namespace EISv3.PageModel
         private void _Help(object parameter)
         {
             log.Info("Selected Help: _Help");
-            Contents.Add(new HelpView());
+            try
+            {
+                Contents.Add(new HelpView());
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }
