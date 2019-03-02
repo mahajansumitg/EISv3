@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
       xmlns:vm="clr-namespace:EISv3.PageModel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"      
@@ -47,20 +48,20 @@
             <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Employee Information System"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bookman Old Style" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Enter your login credentials below :"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-            <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="User Name" 
+            <TextBox Name="Username" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="User Name"
                      Foreground="Black" Text="{Binding UserName}" MinWidth="150" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <PasswordBox Name="pswd" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password" 
+            <PasswordBox Name="pswd" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password"
                          MinWidth="150" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"/>
 
             <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Content="If you are a new user click on Sign Up"  HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Login" 
-                    Command="{Binding Login}"  CommandParameter="{Binding ElementName=pswd}" 
-                    Grid.Column="0" Grid.Row="5" Width="80" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    Command="{Binding Login}"
+                    Grid.Column="0" Grid.Row="5" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Sign Up" 
                     Command="{Binding SignUp}"
-                    Grid.Column="1" Grid.Row="5" Width="80" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    Grid.Column="1" Grid.Row="5" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Page>

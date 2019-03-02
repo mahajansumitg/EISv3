@@ -5024,3 +5024,93 @@
 2019-03-02 16:11:54,138 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
 2019-03-02 16:11:54,144 INFO EISv3.Views.HomeView - On HomeView
 2019-03-02 16:11:54,197 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-02 17:28:15,767 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 17:28:20,526 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 17:28:20,540 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 17:28:25,276 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 17:29:37,121 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 17:29:37,460 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 17:29:37,465 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 17:29:40,607 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 17:30:10,958 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-02 17:30:10,975 INFO EISv3.Views.HomeView - On HomeView
+2019-03-02 17:30:26,435 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-02 17:30:26,438 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A70089
+2019-03-02 17:30:26,494 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-02 17:30:26,799 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-02 17:30:27,697 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-02 17:30:37,631 INFO EISv3.Views.HomeView - On HomeView
+2019-03-02 17:38:25,321 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 17:38:29,120 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 17:38:29,126 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 17:39:13,024 INFO EISv3.PageModel.LoginPageModel - In LoginPage : _Login()
+2019-03-02 17:39:13,085 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-02 17:39:13,530 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-02 17:39:13,551 INFO EISv3.PageModel.MainPageModel - MainPage started: In constructor MainPageModel
+2019-03-02 17:39:13,569 INFO EISv3.Views.HomeView - On HomeView
+2019-03-02 17:39:13,746 INFO EISv3.PageModel.LoginPageModel - Login Successfull Mediator calling for GoToMainPage
+2019-03-02 17:39:31,618 INFO EISv3.ViewModel.ProfileViewModel - Started ProfileView: In constructor ProfileViewModel()
+2019-03-02 17:39:31,623 INFO EISv3.ViewModel.ProfileViewModel - Finding data for Employee A00000
+2019-03-02 17:39:31,671 INFO EISv3.ProgressBar - -----ProgressBar Running------
+2019-03-02 17:39:31,933 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-02 17:39:32,574 INFO EISv3.PageModel.MainPageModel - Selected ProfileView from menu: In case ItemForm
+2019-03-02 17:39:32,576 INFO EISv3.Utils.Loading - -----ProgressBar Closed------
+2019-03-02 22:19:33,683 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:19:40,267 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:19:40,270 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:19:52,778 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:24:22,201 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:26:06,064 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:26:06,351 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:26:06,355 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:26:09,458 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:30:08,169 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:30:08,445 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:30:08,450 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:30:13,915 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:41:12,082 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:41:16,129 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:41:16,134 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:41:18,270 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:42:12,773 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:44:37,030 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:44:37,256 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:44:37,259 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:44:40,312 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:45:42,910 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:45:43,203 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:45:43,208 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:45:46,670 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:48:26,688 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:48:26,918 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:48:26,924 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:48:41,161 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:53:19,644 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:53:19,910 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:53:19,913 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:53:22,581 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:56:10,338 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:56:10,956 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:56:10,960 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:56:13,521 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 22:58:29,533 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 22:58:29,784 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 22:58:29,789 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 22:58:33,134 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 23:07:17,051 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 23:07:21,252 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 23:07:21,258 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 23:07:24,226 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 23:08:52,602 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 23:08:52,848 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 23:08:52,853 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 23:08:56,084 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 23:11:50,964 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 23:11:51,197 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 23:11:51,202 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 23:11:58,082 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 23:35:23,601 INFO EISv3.App -         =============  Application Started  =============        
+2019-03-02 23:35:27,369 INFO EISv3.MainWindow - MainWindow Started
+2019-03-02 23:35:27,375 INFO EISv3.PageModel.LoginPageModel - On LoginPage
+2019-03-02 23:35:31,819 INFO EISv3.PageModel.SignUpPageModel - Started SignUpPage: In constructor SignUpPageModel()
+2019-03-02 23:36:57,776 INFO EISv3.PageModel.LoginPageModel - On LoginPage

@@ -298,10 +298,9 @@ namespace EISv3.ViewModel
 
         private void PerformSort(string column)
         {
-            Sort sortObj = new Sort();
             try
             {
-                sortObj.OrderByLogic(ref empInfoList, column, _sortDirection);
+                Utility.Sort(ref empInfoList, column, _sortDirection);
                 SetEmpInfoDictionary(empInfoList);
                 SetPageInListView();
             }

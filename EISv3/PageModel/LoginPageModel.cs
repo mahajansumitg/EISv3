@@ -37,14 +37,14 @@ namespace EISv3.PageModel
             log.Info("On LoginPage");
         }
 
+        //Login Command 
         public ICommand Login => new Command(_Login, HandleVisibility);
-
         //Perform Login
         private void _Login(object parameter)
         {
             log.Info("In LoginPage : _Login()");
 
-            string loginQuery = "select * from Login where user_name = '" + _UserName + "'";
+            string loginQuery = "select * from Login where user_name = '" + UserName + "'";
             try
             {
                 List<Login> loginList = Loading.Show(() => Connection.getData<Login>(loginQuery)) as List<Login>;
@@ -66,7 +66,7 @@ namespace EISv3.PageModel
         //Enable or disable the Login Button
         private bool HandleVisibility(object parameter)
         {
-            return _UserName != null && (parameter as PasswordBox).Password != null;
+            return UserName != null && (parameter as PasswordBox).Password != null;
         }
 
         //SignUp Command
