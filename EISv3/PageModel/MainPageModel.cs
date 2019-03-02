@@ -172,8 +172,6 @@ namespace EISv3.PageModel
             Mediator.RemoveAction("SwitchToDashBoardView");
             Mediator.RemoveAction("SwitchToProfileView");
 
-            Mediator.RemoveAction("CloseSignUpPage");
-
             Mediator.RemoveAction("DisableButtons");
             Mediator.RemoveAction("EnableButtons");
 

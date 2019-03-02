@@ -73,14 +73,16 @@ namespace EISv3.PageModel
         public ICommand SignUp => new Command(_SignUp);
         private void _SignUp(object parameter)
         {
-            MainWindow mainWindow = Mediator.GetVar("Window") as MainWindow;
-            mainWindow.Opacity = 0.5;
-            SignUpPage signUpPage = new SignUpPage
-            {
-                Owner = mainWindow
-            };
-            Mediator.RegisterAction("CloseSignUpPage",() => { signUpPage.Close(); mainWindow.Opacity = 1; });
-            signUpPage.ShowDialog();
+            //MainWindow mainWindow = Mediator.GetVar("Window") as MainWindow;
+            //mainWindow.Opacity = 0.5;
+            //SignUpPage signUpPage = new SignUpPage
+            //{
+            //    Owner = mainWindow
+            //};
+            //Mediator.RegisterAction("CloseSignUpPage",() => { signUpPage.Close(); mainWindow.Opacity = 1; });
+            //signUpPage.ShowDialog();
+            Mediator.PerformAction("GoToSignUpPage");
+
         }
     }
 }

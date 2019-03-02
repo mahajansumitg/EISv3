@@ -47,10 +47,6 @@ namespace EISv3.PageModel
         public ICommand SignUp => new Command(_SignUp);
         private void _SignUp(object parameter)
         {
-            //password = (parameter as PasswordBox).Password;
-            //if(password == null) MessageBox.Show("PasswordBox should not empty");
-            //Login.PSWD = password;
-
             try
             {
                 if (Connection.setData(Login))
@@ -58,7 +54,6 @@ namespace EISv3.PageModel
                     MessageBox.Show("User " + Login.UserName + " with Employee Id " + Login.EmpId + " created");
 
                     Mediator.RegisterVar("Login", Login);
-                    Mediator.PerformAction("CloseSignUpPage");
                     Mediator.PerformAction("GoToMainPage");
                 }
                 else MessageBox.Show("Error in Insert.");
@@ -74,7 +69,7 @@ namespace EISv3.PageModel
         private void _Cancel(object parameter)
         {
             Login = null;
-            Mediator.PerformAction("CloseSignUpPage");
+            Mediator.PerformAction("GoToLoginPage");
         }
     }
 }

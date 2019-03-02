@@ -18,6 +18,9 @@ namespace EISv3
 
             InitializeComponent();
 
+            //Test DataBse Connection
+            Connection.TestConnection();
+
             //Logs Code
             log.Info("MainWindow Started");
 
@@ -25,6 +28,7 @@ namespace EISv3
             Mediator.RegisterVar("Window", this);
             Mediator.RegisterAction("GoToLoginPage", () => { this.Content = new LoginPage(); });
             Mediator.RegisterAction("GoToMainPage", () => { this.Content = new MainPage(); });
+            Mediator.RegisterAction("GoToSignUpPage", () => { this.Content = new SignUpPage(); });
         }
 
     }
