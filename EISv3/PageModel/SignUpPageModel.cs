@@ -1,5 +1,6 @@
 ﻿using EISv3.Model;
 using EISv3.Utils;
+using EISv3.Pages;
 using log4net;
 using System;
 using System.Collections.Generic;
@@ -20,12 +21,16 @@ namespace EISv3.PageModel
             set { _Login = value; OnPropertyChanged("Login"); }
         }
 
+        public List<string> Roles { get; set; } = new List<string> { "admin", "employee", "contractor" };
+      
         public SignUpPageModel()
         {
             log4net.Config.XmlConfigurator.Configure();
             log.Info("Started SignUpPage: In constructor SignUpPageModel()");
 
             Login = new Login();
+            Login.Role = "employee";
+            Login.SecKeyVisibility = Visibility.Collapsed;
             Login.LoginList = Connection.getData<Login>("Select * from Login");
         }
 
@@ -34,13 +39,11 @@ namespace EISv3.PageModel
 
         private bool CanSignUp(object arg)
         {
-            return !string.IsNullOrWhiteSpace(Login.UserName)  && !string.IsNullOrWhiteSpace(Login.PSWD) && !string.IsNullOrWhiteSpace(Login.Role);
+            return !string.IsNullOrWhiteSpace(Login.UserName) && !string.IsNullOrWhiteSpace(Login.PSWD);
         }
 
         private void _SignUp(object parameter)
         {
-
-
             Login.EmpId = RndEmpId(Login.LoginList);
             Login.UserName = Login.UserName.Trim();
 
@@ -84,23 +87,7 @@ namespace EISv3.PageModel
 
         private void _Cancel(object parameter)
         {
-            Login = null;
             Mediator.PerformAction("GoToLoginPage");
         }
-
-        //Password Command
-        public ICommand PasswordChanged => new Command(_passwordChanged);
-        private void _passwordChanged(object parameter)
-        {         
-            Login.PSWD = (parameter as PasswordBox).Password;
-
-            string result = null;
-            if(!string.IsNullOrEmpty(Login.PSWD))
-                        {
-                if (Login.PSWD.Length < 8) result = "Password should have length of atleast 8";
-            }
-            Login.updateErrorCollection("PSWD", result);
-        }
-
-    }       
+    }
 }

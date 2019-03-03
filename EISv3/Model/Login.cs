@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace EISv3.Model
 {
@@ -23,15 +24,32 @@ namespace EISv3.Model
             get { return pswd; }
             set { OnPropertyChanged(ref pswd, value); }
         }
+
+        public string ConfirmPSWD { get; set; }
+
         public string Role
         {
-            get { return role; }
-            set { OnPropertyChanged(ref role, value); }
+            get => role;   
+            set {
+                OnPropertyChanged(ref role, value);
+                SecKeyVisibility = !string.IsNullOrEmpty(role) && role.Equals("admin") ? Visibility.Visible : Visibility.Collapsed;
+            }
         }
         public string EmpId
         {
             get { return emp_id; }
             set { OnPropertyChanged(ref emp_id, value); }
+        }
+
+
+        public string SecKey { get; set; }
+
+        private Visibility _SecKeyVisibility { get; set; } = Visibility.Collapsed;
+
+        public Visibility SecKeyVisibility
+        {
+            get => _SecKeyVisibility;
+            set { _SecKeyVisibility = value; OnPropertyChanged("SecKeyVisibility"); }
         }
 
         //IDataErrorInfo
@@ -72,34 +90,40 @@ namespace EISv3.Model
 
                         }
                         break;
+                    case "PSWD":
+                        if (!string.IsNullOrEmpty(PSWD))
+                        {
+                            if (PSWD.Length < 8) result = name + " should have length of atleast 8";
+                        }
+                        break;
+                    case "ConfirmPSWD":
+                        if (!string.IsNullOrEmpty(ConfirmPSWD))
+                        {
+                            if (!PSWD.Equals(ConfirmPSWD)) result = name + " should match with Password";
+                        }
+                        break;
+                   
                 }
 
-                updateErrorCollection(name, result);
-               
+                //adding name, result in ErrorCollection dictionary
+                if (ErrorCollection.ContainsKey(name))
+                    ErrorCollection[name] = result;
+                else if (result != null)
+                    ErrorCollection.Add(name, result);
+
+                foreach (string value in ErrorCollection.Values)
+                {
+                    if (value != null)
+                    {
+                        SignUpEnable = false;
+                        break;
+                    }
+                    SignUpEnable = true;
+                }
+
+                OnPropertyChanged("SignUpEnable");
                 return result;
             }
-        }
-
-        //adding name, result in ErrorCollection dictionary
-        public void updateErrorCollection(string name, string result)
-        {
-            if (ErrorCollection.ContainsKey(name))
-                ErrorCollection[name] = result;
-            else if (result != null)
-                ErrorCollection.Add(name, result);
-
-            foreach (string value in ErrorCollection.Values)
-            {
-                if (value != null)
-                {
-                    SignUpEnable = false;
-                    break;
-                }
-                SignUpEnable = true;
-            }
-
-            OnPropertyChanged("ErrorCollection");
-            OnPropertyChanged("SignUpEnable");
         }
 
         public bool SignUpEnable { get; set; } = true;
