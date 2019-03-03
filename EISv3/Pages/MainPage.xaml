@@ -85,28 +85,28 @@
                     </Button>
                 </Grid>
 
-                <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView x:Name="ListViewMenu" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedItem="{Binding SelectedItem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="SelectionChanged">
-                            <i:InvokeCommandAction Command="{Binding SelectionChanged}" CommandParameter="{Binding ElementName=ListViewMenu, Path=SelectedItem}"/>
+                            <i:InvokeCommandAction Command="{Binding SelectionChanged}" CommandParameter="{Binding ElementName=ListViewMenu}"/>
                         </i:EventTrigger>
                     </i:Interaction.Triggers>
 
-                    <ListViewItem x:Name="ItemHome" Height="60" Visibility="{Binding HomeVisibility}">
+                    <ListViewItem x:Name="HomeView" Height="60" Visibility="{Binding HomeVisibility}">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="HomeOutline" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="Home" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
 
-                    <ListViewItem x:Name="ItemForm" Height="60">
+                    <ListViewItem x:Name="ProfileView" Height="60">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Pencil" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="Form" VerticalAlignment="Center" Margin="20 10"/>
                         </StackPanel>
                     </ListViewItem>
 
-                    <ListViewItem x:Name="ItemDashBoard" Height="60" Visibility="{Binding DashBoardVisibility}">
+                    <ListViewItem x:Name="DashBoardView" Height="60" Visibility="{Binding DashBoardVisibility}">
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="ViewDashboard" Height="25" Width="25" Margin="10"/>
                             <TextBlock Text="DashBoard" VerticalAlignment="Center"  Margin="20 10"/>

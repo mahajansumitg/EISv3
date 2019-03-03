@@ -48,14 +48,19 @@ namespace EISv3.PageModel
             try
             {
                 List<Login> loginList = Loading.Show(() => Connection.getData<Login>(loginQuery)) as List<Login>;
-                if (loginList.Count() > 0 && loginList.First().pswd == (parameter as PasswordBox).Password)
+
+                if (loginList.Count() <= 0)
+                {
+                    MessageBox.Show("Entered user_name is incorrect");
+                }
+                else if(loginList.First().pswd == (parameter as PasswordBox).Password)
                 {
                     Mediator.RegisterVar("Login", loginList.First());
                     Mediator.PerformAction("GoToMainPage");
                     log.Info("Login Successfull Mediator calling for GoToMainPage");
                 }
                 else
-                    MessageBox.Show("Entered user_name or password is incorrect");
+                    MessageBox.Show("Entered password is incorrect");
             }
             catch(Exception e)
             {
@@ -66,23 +71,14 @@ namespace EISv3.PageModel
         //Enable or disable the Login Button
         private bool HandleVisibility(object parameter)
         {
-            return UserName != null && (parameter as PasswordBox).Password != null;
+            return !string.IsNullOrWhiteSpace(UserName) && !string.IsNullOrEmpty((parameter as PasswordBox).Password);
         }
 
         //SignUp Command
         public ICommand SignUp => new Command(_SignUp);
         private void _SignUp(object parameter)
         {
-            //MainWindow mainWindow = Mediator.GetVar("Window") as MainWindow;
-            //mainWindow.Opacity = 0.5;
-            //SignUpPage signUpPage = new SignUpPage
-            //{
-            //    Owner = mainWindow
-            //};
-            //Mediator.RegisterAction("CloseSignUpPage",() => { signUpPage.Close(); mainWindow.Opacity = 1; });
-            //signUpPage.ShowDialog();
             Mediator.PerformAction("GoToSignUpPage");
-
         }
     }
 }

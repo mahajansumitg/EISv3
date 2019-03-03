@@ -6,8 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
         xmlns:Local="clr-namespace:EISv3.PageModel"
-        xmlns:Utils="clr-namespace:EISv3.Utils"
-        mc:Ignorable="d"
+      mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="800"  
         Title="SignUpPage">
 
@@ -68,13 +67,13 @@
                 </ComboBox>
             </Grid>
 
-            <Grid Margin="10,10,10,10" Visibility="{Binding Login.SecKeyVisibility, Mode=TwoWay}">
+            <Grid Margin="10,10,10,10" Visibility="{Binding Login.HighSecPwdVisibility, Mode=TwoWay}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Label Foreground="Black" Grid.Column="0" Content="Sec key   :" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-                <TextBox Name="SecKey" Foreground="Black" Text="{Binding Login.SecKey, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" FontFamily="ms-appx:///Assets/PassDot.ttf#PassDot" ToolTip="{Binding ErrorCollection[SecKey]}" MinWidth="200" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB"/>
+                <TextBox Name="SecKey" Foreground="Black" Text="{Binding Login.HighSecPwd, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" FontFamily="pack://application:,,,/Resources/#password" MinWidth="200" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB"/>
             </Grid>
 
             <Grid Margin="10,10,10,10" HorizontalAlignment="Center" Width="270">

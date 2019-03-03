@@ -22,15 +22,17 @@ namespace EISv3.PageModel
         }
 
         public List<string> Roles { get; set; } = new List<string> { "admin", "employee", "contractor" };
-      
+
         public SignUpPageModel()
         {
             log4net.Config.XmlConfigurator.Configure();
             log.Info("Started SignUpPage: In constructor SignUpPageModel()");
 
-            Login = new Login();
-            Login.Role = "employee";
-            Login.SecKeyVisibility = Visibility.Collapsed;
+            Login = new Login
+            {
+                Role = "employee",
+                HighSecPwdVisibility = Visibility.Collapsed
+            };
             Login.LoginList = Connection.getData<Login>("Select * from Login");
         }
 
@@ -39,7 +41,9 @@ namespace EISv3.PageModel
 
         private bool CanSignUp(object arg)
         {
-            return !string.IsNullOrWhiteSpace(Login.UserName) && !string.IsNullOrWhiteSpace(Login.PSWD);
+            return !string.IsNullOrWhiteSpace(Login.UserName)
+                && !string.IsNullOrWhiteSpace(Login.PSWD)
+                && ((Login.Role.Equals("admin") && !string.IsNullOrWhiteSpace(Login.HighSecPwd)) || (!Login.Role.Equals("admin")));
         }
 
         private void _SignUp(object parameter)
@@ -47,21 +51,19 @@ namespace EISv3.PageModel
             Login.EmpId = RndEmpId(Login.LoginList);
             Login.UserName = Login.UserName.Trim();
 
-            try
+            if (Login.Role.Equals("admin") && !Login.HighSecPwd.Equals("Sumit123@"))
             {
-                if (Connection.setData(Login))
-                {
-                    MessageBox.Show("User " + Login.UserName + " with Employee Id " + Login.EmpId + " created");
+                MessageBox.Show("Security key is incorrect");
+            }
+            else if (Connection.setData(Login))
+            {
+                MessageBox.Show("User " + Login.UserName + " with Employee Id " + Login.EmpId + " created");
 
-                    Mediator.RegisterVar("Login", Login);
-                    Mediator.PerformAction("GoToMainPage");
-                }
-                else MessageBox.Show("Error in Insert.");
+                Mediator.RegisterVar("Login", Login);
+                Mediator.PerformAction("GoToMainPage");
             }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
+            else MessageBox.Show("Unable to create account");
+
         }
         private string RndEmpId(List<Login> loginList)
         {

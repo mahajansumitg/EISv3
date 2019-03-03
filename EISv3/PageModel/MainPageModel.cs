@@ -3,6 +3,7 @@ using EISv3.Utils;
 using EISv3.Views;
 using log4net;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -53,6 +54,7 @@ namespace EISv3.PageModel
 
         #endregion
 
+        Dictionary<string, ListViewItem> ListViewDictionary = new Dictionary<string, ListViewItem>(); 
         public MainPageModel()
         {
             log4net.Config.XmlConfigurator.Configure();
@@ -67,30 +69,19 @@ namespace EISv3.PageModel
                 Login login = Mediator.GetVar("Login") as Login;
                 if (!login.role.Equals("admin"))
                 {
-                    DashBoardVisibility = Visibility.Hidden;
-                    HomeVisibility = Visibility.Hidden;
+                    DashBoardVisibility = Visibility.Collapsed;
+                    HomeVisibility = Visibility.Collapsed;
                 }
 
                 #region Registering Mediator Actions
-                Mediator.RegisterAction("SwitchToHomeView", () =>
-                {
-                    this.Contents.Clear();
-                    this.Contents.Add(new HomeView());
-                });
-                Mediator.RegisterAction("SwitchToDashBoardView", () =>
-                {
-                    this.Contents.Clear();
-                    this.Contents.Add(new DashBoardView());
-                });
-                Mediator.RegisterAction("SwitchToProfileView", () =>
-                {
-                    this.Contents.Clear();
-                    this.Contents.Add(new ProfileView());
-                });
+                Mediator.RegisterAction("SwitchToHomeView", () => SelectedItem = ListViewDictionary["HomeView"]);
+                Mediator.RegisterAction("SwitchToProfileView", () => SelectedItem = ListViewDictionary["ProfileView"]);
+                Mediator.RegisterAction("SwitchToDashBoardView", () => SelectedItem = ListViewDictionary["DashBoardView"]);
+
                 Mediator.RegisterAction("DisableButtons", () =>
                 {
-                    DashBoardVisibility = Visibility.Hidden;
-                    HomeVisibility = Visibility.Hidden;
+                    DashBoardVisibility = Visibility.Collapsed;
+                    HomeVisibility = Visibility.Collapsed;
                 });
                 Mediator.RegisterAction("EnableButtons", () =>
                 {
@@ -123,35 +114,53 @@ namespace EISv3.PageModel
             CloseMenuVisibily = Visibility.Collapsed;
         }
 
+        public ListViewItem _SelectedItem;
+        public ListViewItem SelectedItem
+        {
+            get => _SelectedItem;
+            set
+            {
+                setView(value);
+                OnPropertyChanged(ref _SelectedItem, value);
+            }
+        }
+
+        private void setView(ListViewItem item)
+        {
+            Contents.Clear();
+            switch (item.Name)
+            {
+                case "HomeView":
+                    Contents.Add(new HomeView());
+                    log.Info("Selected HomeView from menu: In case ItemHome");
+                    break;
+                case "ProfileView":
+                    Contents.Add(new ProfileView());
+                    log.Info("Selected ProfileView from menu: In case ItemForm");
+                    break;
+                case "DashBoardView":
+                    Contents.Add(new DashBoardView());
+                    log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
+                    break;
+                default:
+                    break;
+            }
+        }
+
         //Switching of childs in ItemControl as per selection of Item in Manu
         public ICommand SelectionChanged => new Command(_SelectionChanged);
         private void _SelectionChanged(object parameter)
         {
-            Contents.Clear();
-            try
+            if (ListViewDictionary.Count == 3) return;
+
+            ItemCollection collection = (parameter as ListView).Items;
+            foreach(Object o in collection)
             {
-                switch ((parameter as ListViewItem).Name)
-                {
-                    case "ItemHome":
-                        Contents.Add(new HomeView());
-                        log.Info("Selected HomeView from menu: In case ItemHome");
-                        break;
-                    case "ItemDashBoard":
-                        Contents.Add(new DashBoardView());
-                        log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
-                        break;
-                    case "ItemForm":
-                        Contents.Add(new ProfileView());
-                        log.Info("Selected ProfileView from menu: In case ItemForm");
-                        break;
-                    default:
-                        break;
-                }
-            }catch (Exception e)
-            {
-                MessageBox.Show(e.Message);
+                ListViewItem item = o as ListViewItem;
+                ListViewDictionary.Add(item.Name, item);
             }
         }
+
 
         //Exit Application
         public ICommand Exit => new Command(_Exit);

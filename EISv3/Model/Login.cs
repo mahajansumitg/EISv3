@@ -32,7 +32,7 @@ namespace EISv3.Model
             get => role;   
             set {
                 OnPropertyChanged(ref role, value);
-                SecKeyVisibility = !string.IsNullOrEmpty(role) && role.Equals("admin") ? Visibility.Visible : Visibility.Collapsed;
+                HighSecPwdVisibility = !string.IsNullOrEmpty(role) && role.Equals("admin") ? Visibility.Visible : Visibility.Collapsed;
             }
         }
         public string EmpId
@@ -41,15 +41,14 @@ namespace EISv3.Model
             set { OnPropertyChanged(ref emp_id, value); }
         }
 
+        public string HighSecPwd { get; set; }
 
-        public string SecKey { get; set; }
+        private Visibility _HighSecPwdVisibility { get; set; } = Visibility.Collapsed;
 
-        private Visibility _SecKeyVisibility { get; set; } = Visibility.Collapsed;
-
-        public Visibility SecKeyVisibility
+        public Visibility HighSecPwdVisibility
         {
-            get => _SecKeyVisibility;
-            set { _SecKeyVisibility = value; OnPropertyChanged("SecKeyVisibility"); }
+            get => _HighSecPwdVisibility;
+            set { _HighSecPwdVisibility = value; OnPropertyChanged("HighSecPwdVisibility"); }
         }
 
         //IDataErrorInfo
@@ -94,15 +93,15 @@ namespace EISv3.Model
                         if (!string.IsNullOrEmpty(PSWD))
                         {
                             if (PSWD.Length < 8) result = name + " should have length of atleast 8";
+                            else if (ConfirmPSWD != null  && !PSWD.Equals(ConfirmPSWD)) result = name + " should match with Confirm Password";
                         }
                         break;
                     case "ConfirmPSWD":
                         if (!string.IsNullOrEmpty(ConfirmPSWD))
                         {
-                            if (!PSWD.Equals(ConfirmPSWD)) result = name + " should match with Password";
+                            if (string.IsNullOrEmpty(PSWD) || !PSWD.Equals(ConfirmPSWD)) result = name + " should match with Password";
                         }
                         break;
-                   
                 }
 
                 //adding name, result in ErrorCollection dictionary

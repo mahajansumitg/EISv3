@@ -56,7 +56,7 @@
             <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Content="If you are a new user click on Sign Up"  HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Login" 
-                    Command="{Binding Login}"
+                    Command="{Binding Login}" CommandParameter="{Binding ElementName=pswd}"
                     Grid.Column="0" Grid.Row="5" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Sign Up" 
