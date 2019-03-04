@@ -32,7 +32,7 @@ namespace EISv3.Model
             get => role;   
             set {
                 OnPropertyChanged(ref role, value);
-                HighSecPwdVisibility = !string.IsNullOrEmpty(role) && role.Equals("admin") ? Visibility.Visible : Visibility.Collapsed;
+                HighSecPwdVisibility = !string.IsNullOrEmpty(role) && role.Equals("Admin") ? Visibility.Visible : Visibility.Collapsed;
             }
         }
         public string EmpId

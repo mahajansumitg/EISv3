@@ -17,6 +17,20 @@ namespace EISv3.PageModel
 
         #region Properties
 
+        private string _EmpIDMainPage;
+        public string EmpIDMainPage
+        {
+            get { return _EmpIDMainPage; }
+            set { _EmpIDMainPage = value; OnPropertyChanged("EmpIDMainPage"); }
+        }
+        
+        private string _RoleMainPage;
+        public string RoleMainPage
+        {
+            get { return _RoleMainPage; }
+            set { _RoleMainPage = value; OnPropertyChanged("RoleMainPage"); }
+        }
+
         private ObservableCollection<UserControl> _Contents = new ObservableCollection<UserControl>();
         public ObservableCollection<UserControl> Contents
         {
@@ -67,7 +81,9 @@ namespace EISv3.PageModel
             try
             {
                 Login login = Mediator.GetVar("Login") as Login;
-                if (!login.role.Equals("admin"))
+                EmpIDMainPage = login.UserName + " : " + login.EmpId;
+                RoleMainPage = login.Role;
+                if (!login.role.Equals("Admin"))
                 {
                     DashBoardVisibility = Visibility.Collapsed;
                     HomeVisibility = Visibility.Collapsed;

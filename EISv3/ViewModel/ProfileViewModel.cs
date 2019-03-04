@@ -70,7 +70,7 @@ namespace EISv3.ViewModel
                     Login user = Mediator.GetVar("Login") as Login;            //Setting Employee_id same as Logged in user 
                     EmpInfo.emp_id = user.emp_id;
 
-                    isAdmin = user.role.Equals("admin") ? true : false;
+                    isAdmin = user.role.Equals("Admin") ? true : false;
                     VendorGrid = user.role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
                     EmpInfo.IsContractor = user.role.Equals("contractor");
 

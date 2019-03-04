@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Linq;
 
 namespace EISv3.PageModel
 {
@@ -21,7 +22,7 @@ namespace EISv3.PageModel
             set { _Login = value; OnPropertyChanged("Login"); }
         }
 
-        public List<string> Roles { get; set; } = new List<string> { "admin", "employee", "contractor" };
+        public List<string> Roles { get; set; } = new List<string> { "Admin", "Employee", "Contractor" };
 
         public SignUpPageModel()
         {
@@ -30,7 +31,7 @@ namespace EISv3.PageModel
 
             Login = new Login
             {
-                Role = "employee",
+                Role = "Employee",
                 HighSecPwdVisibility = Visibility.Collapsed
             };
             Login.LoginList = Connection.getData<Login>("Select * from Login");
@@ -43,7 +44,7 @@ namespace EISv3.PageModel
         {
             return !string.IsNullOrWhiteSpace(Login.UserName)
                 && !string.IsNullOrWhiteSpace(Login.PSWD)
-                && ((Login.Role.Equals("admin") && !string.IsNullOrWhiteSpace(Login.HighSecPwd)) || (!Login.Role.Equals("admin")));
+                && ((Login.Role.Equals("Admin") && !string.IsNullOrWhiteSpace(Login.HighSecPwd)) || (!Login.Role.Equals("Admin")));
         }
 
         private void _SignUp(object parameter)
@@ -51,7 +52,7 @@ namespace EISv3.PageModel
             Login.EmpId = RndEmpId(Login.LoginList);
             Login.UserName = Login.UserName.Trim();
 
-            if (Login.Role.Equals("admin") && !Login.HighSecPwd.Equals("Sumit123@"))
+            if (Login.Role.Equals("Admin") && !Login.HighSecPwd.Equals("Sumit123@"))
             {
                 MessageBox.Show("Security key is incorrect");
             }
@@ -74,14 +75,14 @@ namespace EISv3.PageModel
 
         private string GetAndCheck(List<Login> loginList)
         {
-            Random random = new Random();
-            string rndEmpId = "A" + random.Next(10000, 99999);
+            //Random random = new Random();
+            //string rndEmpId = "A" + random.Next(10000, 99999);
 
-            foreach (Login login in loginList)
-            {
-                if (login.emp_id.Equals(rndEmpId)) return null;
-            }
-            return rndEmpId;
+            //foreach (Login login in loginList)
+            //{
+            //    if (login.emp_id.Equals(rndEmpId)) return null;
+            //}
+            return "A" + (int.Parse(loginList.OrderBy(i => i.EmpId).Last().EmpId.Substring(1)) + 1).ToString("00000");
         }
 
         //Cancel Command
