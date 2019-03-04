@@ -24,9 +24,9 @@ namespace EISv3.Model
         public string department;
         public string vendor;
 
-        public DateTime dob;
-        public DateTime doj;
-        public DateTime dol;
+        public DateTime? dob;
+        public DateTime? doj;
+        public DateTime? dol;
 
         public string salary = "5000";
 
@@ -87,31 +87,19 @@ namespace EISv3.Model
         public DateTime? DOB
         {
             get => dob;
-            set
-            {
-                dob = value.GetValueOrDefault(DateTime.Now);
-                OnPropertyChanged("DOB");
-            }
+            set { OnPropertyChanged(ref dob, value); }
         }
 
         public DateTime? DOJ
         {
             get => doj;
-            set
-            {
-                doj = value.GetValueOrDefault(DateTime.Now);
-                OnPropertyChanged("DOJ");
-            }
+            set { OnPropertyChanged(ref doj, value); }
         }
 
         public DateTime? DOL
         {
             get => dol;
-            set
-            {
-                dol = value.GetValueOrDefault(DateTime.Now);
-                OnPropertyChanged("DOL");
-            }
+            set { OnPropertyChanged(ref dol, value); }
         }
 
         public int Salary

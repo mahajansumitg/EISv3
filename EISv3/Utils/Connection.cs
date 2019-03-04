@@ -128,6 +128,7 @@ namespace EISv3.Utils
                             info.SetValue(obj, Int32.Parse(data));
                             break;
                         case "DateTime":
+                        case "Nullable`1":
                             info.SetValue(obj, DateTime.Parse(data));
                             break;
                         default:
@@ -167,6 +168,7 @@ namespace EISv3.Utils
                         builder.Append("'" + info.GetValue(obj) + "',");
                         break;
                     case "DateTime":
+                    case "Nullable`1":
                         builder.Append("'" + GetFormatedDate((DateTime)info.GetValue(obj)) + "',");
                         break;
                     case "Int32":
@@ -205,6 +207,7 @@ namespace EISv3.Utils
                         if (info.Name.Equals(key)) keyValue = "'" + info.GetValue(obj) + "'";
                         break;
                     case "DateTime":
+                    case "Nullable`1":
                         string date = GetFormatedDate((DateTime)info.GetValue(obj));
                         builder.Append("'" + date + "',");
                         if (info.Name.Equals(key)) keyValue = "'" + date + "'";
