@@ -102,7 +102,7 @@ namespace EISv3.Model
                     OnPropertyChanged(ref dob, DateTime.Parse(value));
                 }catch (Exception)
                 {
-                    MessageBox.Show("Please select date from date picker");
+                    MessageBox.Show("Error occured in while selecting date");
                 }
             }
         }
@@ -115,19 +115,12 @@ namespace EISv3.Model
             }
             set
             {
-                if (value == "")
+                Regex regex = new Regex("^\\d{1,2}\\-\\d{1,2}\\-\\d{4}$");
+                if (regex.IsMatch(value))
                 {
-                    OnPropertyChanged("DOJ");
-                    return;
+                    if (DateTime.TryParse(value, out DateTime dolTemp)) OnPropertyChanged(ref doj, DateTime.Parse(value));
                 }
-                try
-                {
-                    OnPropertyChanged(ref doj, DateTime.Parse(value));
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Please select date from date picker");
-                }
+                OnPropertyChanged("DOJ");
             }
         }
 
@@ -147,9 +140,10 @@ namespace EISv3.Model
                 try
                 {
                     OnPropertyChanged(ref dol, DateTime.Parse(value));
-                }catch(Exception)
+                }
+                catch (Exception)
                 {
-                    MessageBox.Show("Please select date from date picker");
+                    MessageBox.Show("Error occured in while selecting date");
                 }
             }
         }
@@ -223,7 +217,7 @@ namespace EISv3.Model
                     case "Salary":
                         if (!string.IsNullOrWhiteSpace(salary) && int.Parse(salary) != 0)
                         {
-                            if (int.Parse(salary) < 0 || int.Parse(salary) < 5000) result = name + " should be more than 5000";
+                            if (int.Parse(salary) < 0 || int.Parse(salary) <= 5000) result = name + " should be more than or equal to 5000";
                         }
                         break;
                     case "DOB":

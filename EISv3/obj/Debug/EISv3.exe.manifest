@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EISv3.exe" size="424432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EISv3.exe" size="426480">
       <assemblyIdentity name="EISv3" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bImIEv/gW43NnEB84xODa9CRr2NMh3xN8mFA8aF4NhA=</dsig:DigestValue>
+        <dsig:DigestValue>4JQm0CFWB20l5iJddjo7fkxBuP5hDLZtek+q+0A5NLk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

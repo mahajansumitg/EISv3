@@ -79,14 +79,9 @@
         <ComboBox
             Foreground="Black" HorizontalContentAlignment="Center" 
             Grid.Row="6" Grid.Column="3" HorizontalAlignment="Center" VerticalContentAlignment="Center" Height="40" Width="120"
-            IsEditable="True"
-            Text="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-            ToolTip="{Binding ErrorCollection[Department]}">
-            <ComboBoxItem Content="Management"/>
-            <ComboBoxItem Content="Development"/>
-            <ComboBoxItem Content="Analytics"/>
-            <ComboBoxItem Content="Testing"/>
-            <ComboBoxItem Content="Other"/>
+            SelectedItem="{Binding EmpInfo.Department, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+            ToolTip="{Binding ErrorCollection[Department]}"
+            ItemsSource="{Binding Departments}">
         </ComboBox>
         
         <TextBox TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True"

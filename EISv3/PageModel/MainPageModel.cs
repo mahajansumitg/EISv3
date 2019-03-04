@@ -89,9 +89,9 @@ namespace EISv3.PageModel
                     HomeVisibility = Visibility.Visible;
                 });
                 #endregion
-            }catch(Exception e)
+            }catch (Exception)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Error occured while navigating");
             }
         }
 

@@ -10,6 +10,7 @@ using System.ComponentModel;
 using System.Linq;
 using log4net;
 using System.Windows;
+using System.Text.RegularExpressions;
 
 namespace EISv3.ViewModel
 {
@@ -73,12 +74,13 @@ namespace EISv3.ViewModel
             get => dojSearch.Year == 1 ? "" : GetFormatedDate(dojSearch);
             set
             {
-                if (value == "")
+                Regex regex = new Regex("^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$");
+                if (regex.IsMatch(value))
                 {
-                    OnPropertyChanged("DojSearch");
-                    return;
+                    if (DateTime.TryParse(value, out dojTemp)) OnPropertyChanged(ref dojSearch, DateTime.Parse(value));   
                 }
-                OnPropertyChanged(ref dojSearch, DateTime.Parse(value));
+                OnPropertyChanged("DojSearch");
+
             }
         }
 
@@ -89,12 +91,12 @@ namespace EISv3.ViewModel
             get => dolSearch.Year == 1 ? "" : GetFormatedDate(dolSearch);
             set
             {
-                if (value == "")
+                Regex regex = new Regex("^\\d{1,2}\\-\\d{1,2}\\-\\d{4}$");
+                if (regex.IsMatch(value))
                 {
-                    OnPropertyChanged("DolSearch");
-                    return;
+                    if(DateTime.TryParse(value, out dolTemp)) OnPropertyChanged(ref dolSearch, DateTime.Parse(value));
                 }
-                OnPropertyChanged(ref dolSearch, DateTime.Parse(value));
+                OnPropertyChanged("DolSearch");
             }
         }
 
@@ -386,20 +388,16 @@ namespace EISv3.ViewModel
 
             EmpIdSearch = DojSearch = DolSearch = "";
 
-            try
-            {
-                SetEmpInfoDictionary(empInfoList);
-                SetPageInListView();
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
+            SetEmpInfoDictionary(empInfoList);
+            SetPageInListView();
+
         }
 
+        public DateTime dojTemp;
+        public DateTime dolTemp;
         private bool PerformSearch(object sender)
         {
-            return !string.IsNullOrEmpty(empIdSearch) || !string.IsNullOrEmpty(DojSearch) || !string.IsNullOrEmpty(DolSearch);
+            return !string.IsNullOrWhiteSpace(empIdSearch) || (!string.IsNullOrWhiteSpace(DojSearch) && !string.IsNullOrWhiteSpace(dojTemp.ToString())) || (!string.IsNullOrWhiteSpace(DolSearch) && !string.IsNullOrWhiteSpace(dolTemp.ToString()));
         }
 
         #endregion

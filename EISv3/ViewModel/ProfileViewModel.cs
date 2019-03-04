@@ -32,6 +32,7 @@ namespace EISv3.ViewModel
             set { _VendorVisibily = value; OnPropertyChanged("VendorVisibily"); }
         }
 
+        public List<string> Departments { get; set; } = new List<string> { "Management", "Development", "Analytics", "Testing", "Other" };
         #endregion
 
         bool isUserPresent;
