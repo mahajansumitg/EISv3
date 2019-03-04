@@ -67,37 +67,18 @@ namespace EISv3.ViewModel
 
         #region Search Properties
 
-        //Date of joining with which we want to search
-        private DateTime dojSearch;
-        public string DojSearch
+        public DateTime? dojSearch;
+        public DateTime? DojSearch
         {
-            get => dojSearch.Year == 1 ? "" : GetFormatedDate(dojSearch);
-            set
-            {
-                Regex regex = new Regex("^(?:(?:31(\\/|-|\\.)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/|-|\\.)(?:0?[13-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/|-|\\.)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$");
-                if (regex.IsMatch(value))
-                {
-                    if (DateTime.TryParse(value, out dojTemp)) OnPropertyChanged(ref dojSearch, DateTime.Parse(value));   
-                }
-                OnPropertyChanged("DojSearch");
-
-            }
+            get => dojSearch;
+            set { OnPropertyChanged(ref dojSearch, value); }
         }
 
-        //Date of leaving with which we want to search
-        private DateTime dolSearch;
-        public string DolSearch
+        public DateTime? dolSearch;
+        public DateTime? DolSearch
         {
-            get => dolSearch.Year == 1 ? "" : GetFormatedDate(dolSearch);
-            set
-            {
-                Regex regex = new Regex("^\\d{1,2}\\-\\d{1,2}\\-\\d{4}$");
-                if (regex.IsMatch(value))
-                {
-                    if(DateTime.TryParse(value, out dolTemp)) OnPropertyChanged(ref dolSearch, DateTime.Parse(value));
-                }
-                OnPropertyChanged("DolSearch");
-            }
+            get => dolSearch;
+            set { OnPropertyChanged(ref dolSearch, value); }
         }
 
         #endregion
@@ -356,9 +337,9 @@ namespace EISv3.ViewModel
                 {
                     foreach (EmpInfo emp in empInfoList)
                     {
-                        if (!string.IsNullOrEmpty(empIdSearch) && !emp.emp_id.ToLower().Contains(empIdSearch.ToLower())
-                            || !string.IsNullOrEmpty(DojSearch) && emp.doj != DateTime.Parse(DojSearch)
-                            || !string.IsNullOrEmpty(DolSearch) && emp.dol != DateTime.Parse(DolSearch))
+                        if ((!string.IsNullOrEmpty(empIdSearch) && !emp.emp_id.ToLower().Contains(empIdSearch.ToLower()))
+                            || (DojSearch!=null && emp.doj != DojSearch)
+                            || (DolSearch!=null && emp.dol != DolSearch))
                             newEmpInfoList.Remove(emp);
                     }
 
@@ -386,18 +367,17 @@ namespace EISv3.ViewModel
         {
             log.Info("Cleared search");
 
-            EmpIdSearch = DojSearch = DolSearch = "";
+            EmpIdSearch = "";
+            DolSearch = DojSearch = null;
 
             SetEmpInfoDictionary(empInfoList);
             SetPageInListView();
 
         }
 
-        public DateTime dojTemp;
-        public DateTime dolTemp;
         private bool PerformSearch(object sender)
         {
-            return !string.IsNullOrWhiteSpace(empIdSearch) || (!string.IsNullOrWhiteSpace(DojSearch) && !string.IsNullOrWhiteSpace(dojTemp.ToString())) || (!string.IsNullOrWhiteSpace(DolSearch) && !string.IsNullOrWhiteSpace(dolTemp.ToString()));
+            return !string.IsNullOrWhiteSpace(empIdSearch) || DojSearch!=null || DolSearch!=null;
         }
 
         #endregion

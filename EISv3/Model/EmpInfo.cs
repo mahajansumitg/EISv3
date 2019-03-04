@@ -84,67 +84,33 @@ namespace EISv3.Model
             set { OnPropertyChanged(ref vendor, value); }
         }
 
-        public string DOB
+        public DateTime? DOB
         {
-            get
-            {
-                return dob.Year == 1 ? "" : GetFormatedDate(dob);
-            }
+            get => dob;
             set
             {
-                if (value == "")
-                {
-                    OnPropertyChanged("DOB");
-                    return;
-                }
-                try
-                {
-                    OnPropertyChanged(ref dob, DateTime.Parse(value));
-                }catch (Exception)
-                {
-                    MessageBox.Show("Error occured in while selecting date");
-                }
+                dob = value.GetValueOrDefault(DateTime.Now);
+                OnPropertyChanged("DOB");
             }
         }
 
-        public string DOJ
+        public DateTime? DOJ
         {
-            get
-            {
-                return doj.Year == 1 ? "" : GetFormatedDate(doj);
-            }
+            get => doj;
             set
             {
-                Regex regex = new Regex("^\\d{1,2}\\-\\d{1,2}\\-\\d{4}$");
-                if (regex.IsMatch(value))
-                {
-                    if (DateTime.TryParse(value, out DateTime dolTemp)) OnPropertyChanged(ref doj, DateTime.Parse(value));
-                }
+                doj = value.GetValueOrDefault(DateTime.Now);
                 OnPropertyChanged("DOJ");
             }
         }
 
-        public string DOL
+        public DateTime? DOL
         {
-            get
-            {
-                return dol.Year == 1 ? "" : GetFormatedDate(dol);
-            }
+            get => dol;
             set
             {
-                if (value == "")
-                {
-                    OnPropertyChanged("DOL");
-                    return;
-                }
-                try
-                {
-                    OnPropertyChanged(ref dol, DateTime.Parse(value));
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Error occured in while selecting date");
-                }
+                dol = value.GetValueOrDefault(DateTime.Now);
+                OnPropertyChanged("DOL");
             }
         }
 
@@ -155,6 +121,12 @@ namespace EISv3.Model
         }
 
         public bool IsContractor { get; set; }
+        public EmpInfo()
+        {
+            DOB = null;
+            DOJ = null;
+            DOL = null;
+        }
 
         public static string GetFormatedDate(DateTime dateTime)
         {
@@ -217,32 +189,33 @@ namespace EISv3.Model
                     case "Salary":
                         if (!string.IsNullOrWhiteSpace(salary) && int.Parse(salary) != 0)
                         {
-                            if (int.Parse(salary) < 0 || int.Parse(salary) <= 5000) result = name + " should be more than or equal to 5000";
+                            if (int.Parse(salary) < 5000) result = name + " should be more than or equal to 5000";
                         }
                         break;
                     case "DOB":
-                        if (!string.IsNullOrWhiteSpace(DOB))
+                        if (DOB != null)
                         {
-                            if (!(DateTime.Parse(DOB) < DateTime.Now.AddYears(-21))) result = name + " should be 21 years before today";
+                            if (DOB > DateTime.Now.AddYears(-21)) result = "Age i.e. " + name + " should be 21 years";
                         }
                         break;
                     case "DOJ":
-                        if (!string.IsNullOrWhiteSpace(DOJ))
+                        if (DOJ != null)
                         {
-                            if (!(DateTime.Parse(DOJ) > DateTime.Parse(DOB).AddYears(21))) result = name + " should be greater than 21 age";
-                            //else if(!(DateTime.Parse(DOJ) < DateTime.Now.AddMonths(1))) result = name + " should be within 1 month from today";
+                            if (DOJ <= DOB.GetValueOrDefault(DateTime.Now).AddYears(21)) result = name + " should be greater than 21 age";
+                            else if(DOJ >= DateTime.Now.AddMonths(1)) result = name + " should be within 1 month from today";
                         }
                         break;
                     case "DOL":
-                        if (!(DOL == ""))
+                        if (DOL != null)
                         {
-                            if ( !(DateTime.Parse(DOL) > DateTime.Parse(DOJ)) ) result = name + " should be greater than date of joining";
+                            if (DOL <= DOJ) result = name + " should be greater than date of joining";
+                            else if(DOL > DateTime.Now) result = name + " should be less than today";
                         }
                         break;
                     case "Vendor":
                         if (IsContractor && !string.IsNullOrWhiteSpace(Vendor))
                         {
-                            if (!avoidSpecialChar.IsMatch(department)) result = name + " should not contain  numbers and special chars";
+                            if (!avoidSpecialChar.IsMatch(Vendor)) result = name + " should not contain  numbers and special chars";
                         }
                         break;
                 }

@@ -43,9 +43,10 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Employee Information System"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bookman Old Style" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Employee Information System"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bookman Old Style" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16"/>
             <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Content="Enter your login credentials below :"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
             <TextBox Name="Username" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="User Name"
@@ -55,13 +56,15 @@
 
             <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Content="If you are a new user click on Sign Up"  HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
+            <Label Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Content="Contact HR if you forgot the password" ToolTip="sumit_mahajan@persistent.com" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Login" 
                     Command="{Binding Login}" CommandParameter="{Binding ElementName=pswd}"
-                    Grid.Column="0" Grid.Row="5" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    Grid.Column="0" Grid.Row="6" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
             <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Sign Up" 
                     Command="{Binding SignUp}"
-                    Grid.Column="1" Grid.Row="5" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    Grid.Column="1" Grid.Row="6" Width="100" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Page>

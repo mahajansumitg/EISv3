@@ -29,7 +29,7 @@ namespace EISv3.ViewModel
         public Visibility VendorGrid
         {
             get => _VendorVisibily;
-            set { _VendorVisibily = value; OnPropertyChanged("VendorVisibily"); }
+            set { _VendorVisibily = value; OnPropertyChanged("VendorGrid"); }
         }
 
         public List<string> Departments { get; set; } = new List<string> { "Management", "Development", "Analytics", "Testing", "Other" };
@@ -71,8 +71,8 @@ namespace EISv3.ViewModel
                     EmpInfo.emp_id = user.emp_id;
 
                     isAdmin = user.role.Equals("Admin") ? true : false;
-                    VendorGrid = user.role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
-                    EmpInfo.IsContractor = user.role.Equals("contractor");
+                    VendorGrid = user.role.Equals("Contractor") ? Visibility.Visible : Visibility.Hidden;
+                    EmpInfo.IsContractor = user.role.Equals("Contractor");
 
                     log.Info("Finding data for Employee " + user.emp_id);
 
@@ -125,7 +125,7 @@ namespace EISv3.ViewModel
         //CanUpdate methid to check for empty textboxes
         private bool CanUpdate(object parameter)
         {
-            return !string.IsNullOrWhiteSpace(EmpInfo.FirstName) && !string.IsNullOrWhiteSpace(EmpInfo.MiddleName) && !string.IsNullOrWhiteSpace(EmpInfo.LastName) && !string.IsNullOrWhiteSpace(EmpInfo.EmailId) && !string.IsNullOrWhiteSpace(EmpInfo.EmpId) && !string.IsNullOrWhiteSpace(EmpInfo.Salary.ToString()) && !string.IsNullOrWhiteSpace(EmpInfo.DOB) && !string.IsNullOrWhiteSpace(EmpInfo.DOJ) && !string.IsNullOrWhiteSpace(EmpInfo.City) && !string.IsNullOrWhiteSpace(EmpInfo.Address) && !string.IsNullOrWhiteSpace(EmpInfo.Department);
+            return !string.IsNullOrWhiteSpace(EmpInfo.FirstName) && !string.IsNullOrWhiteSpace(EmpInfo.MiddleName) && !string.IsNullOrWhiteSpace(EmpInfo.LastName) && !string.IsNullOrWhiteSpace(EmpInfo.EmailId) && !string.IsNullOrWhiteSpace(EmpInfo.EmpId) && !string.IsNullOrWhiteSpace(EmpInfo.Salary.ToString()) && EmpInfo.Salary != 0 && EmpInfo.DOB!=null && EmpInfo.DOJ!=null && !string.IsNullOrWhiteSpace(EmpInfo.City) && !string.IsNullOrWhiteSpace(EmpInfo.Address) && !string.IsNullOrWhiteSpace(EmpInfo.Department);
         }
 
         //Switch & enable buttons

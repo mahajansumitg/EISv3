@@ -61,19 +61,19 @@
         <TextBox Text="{Binding EmpInfo.EmpId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"      ToolTip="{Binding ErrorCollection[EmpId]}"      
                  Foreground="Black" IsReadOnly="True" TextAlignment="Center" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
 
-        <DatePicker Text="{Binding EmpInfo.DOB, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOB]}"
+        <DatePicker SelectedDate="{Binding EmpInfo.DOB, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOB]}"
                     Foreground="Black" Height="40" Grid.Row="4" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         <TextBox Text="{Binding EmpInfo.Salary, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"     ToolTip="{Binding ErrorCollection[Salary]}"     
                  Foreground="Black" TextAlignment="Center" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
 
-        <DatePicker Text="{Binding EmpInfo.DOJ, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOJ]}"
+        <DatePicker SelectedDate="{Binding EmpInfo.DOJ, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOJ]}"
                     Foreground="Black" Height="40" Grid.Row="5" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         <TextBox Text="{Binding EmpInfo.City, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"       ToolTip="{Binding ErrorCollection[City]}"       
                  Foreground="Black" TextAlignment="Center" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center"   VerticalAlignment="Center" Height="40" Width="120"/>
 
-        <DatePicker Text="{Binding EmpInfo.DOL, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOL]}"
+        <DatePicker SelectedDate="{Binding EmpInfo.DOL, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[DOL]}"
                     Foreground="Black" Height="40" Grid.Row="6" Grid.Column="1" SelectedDateFormat="Short" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
         <ComboBox
