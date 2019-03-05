@@ -58,7 +58,7 @@ namespace EISv3.ViewModel
                     //checking for contractor or not
                     string findRoleQuery = "select * from Login where emp_id = '" + EmpInfo.emp_id + "'";
                     List<Login> TempList = Loading.Show(() => Connection.getData<Login>(findRoleQuery)) as List<Login>;
-                    if (TempList.Count > 0) VendorGrid = TempList.First().Role.Equals("contractor") ? Visibility.Visible : Visibility.Hidden;
+                    if (TempList.Count > 0) VendorGrid = TempList.First().Role.Equals("contractor") ? Visibility.Visible : Visibility.Collapsed;
 
                     log.Info("Finding data for Selected Employee " + EmpInfo.emp_id);
                     string findQuery = "select * from EmpInfo where emp_id = '" + EmpInfo.emp_id + "'";
@@ -71,7 +71,7 @@ namespace EISv3.ViewModel
                     EmpInfo.emp_id = user.emp_id;
 
                     isAdmin = user.role.Equals("Admin") ? true : false;
-                    VendorGrid = user.role.Equals("Contractor") ? Visibility.Visible : Visibility.Hidden;
+                    VendorGrid = user.role.Equals("Contractor") ? Visibility.Visible : Visibility.Collapsed;
                     EmpInfo.IsContractor = user.role.Equals("Contractor");
 
                     log.Info("Finding data for Employee " + user.emp_id);
