@@ -2,6 +2,8 @@
 using EISv3.Utils;
 using EISv3.Views;
 using log4net;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -14,6 +16,20 @@ namespace EISv3.PageModel
         readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region Properties
+
+        private string _EmpIDMainPage;
+        public string EmpIDMainPage
+        {
+            get { return _EmpIDMainPage; }
+            set { _EmpIDMainPage = value; OnPropertyChanged("EmpIDMainPage"); }
+        }
+        
+        private string _RoleMainPage;
+        public string RoleMainPage
+        {
+            get { return _RoleMainPage; }
+            set { _RoleMainPage = value; OnPropertyChanged("RoleMainPage"); }
+        }
 
         private ObservableCollection<UserControl> _Contents = new ObservableCollection<UserControl>();
         public ObservableCollection<UserControl> Contents
@@ -52,6 +68,7 @@ namespace EISv3.PageModel
 
         #endregion
 
+        Dictionary<string, ListViewItem> ListViewDictionary = new Dictionary<string, ListViewItem>(); 
         public MainPageModel()
         {
             log4net.Config.XmlConfigurator.Configure();
@@ -61,31 +78,37 @@ namespace EISv3.PageModel
             _OpenMenuVisibily = Visibility.Visible;
             _CloseMenuVisibily = Visibility.Collapsed;
 
-            Login login = Mediator.getVar("Login") as Login;
-            if (!login.role.Equals("admin"))
+            try
             {
-                DashBoardVisibility = Visibility.Hidden;
-                HomeVisibility = Visibility.Hidden;
-            }
+                Login login = Mediator.GetVar("Login") as Login;
+                EmpIDMainPage = login.UserName + " : " + login.EmpId;
+                RoleMainPage = login.Role;
+                if (!login.role.Equals("Admin"))
+                {
+                    DashBoardVisibility = Visibility.Collapsed;
+                    HomeVisibility = Visibility.Collapsed;
+                }
 
-            #region Registering Mediator Actions
-            Mediator.registerAction("SwitchToDashBoardView", () => {
-                this.Contents.Clear();
-                this.Contents.Add(new DashBoardView());
-            });
-            Mediator.registerAction("SwitchToProfileView", () => {
-                this.Contents.Clear();
-                this.Contents.Add(new ProfileView());
-            });
-            Mediator.registerAction("DisableButtons", () => {
-                DashBoardVisibility = Visibility.Hidden;
-                HomeVisibility = Visibility.Hidden;
-            });
-            Mediator.registerAction("EnableButtons", () => {
-                DashBoardVisibility = Visibility.Visible;
-                HomeVisibility = Visibility.Visible;
-            });
-            #endregion
+                #region Registering Mediator Actions
+                Mediator.RegisterAction("SwitchToHomeView", () => SelectedItem = ListViewDictionary["HomeView"]);
+                Mediator.RegisterAction("SwitchToProfileView", () => SelectedItem = ListViewDictionary["ProfileView"]);
+                Mediator.RegisterAction("SwitchToDashBoardView", () => SelectedItem = ListViewDictionary["DashBoardView"]);
+
+                Mediator.RegisterAction("DisableButtons", () =>
+                {
+                    DashBoardVisibility = Visibility.Collapsed;
+                    HomeVisibility = Visibility.Collapsed;
+                });
+                Mediator.RegisterAction("EnableButtons", () =>
+                {
+                    DashBoardVisibility = Visibility.Visible;
+                    HomeVisibility = Visibility.Visible;
+                });
+                #endregion
+            }catch (Exception)
+            {
+                MessageBox.Show("Error occured while navigating");
+            }
         }
 
         //Open Menu Panal
@@ -107,29 +130,53 @@ namespace EISv3.PageModel
             CloseMenuVisibily = Visibility.Collapsed;
         }
 
-        //Switching of childs in ItemControl as per selection of Item in Manu
-        public ICommand SelectionChanged => new Command(_SelectionChanged);
-        private void _SelectionChanged(object parameter)
+        public ListViewItem _SelectedItem;
+        public ListViewItem SelectedItem
+        {
+            get => _SelectedItem;
+            set
+            {
+                setView(value);
+                OnPropertyChanged(ref _SelectedItem, value);
+            }
+        }
+
+        private void setView(ListViewItem item)
         {
             Contents.Clear();
-            switch ((parameter as ListViewItem).Name)
+            switch (item.Name)
             {
-                case "ItemHome":
+                case "HomeView":
                     Contents.Add(new HomeView());
                     log.Info("Selected HomeView from menu: In case ItemHome");
                     break;
-                case "ItemDashBoard":
-                    Contents.Add(new DashBoardView());
-                    log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
-                    break;
-                case "ItemForm":
+                case "ProfileView":
                     Contents.Add(new ProfileView());
                     log.Info("Selected ProfileView from menu: In case ItemForm");
+                    break;
+                case "DashBoardView":
+                    Contents.Add(new DashBoardView());
+                    log.Info("Selected DashBoardView from menu: In case ItemDashBoard");
                     break;
                 default:
                     break;
             }
         }
+
+        //Switching of childs in ItemControl as per selection of Item in Manu
+        public ICommand SelectionChanged => new Command(_SelectionChanged);
+        private void _SelectionChanged(object parameter)
+        {
+            if (ListViewDictionary.Count == 3) return;
+
+            ItemCollection collection = (parameter as ListView).Items;
+            foreach(Object o in collection)
+            {
+                ListViewItem item = o as ListViewItem;
+                ListViewDictionary.Add(item.Name, item);
+            }
+        }
+
 
         //Exit Application
         public ICommand Exit => new Command(_Exit);
@@ -143,15 +190,17 @@ namespace EISv3.PageModel
         public ICommand Logout => new Command(_Logout);
         private void _Logout(object parameter)
         {
+            Mediator.RemoveVar("Login");
+            Mediator.RemoveVar("EmpInfo");
 
-            Mediator.removeVar("Login");
-            Mediator.removeVar("EmpInfo");
-            Mediator.removeAction("SwitchToDashBoardView");
-            Mediator.removeAction("SwitchToProfileView");
-            Mediator.removeAction("DisableButtons");
-            Mediator.removeAction("EnableButtons");
+            Mediator.RemoveAction("SwitchToHomeView");
+            Mediator.RemoveAction("SwitchToDashBoardView");
+            Mediator.RemoveAction("SwitchToProfileView");
 
-            Mediator.performAction("GoToLoginPage");
+            Mediator.RemoveAction("DisableButtons");
+            Mediator.RemoveAction("EnableButtons");
+
+            Mediator.PerformAction("GoToLoginPage");
 
             log.Info("*****Logged Out*****");
         }
@@ -161,7 +210,13 @@ namespace EISv3.PageModel
         private void _Help(object parameter)
         {
             log.Info("Selected Help: _Help");
-            Contents.Add(new HelpView());
+            try
+            {
+                Contents.Add(new HelpView());
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }

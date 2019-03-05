@@ -18,13 +18,17 @@ namespace EISv3
 
             InitializeComponent();
 
+            //Test DataBse Connection
+            Connection.TestConnection();
+
             //Logs Code
             log.Info("MainWindow Started");
 
             this.Content = new LoginPage();
-            Mediator.registerVar("Window", this);
-            Mediator.registerAction("GoToLoginPage", () => { this.Content = new LoginPage(); });
-            Mediator.registerAction("GoToMainPage", () => { this.Content = new MainPage(); });
+            Mediator.RegisterVar("Window", this);
+            Mediator.RegisterAction("GoToLoginPage", () => { this.Content = new LoginPage(); });
+            Mediator.RegisterAction("GoToMainPage", () => { this.Content = new MainPage(); });
+            Mediator.RegisterAction("GoToSignUpPage", () => { this.Content = new SignUpPage(); });
         }
 
     }

@@ -1,0 +1,87 @@
+﻿<Page x:Class="EISv3.Pages.SignUpPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:Local="clr-namespace:EISv3.PageModel"
+      mc:Ignorable="d"
+        d:DesignHeight="450" d:DesignWidth="800"  
+        Title="SignUpPage">
+
+    <Page.Resources>
+        <Local:SignUpPageModel x:Key="vm"/>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="White" DataContext="{Binding Source={StaticResource vm}}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Fill your details below to ceate account"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Bookman Old Style" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Margin="0,10,0,10"/>
+
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+
+                <StackPanel Margin="5">
+                    <Label Foreground="Black" Content="UserName"         HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content="Password"         HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content="Confirm Password" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content="Role"             HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content="Sec key"          HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="{Binding Login.HighSecPwdVisibility, Mode=TwoWay}"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+                    <Label Foreground="Black" Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                    <Label Foreground="Black" Content=":" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="{Binding Login.HighSecPwdVisibility, Mode=TwoWay}"/>
+                </StackPanel>
+
+                <StackPanel Margin="5">
+
+                    <TextBox Name="UserName" Foreground="Black" Text="{Binding Login.UserName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[UserName]}" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB" Margin="0,0,5,20"/>
+
+                    <TextBox Name="Password" Foreground="Black" Text="{Binding Login.PSWD, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[PSWD]}" Width="150" FontFamily="pack://application:,,,/Resources/#password" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB" Margin="0,0,5,20"/>
+
+                    <TextBox Name="ConfirmPassword" Foreground="Black" Text="{Binding Login.ConfirmPSWD, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" FontFamily="pack://application:,,,/Resources/#password" ToolTip="{Binding ErrorCollection[ConfirmPSWD]}" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB" Margin="0,0,5,20"/>
+
+                    <ComboBox Name="Role" Foreground="Black" 
+                      SelectedItem="{Binding Login.Role, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                      ItemsSource="{Binding Roles}"
+                      Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,5,20"/>
+
+                    <TextBox Name="SecKey" Foreground="Black" Text="{Binding Login.HighSecPwd, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Visibility="{Binding Login.HighSecPwdVisibility, Mode=TwoWay}" FontFamily="pack://application:,,,/Resources/#password" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFFFFBFB" Margin="0,0,5,0"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <Grid Grid.Row="2" Margin="0,15,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Sign Up" IsEnabled="{Binding SignUpEnable, Mode=TwoWay}" Command="{Binding SignUp}" Grid.Column="0" Width="100" Height="30" HorizontalAlignment="Center"/>
+
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" materialDesign:RippleAssist.Feedback="#DD000000" Content="Cancel" Command="{Binding Cancel}" Grid.Column="1" Width="100" Height="30" HorizontalAlignment="Center"/>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>

@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace EISv3.Utils
 {
-    public class Sort
+    public class Utility
     {
-        public void OrderByLogic(ref List<EmpInfo> currentList, string key, ListSortDirection direction)
+        public static void Sort(ref List<EmpInfo> currentList, string key, ListSortDirection direction)
         {
             if (direction == ListSortDirection.Ascending)
             {

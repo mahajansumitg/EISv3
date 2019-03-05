@@ -1,6 +1,7 @@
 ﻿using log4net;
 using System;
 using System.Threading;
+using System.Windows;
 
 namespace EISv3.Utils
 {
@@ -24,7 +25,7 @@ namespace EISv3.Utils
             });
             thread.Start();
 
-            window = Mediator.getVar("Window") as MainWindow;
+            window = Mediator.GetVar("Window") as MainWindow;
             window.Opacity = 0.4;
 
             progressBar = new ProgressBar();
@@ -38,16 +39,23 @@ namespace EISv3.Utils
         private static void Invoke()
         {
             log4net.Config.XmlConfigurator.Configure();
-
-            progressBar.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal,
-            new Action(
-            delegate ()
+            try
             {
-                progressBar.Close();
-                window.Opacity = 1;
-                log.Info("-----ProgressBar Closed------");
+                progressBar.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal,
+                new Action(
+                delegate ()
+                {
+                    progressBar.Close();
+                    window.Opacity = 1;
+                    log.Info("-----ProgressBar Closed------");
+                }
+                ));
             }
-            ));
+            catch (Exception)
+            {
+                if (MessageBox.Show("Please click on ok to restart the application. Your data is saved.", "Some problem occured while loading", MessageBoxButton.OK) == MessageBoxResult.OK) System.Windows.Forms.Application.Restart(); 
+                else System.Windows.Forms.Application.Restart();
+            }
         }
     }
 }

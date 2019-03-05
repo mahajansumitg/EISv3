@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using static EISv3.Model.EmpInfo;
 
 
@@ -54,13 +55,7 @@ namespace EISv3.Utils
             return builder.ToString();
         }
 
-        #region Connection Open & Close
-
-        //Connection close
-        public static void close()
-        {
-            connection.Close();
-        }
+        #region Execution and Close Connetion
 
         //Status of Query action & Close connection 
         private static bool returnAndClose(SqlCommand command)
@@ -133,6 +128,7 @@ namespace EISv3.Utils
                             info.SetValue(obj, Int32.Parse(data));
                             break;
                         case "DateTime":
+                        case "Nullable`1":
                             info.SetValue(obj, DateTime.Parse(data));
                             break;
                         default:
@@ -172,6 +168,7 @@ namespace EISv3.Utils
                         builder.Append("'" + info.GetValue(obj) + "',");
                         break;
                     case "DateTime":
+                    case "Nullable`1":
                         builder.Append("'" + GetFormatedDate((DateTime)info.GetValue(obj)) + "',");
                         break;
                     case "Int32":
@@ -210,6 +207,7 @@ namespace EISv3.Utils
                         if (info.Name.Equals(key)) keyValue = "'" + info.GetValue(obj) + "'";
                         break;
                     case "DateTime":
+                    case "Nullable`1":
                         string date = GetFormatedDate((DateTime)info.GetValue(obj));
                         builder.Append("'" + date + "',");
                         if (info.Name.Equals(key)) keyValue = "'" + date + "'";
@@ -250,6 +248,20 @@ namespace EISv3.Utils
             return builder.ToString();
         }
 
+        #endregion
+
+        #region Test DataBase Connection
+        public static void TestConnection()
+        {
+            try
+            {
+                connection.Open();
+                connection.Close();
+            }catch(Exception e)
+            {
+                MessageBox.Show("Error occured while connecting to database" + e.Message);
+            }
+        }
         #endregion
     }
 }

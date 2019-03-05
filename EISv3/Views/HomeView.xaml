@@ -28,33 +28,40 @@
         <TextBlock Text="Welcome to the Persistent Systems Information Portal" 
                    Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Height="50" Width="816" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" TextAlignment="Center" LineStackingStrategy="BlockLineHeight" Background="Black" Foreground="#FFCFCDCD" OpacityMask="#FF642F2F"/>
 
-        <ListBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Background="#FF1F1F1F" BorderBrush="#FF080404" Foreground="#FFDEDEDE" FontSize="18" Margin="0" Padding="10" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Background="#FF1F1F1F">
 
-            <BulletDecorator>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <BulletDecorator Grid.Row="0" VerticalAlignment="Center" Margin="12">
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    Use left side panal controls for own information updations."/>
+                <TextBlock Text="    Use left side panal controls for information update." Foreground="#FFD4CFCF" FontSize="16"/>
             </BulletDecorator>
-            <BulletDecorator>
+            <BulletDecorator Grid.Row="1" VerticalAlignment="Center" Margin="12">
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    Form consists of all your information registered."/>
+                <TextBlock Text="    Form consists of all your information if registered." Foreground="#FFD4CFCF" FontSize="16"/>
             </BulletDecorator>
-            <BulletDecorator>
+            <BulletDecorator Grid.Row="2" VerticalAlignment="Center" Margin="12">
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    You can update your information or insert from form."/>
+                <TextBlock Text="    You can update your information or insert from form." Foreground="#FFD4CFCF" FontSize="16"/>
             </BulletDecorator>
-            <BulletDecorator>
+            <BulletDecorator Grid.Row="3" VerticalAlignment="Center" Margin="12">
                 <BulletDecorator.Bullet>
                     <Ellipse Height="10" Width="10" Fill="Blue"/>
                 </BulletDecorator.Bullet>
-                <TextBlock Text="    If you have admin rights, you can use Dashboard for controlling all employees."/>
+                <TextBlock Text="    If you are the admin, you can use Dashboard for managing information of all employees." Foreground="#FFD4CFCF" FontSize="16"/>
             </BulletDecorator>
 
-        </ListBox>
+        </Grid>
     </Grid>
 </UserControl>
