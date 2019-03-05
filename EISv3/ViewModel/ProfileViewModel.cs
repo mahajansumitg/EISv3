@@ -3,10 +3,7 @@ using EISv3.Utils;
 using log4net;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -147,6 +144,7 @@ namespace EISv3.ViewModel
         public ICommand GoToHomePage => new Command(_GoToHomePage);
         private void _GoToHomePage(object parameter)
         {
+            Mediator.RemoveVar("EmpInfo");
             SwitchEnable();
         }
     }

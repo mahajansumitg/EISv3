@@ -28,7 +28,7 @@
 
         <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <StackPanel Margin="5">
+                <StackPanel>
                     <Label Content="Name"            HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                     <Label Content="Email Id"        HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
 
@@ -36,10 +36,10 @@
                     <Label Content="Date Of Joining" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                     <Label Content="Date Of Leaving" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
 
-                    <Label Content="Vendor"          HorizontalAlignment="Left" HorizontalContentAlignment="Left" Visibility="{Binding VendorGrid, Mode=TwoWay}"/>
+                    <Label Content="Vendor"          HorizontalAlignment="Left" HorizontalContentAlignment="Left" Foreground="Black" Visibility="{Binding VendorGrid, Mode=TwoWay}"/>
                 </StackPanel>
 
-                <StackPanel Margin="5" HorizontalAlignment="Left">
+                <StackPanel HorizontalAlignment="Center">
                     <Label Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                     <Label Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
 
@@ -50,7 +50,7 @@
                     <Label Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black" Visibility="{Binding VendorGrid, Mode=TwoWay}"/>
                 </StackPanel>
 
-                <StackPanel Margin="5">
+                <StackPanel>
                     <TextBox Name="FirstName" Text="{Binding EmpInfo.FirstName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[FirstName]}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,5,20" Foreground="Black"/>
 
                     <TextBox Text="{Binding EmpInfo.EmailId, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[EmailId]}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,5,20" Foreground="Black"/>
@@ -67,7 +67,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <StackPanel Margin="5">
+                <StackPanel>
                     <TextBox Text="{Binding EmpInfo.MiddleName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[MiddleName]}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,5,20" Foreground="Black"/>
                     <Label Content="Employee Id"     HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                     <Label Content="Salary"          HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
@@ -75,7 +75,7 @@
                     <Label Content="Department"      HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                 </StackPanel>
 
-                <StackPanel Margin="5">
+                <StackPanel>
                     <Label Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                     <Label Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                     <Label Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
@@ -83,7 +83,7 @@
                     <Label Content=":" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
                 </StackPanel>
 
-                <StackPanel Margin="5">
+                <StackPanel>
                     <TextBox Text="{Binding EmpInfo.LastName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[LastName]}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,5,20" Foreground="Black"/>
                     <TextBox Text="{Binding EmpInfo.EmpId,    ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[EmpId]}" IsReadOnly="True" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,5,20" Foreground="Black"/>
                     <TextBox Text="{Binding EmpInfo.Salary,   ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Salary]}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,0,5,20" Foreground="Black"/>
@@ -99,7 +99,7 @@
         <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center">
             <Label Content="Address" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
             <Label Content=":"       HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20" Foreground="Black"/>
-            <TextBox TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Address]}" HorizontalAlignment="Center" VerticalAlignment="Stretch" MaxHeight="40" Width="300" Margin="0,0,5,20" Foreground="Black"/>
+            <TextBox TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" SpellCheck.IsEnabled="True" Text="{Binding EmpInfo.Address, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" ToolTip="{Binding ErrorCollection[Address]}" HorizontalAlignment="Center" VerticalAlignment="Center" MaxHeight="40" Width="300" Margin="0,0,5,20" Foreground="Black"/>
         </StackPanel>
         
         <Grid Grid.Row="4">
