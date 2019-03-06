@@ -337,7 +337,7 @@ namespace EISv3.ViewModel
                 {
                     foreach (EmpInfo emp in empInfoList)
                     {
-                        if ((!string.IsNullOrEmpty(empIdSearch) && !emp.emp_id.ToLower().Contains(empIdSearch.ToLower()))
+                        if ((!string.IsNullOrEmpty(empIdSearch) && !emp.emp_id.Trim().ToLower().Contains(empIdSearch.ToLower()))
                             || (DojSearch!=null && emp.doj != DojSearch)
                             || (DolSearch!=null && emp.dol != DolSearch))
                             newEmpInfoList.Remove(emp);
