@@ -169,7 +169,9 @@ namespace EISv3.Utils
                         break;
                     case "DateTime":
                     case "Nullable`1":
-                        builder.Append("'" + GetFormatedDate((DateTime)info.GetValue(obj)) + "',");
+                        string date = Convert.ToDateTime(info.GetValue(obj)).ToString("yyyy-MM-dd");
+                        if (Convert.ToDateTime(date) == DateTime.MinValue) date = "";
+                        builder.Append("'" + date + "',");
                         break;
                     case "Int32":
                         builder.Append(info.GetValue(obj) + ",");
@@ -208,7 +210,9 @@ namespace EISv3.Utils
                         break;
                     case "DateTime":
                     case "Nullable`1":
-                        string date = GetFormatedDate((DateTime)info.GetValue(obj));
+                        //string date = GetFormatedDate((DateTime)info.GetValue(obj));
+                        string date = Convert.ToDateTime(info.GetValue(obj)).ToString("yyyy-MM-dd");
+                        if (Convert.ToDateTime(date) == DateTime.MinValue) date = "";
                         builder.Append("'" + date + "',");
                         if (info.Name.Equals(key)) keyValue = "'" + date + "'";
                         break;

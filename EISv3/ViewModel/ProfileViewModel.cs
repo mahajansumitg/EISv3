@@ -92,31 +92,25 @@ namespace EISv3.ViewModel
         public ICommand UpdateProfile => new Command(_UpdateProfile, CanUpdate);
         private void _UpdateProfile(object parameter)
         {
-            try
-            {
-                if (isUserPresent)
-                    if (Connection.updateData(EmpInfo, "emp_id"))
-                    {
-                        MessageBox.Show("Profile successfully updated");
-                        log.Info("Empployee Information Updated");
-                    }
-                    else MessageBox.Show("Error in Updation.");
-                else
-                    if (Connection.setData(EmpInfo))
+            if (isUserPresent)
+                if (Connection.updateData(EmpInfo, "emp_id"))
                 {
-                    MessageBox.Show("Profile successfully inserted");
-                    log.Info("Empployee Information Inserted");
+                    MessageBox.Show("Profile successfully updated");
+                    log.Info("Empployee Information Updated");
                 }
-                else MessageBox.Show("Error in Insertion");
-
-                //Clearing employee object
-                Mediator.RemoveVar("EmpInfo");
-                SwitchEnable();
-            }
-            catch (Exception e)
+                else MessageBox.Show("Error in Updation.");
+            else
+                if (Connection.setData(EmpInfo))
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Profile successfully inserted");
+                log.Info("Empployee Information Inserted");
             }
+            else MessageBox.Show("Error in Insertion");
+
+            //Clearing employee object
+            Mediator.RemoveVar("EmpInfo");
+            SwitchEnable();
+
         }
 
         //CanUpdate methid to check for empty textboxes
